@@ -106,6 +106,7 @@ public class TestEngine extends HtmlReportSupport {
             capabilitiesForAppium.setCapability("appPackage", appPackage);
             capabilitiesForAppium.setCapability("appActivity", appActivity);
             capabilitiesForAppium.setCapability("app", appPath);
+           
 
             AndroidDriver = new AndroidDriver(new URL("http://127.0.0.1:4723/wd/hub"), capabilitiesForAppium);
             driver = (AndroidDriver);

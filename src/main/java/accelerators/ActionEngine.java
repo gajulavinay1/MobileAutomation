@@ -531,4 +531,45 @@ public class ActionEngine extends TestEngine {
 		String year = Integer.toString(c.get(Calendar.YEAR));
 		return month + "/" + day + "/" + year;
 	}
+	
+	/* method for dropdown
+	 * @ param locator for identify the dropdown
+	 * @param  index is to select item in dropdown
+	 */
+	
+	//@author :sangeetha
+	@SuppressWarnings("unchecked")
+	public static void dropDown(By locator, String name) {
+		boolean flag = false;
+		try
+		{
+		//driver.findElement(locator).click();
+		//driver.findElement(locator_string).click();
+		
+			List<WebElement> options =  driver.findElements(locator);
+			int count = options.size();
+	
+		/*List<MobileElement> options = (List<MobileElement>) driver.findElement(locator);
+		System.out.println("Total number of options available in dropdown:"+options.size());*/
+		System.out.println("name is" +name);
+		for(WebElement e:options)
+        {
+            String val=e.getText();
+           System.out.println(val);
+         
+            if(val.trim().equalsIgnoreCase(name))
+            {
+            	
+                e.click();
+                System.out.println("option in  dropdown is clicked:" +name);
+                break;
+            }
+        }
+		}
+		catch(Exception e)
+		{
+			e.printStackTrace();
+		}
+		
+}
 }

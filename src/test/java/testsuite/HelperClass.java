@@ -93,7 +93,7 @@ public class HelperClass extends PageLocator {
 
 	public static void MenuButtonclick() throws Throwable {
 		click(opendrawer, "loginbutton");
-		Thread.sleep(2000);
+		Thread.sleep(5000);
 		click(products, "continuelogin");
 		Thread.sleep(2000);
 	}
@@ -362,7 +362,7 @@ public class HelperClass extends PageLocator {
 		click(By.xpath(Years.replace("#", Enterkids)), "Coverage Amount");
 	}
 
-	public static void GetquoteData(String option,String Age, String CoverageAmount, String Periodofpolicy,String Selecttheplan,String Deductamount,String zipcode) throws Throwable {
+	public static void GetquoteData(String option,String Age, String CoverageAmount, String Periodofpolicy,String Selecttheplan,String Deductamount,String zipcode,String yearsormonths,String parentsyesorno,String numofparents,String parent1age,String parent2age,String parent3age,String parent4age,String plantype,String coveragedays,String selectwhomtoinsure,String numofmembers) throws Throwable {
 
 		switch (option) {
 
@@ -446,6 +446,258 @@ public class HelperClass extends PageLocator {
 				Thread.sleep(2000);
 				click(BuyNow, "Click on buy Now");
 				break;
+			case "Mediclassic - MCI":
+				click(coveragePlan,"choose");
+				Thread.sleep(2000);
+				click(By.xpath(selectplan.replace("#", Selecttheplan)), "selecting the plan");
+				click(ageinMedi, "Clicking on age");
+				Thread.sleep(2000);
+				type(ageinMedi, Age, "TypeAge");
+				Thread.sleep(3000);
+				if (isElementDisplayed(Kidageclick, "Kid Age")) {
+					Kids("2");
+				}
+				Thread.sleep(2000);
+				click(chooseyearormonth,"clicking on choose year or month");
+				Thread.sleep(2000);
+				click(By.xpath(clickyearsormonths.replace("#", yearsormonths)),"entering the year");
+				Thread.sleep(2000);
+				click(Policyperiodclick, "Clicking on Policy Period");
+				Thread.sleep(2000);
+				click(By.xpath(PolicyPeriod.replace("#", Periodofpolicy)), "Policy Period");
+				Thread.sleep(2000);
+				click(choosePolicyCoverinMedi,"policy cover");
+				Thread.sleep(2000);
+				click(By.xpath(CoverageAMount.replace("#", CoverageAmount)), "Coverage Amount");
+				Thread.sleep(2000);
+				click(liveinMedi, "pincode");
+				Thread.sleep(2000);
+				type(liveinMedi,zipcode,"pincode");
+				Thread.sleep(4000);
+				click(GetQuote, "Click on Get Quote");
+				Thread.sleep(5000);
+				swipe(AndroidDriver, DIRECTION.DOWN);
+				Thread.sleep(2000);
+				click(BuyNow, "Click on buy Now");
+				break;
+			case"Arogya Sanjeev":
+				click(ageins,"age");
+				Thread.sleep(2000);
+				type(ageins, Age, "TypeAge");
+				Thread.sleep(2000);
+				if (isElementDisplayed(Kidageclick, "Kid Age")) {
+					Kids("2");
+				}
+				click(chooseParentsCover,"choose parents coverage");
+				Thread.sleep(2000);
+				click(By.xpath(selectYesorNoinParentsCover.replace("#", parentsyesorno)), "parentsyesorno");
+				if(isElementDisplayed(parentYes, "cover parents also"))
+				{
+					click(chooseHowmanySeniorPatients,"how many parents");
+					Thread.sleep(2000);
+					click(By.xpath(selectParentsNumber.replace("#",numofparents)),"number of parents");
+					Thread.sleep(2000);
+					switch (numofparents) {
+					case "1":
+						click(ageOf1Parent,"parent1 age");
+						Thread.sleep(2000);
+						type(ageOf1Parent,parent1age,"parent 1 age");
+						Thread.sleep(2000);
+						break;
+					case "2":
+						click(ageOf1Parent,"parent1 age");
+						Thread.sleep(2000);
+						type(ageOf1Parent,parent1age,"parent 1 age");
+						Thread.sleep(2000);
+						click(ageOf2Parent,"parent2 age");
+						Thread.sleep(2000);
+						type(ageOf2Parent,parent2age,"parent 2 age");
+						Thread.sleep(2000);
+						break;
+					case "3":
+						click(ageOf1Parent,"parent1 age");
+						Thread.sleep(2000);
+						type(ageOf1Parent,parent1age,"parent 1 age");
+						Thread.sleep(2000);
+						click(ageOf2Parent,"parent2 age");
+						Thread.sleep(2000);
+						type(ageOf2Parent,parent2age,"parent 2 age");
+						Thread.sleep(2000);
+						click(ageOf3Parent,"parent3 age");
+						Thread.sleep(2000);
+						type(ageOf3Parent,parent3age,"parent 3 age");
+						Thread.sleep(2000);
+						
+						break;
+					case "4":
+						click(ageOf1Parent,"parent1 age");
+						Thread.sleep(2000);
+						type(ageOf1Parent,parent1age,"parent 1 age");
+						Thread.sleep(2000);
+						click(ageOf2Parent,"parent2 age");
+						Thread.sleep(2000);
+						type(ageOf2Parent,parent2age,"parent 2 age");
+						Thread.sleep(2000);
+						click(ageOf3Parent,"parent3 age");
+						Thread.sleep(2000);
+						type(ageOf3Parent,parent3age,"parent 3 age");
+						Thread.sleep(2000);
+						click(ageOf4Parent,"parent4 age");
+						Thread.sleep(2000);
+						type(ageOf4Parent,parent4age,"parent 4 age");
+						Thread.sleep(2000);
+						break;
+						default:
+							System.out.println("There is no value");
+					}
+					
+				}
+				click(chooseCoverageAmountinAS,"coverage amount");
+				Thread.sleep(2000);
+				click(By.xpath(coverageAmountinAS.replace("#", CoverageAmount)),"coverage amount");
+				Thread.sleep(2000);
+				click(GetQuote, "Click on Get Quote");
+				Thread.sleep(5000);
+				swipe(AndroidDriver, DIRECTION.DOWN);
+				Thread.sleep(2000);
+				click(BuyNow, "Click on buy Now");
+				break;
+			case "Special care":
+				click(ageins, "Clicking on age");
+				Thread.sleep(2000);
+				type(ageins, Age, "TypeAge");
+				Thread.sleep(2000);
+				click(Policyperiodclick, "Clicking on Policy Period");
+				Thread.sleep(2000);
+				click(By.xpath(PolicyPeriod.replace("#", Periodofpolicy)), "Policy Period");
+				Thread.sleep(2000);
+				click(choosepolicytype, "clickonchoosepolicytype");
+				Thread.sleep(2000);
+				click(clickpolicytype,"click on policy type");
+				Thread.sleep(2000);
+				click(PolicyCoverclick, "Policy Coverage");
+				Thread.sleep(2000);
+				click(By.xpath(CoverageAMount.replace("#", CoverageAmount)), "Coverage Amount");
+				Thread.sleep(2000);
+				click(GetQuote, "Click on Get Quote");
+				Thread.sleep(5000);
+				swipe(AndroidDriver, DIRECTION.DOWN);
+				Thread.sleep(2000);
+				click(BuyNow, "Click on buy Now");
+				break;
+			case "Hospital Cash":
+				
+				click(ageins, "Clicking on age");
+				Thread.sleep(2000);
+				type(ageins, Age, "TypeAge");
+				Thread.sleep(3000);
+				if (isElementDisplayed(Kidageclick, "Kid Age")) {
+					Kids("2");
+				}
+				Thread.sleep(2000);
+				click(choosepolicyTypeinHC,"policy type");
+				Thread.sleep(5000);
+				if(selectwhomtoinsure.equalsIgnoreCase("myself"))
+				{
+				click(clickpolicytypeinHC,"policy type");
+				}
+				else {
+					click(clickPolicyTypeFloater,"policy type");
+					Thread.sleep(2000);
+				}
+				Thread.sleep(2000);
+				click(choosePlanType,"plan type");
+				Thread.sleep(2000);
+				click(By.xpath(clickPlanType.replace("#", plantype)),"selecting plan type");
+				Thread.sleep(2000);
+				if(plantype.equalsIgnoreCase("enhanced"))
+				{
+				click(chooseCoverageAmount,"coverage amount");
+				Thread.sleep(2000);
+				click(By.xpath(clickCoverageAmount.replace("#",CoverageAmount)),"selecting coverage amount");
+				Thread.sleep(2000);
+				click(choosePolicyTerm,"policy term");
+				click(By.xpath(clickPolicyTerm.replace("#",Periodofpolicy)),"selecting coverage amount");
+				click(chooseHospitalDays,"hospital days");
+				click(By.xpath(clickHospitalDays.replace("#",coveragedays)),"selecting coverage days");
+				Thread.sleep(2000);
+				}
+				else
+				{
+					click(chooseCoverageAmountbasic,"basic coverage amount");
+					click(By.xpath(clickCoverageAmount.replace("#",CoverageAmount)),"selecting coverage amount");
+					click(choosePolicyTerm,"policy term");
+					click(By.xpath(clickPolicyTerm.replace("#",Periodofpolicy)),"selecting coverage amount");
+					click(chooseHospitalDaysbasic,"basic hospital days");
+					click(By.xpath(clickHospitalDays.replace("#",coveragedays)),"selecting coverage days");
+				}
+				click(GetQuote, "Click on Get Quote");
+				Thread.sleep(5000);
+				swipe(AndroidDriver, DIRECTION.DOWN);
+				Thread.sleep(2000);
+				click(BuyNow, "Click on buy Now");
+				
+			
+				break;
+			case "Outpatient Care":
+				if(selectwhomtoinsure.equalsIgnoreCase("myself"))
+				{
+					click(myselfAgeinOC,"choose age in myself");
+					type(myselfAgeinOC, Age, "TypeAge");
+					click(chooseyearsormonthsinOC,"choose years or months");
+					click(By.xpath(yearsormonthsinOC.replace("#",yearsormonths)),"selecting years or months");
+					click(chooseCoverageAmountinOC,"choose coverage amount");
+					click(By.xpath(clickCoverageamountinOC.replace("#",CoverageAmount)),"selecting coverage amount");
+					click(choosePolicyTypeinOC,"choose policy type");
+					click(clickPolicyTypeinOC,"click policy type");
+					click(choosePlan,"choose plan");
+					click(By.xpath(clickPlan.replace("#", Selecttheplan)),"selecting the plan");
+					click(GetQuote, "Click on Get Quote");
+					Thread.sleep(5000);
+					swipe(AndroidDriver, DIRECTION.DOWN);
+					Thread.sleep(2000);
+					click(BuyNow, "Click on buy Now");
+				}
+				else
+				{
+				click(ageMyselfandOthers,"choose age");
+				type(ageMyselfandOthers,Age,"age");
+				click(chooseNoofmembers,"choose members");
+				click(By.xpath(clickNoofmembers.replace("#", numofmembers)),"selecting the members");
+				click(chooseCoverageAmountinOC,"choose coverage amount");
+				click(By.xpath(clickCoverageamountinOC.replace("#",CoverageAmount)),"selecting coverage amount");
+				click(choosePolicyType1inOC,"policy type");
+				click(clickPolicyType1inOC,"policy type");
+				click(choosePlan,"choose plan");
+				click(By.xpath(clickPlan.replace("#", Selecttheplan)),"selecting the plan");
+				swipe(AndroidDriver, DIRECTION.DOWN);
+				click(GetQuote, "Click on Get Quote");
+				Thread.sleep(5000);
+				swipe(AndroidDriver, DIRECTION.DOWN);
+				Thread.sleep(2000);
+				click(BuyNow, "Click on buy Now");
+				}
+				break;
+			case "Young Star":
+				click(mySelfAgeinYS,"age");
+				type(mySelfAgeinYS,Age,"age");
+				click(choosePolicyTypeinYS,"policy type");
+				click(clickPolicyTypeinYS,"selecting the policy type");
+				click(choosePlanTypeinYS,"plan type");
+				click(By.xpath(clickPlaninYS.replace("#", Selecttheplan)),"selecting the plan");
+				click(ChooseCoverageAmountinYS,"coverage amount");
+				click(By.xpath(clickCoverageamountinYS.replace("#", CoverageAmount)),"coverage amount");
+				Thread.sleep(5000);
+				click(choosePolicyTerminYS,"policy term");
+				click(By.xpath(clickPolicyTerminYS.replace("#", Periodofpolicy)),"policy term");
+				click(GetQuote, "Click on Get Quote");
+				Thread.sleep(5000);
+				swipe(AndroidDriver, DIRECTION.DOWN);
+				Thread.sleep(2000);
+				click(BuyNow, "Click on buy Now");
+				break;
+				
+				
 			default:
 				System.out.println("There is no value");
 
@@ -1689,6 +1941,209 @@ public class HelperClass extends PageLocator {
 		swipe(AndroidDriver, DIRECTION.DOWN);
 		Thread.sleep(2000);
 		click(clickbuynow, "Click on buy Now");
+	}
+	public static void detailsinAS(String income,String GSTidnumber,String aadhar,String pannum,String addressone,String addresstwo,String pin,String nomineename,String nomineeage,String perofclaim,String height,String weight) throws Throwable
+	{
+		//first page details
+		Thread.sleep(2000);
+		click(startdateinDS,"clicking on start date");
+		Thread.sleep(2000);
+		clickByCondindates(623, 1985);
+		Thread.sleep(2000);
+		//dropDown(policytype, "Portability Policy");
+		//Thread.sleep(2000);
+		
+		swipe(AndroidDriver, DIRECTION.DOWN);
+		click(nextinDS,"clicking next");
+		Thread.sleep(2000);
+		
+		
+		//second page details
+		//proposer dob
+		Thread.sleep(2000);
+		click(proposerdobinDS,"clicking on proposerdob");
+		Thread.sleep(2000);
+		clickByCondindates(742, 1700);
+		Thread.sleep(2000);
+		
+		//selecting occupation
+		click(selectoccupationinDS,"clicking on occupation");
+		Thread.sleep(5000);
+		//dropdown for occupation
+		dropDown(valuesinOccupationDropdown, "BUSINESS/TRADERS");
+		Thread.sleep(5000);
+		swipe(AndroidDriver, DIRECTION.DOWN);
+		
+		//Annual income
+		click(incomeinDS,"clicking on income");
+		Thread.sleep(2000);
+		type(incomeinDS,income, "income");
+		Thread.sleep(2000);
+		
+		//GST type
+		click(GSTtypeinDS,"clicking GST Type");
+		Thread.sleep(5000);
+		dropDown(valuesinGstTypeDropdown, "normal");
+		Thread.sleep(2000);
+		
+		//GST id number
+		
+		click(GSTidnumberinDS,"clicking on GST id number");
+		Thread.sleep(2000);
+		type(GSTidnumberinDS, GSTidnumber, "gstidnumber");
+		Thread.sleep(2000);
+		swipe(AndroidDriver, DIRECTION.DOWN);
+		
+		//Nationality
+		click(nationalityinDS,"clicking nationality");
+		Thread.sleep(2000);
+		dropDown(valuesinNationalityDropdown, "Indian citizen");
+		Thread.sleep(2000);
+		
+		//4 digits of aadhar number
+		click(digitsaadharinDS,"clicking on aadhar");
+		Thread.sleep(2000);
+		type(digitsaadharinDS,aadhar,"aadhar number");
+		
+		Thread.sleep(2000);
+		
+		//pan number
+		//click(pannoinDS,"clicking on 'no' in pan");
+		Thread.sleep(2000);
+		MobileElement panyes = (MobileElement) driver.findElement(By.xpath("(//*[contains(@text,'Yes')])[1]"));
+		boolean panyesselected = panyes.isSelected();
+		if(panyesselected)
+		{
+			click(enterpaninDS,"clicking on pan number");
+			//Thread.sleep(2000);
+			type(enterpaninDS,pannum,"pan number");
+			//Thread.sleep(2000);
+		}
+		Thread.sleep(10000);
+		//eia number
+		//click(eianoinDS,"clicking on  no in eia number");
+		//clickByCondindates(404, 1789);
+		clickByCondindates(406, 1312);
+		Thread.sleep(2000);
+		swipe(AndroidDriver, DIRECTION.DOWN);
+		Thread.sleep(2000);
+		
+		//need to add code for yes 
+		
+		//other health insurance
+		//click(healthinsunoinDS,"clicking on no health insurance");
+		clickByCondindates(406, 1457);
+		Thread.sleep(2000);
+		swipe(AndroidDriver, DIRECTION.DOWN);
+		
+		
+		//address1
+		click(addressoneinDs,"clicking on addressone");
+		Thread.sleep(2000);
+		type(addressoneinDs,addressone,"entering addressone ");
+		Thread.sleep(2000);
+		
+		
+		//address2
+		click(addresstwoinDS,"clicking on address2");
+		Thread.sleep(2000);
+		type(addresstwoinDS, addresstwo, "entering addresstwo");
+		Thread.sleep(2000);
+		
+		//pincode
+		click(pincodeinDS,"clicking on pincode");
+		Thread.sleep(2000);
+		type(pincodeinDS,pin,"entering pincode");
+		Thread.sleep(2000);
+		swipe(AndroidDriver, DIRECTION.DOWN);
+		
+		//clicking on checkbox to copy address
+		click(checkboxtocopyaddressinDS,"clicking on checkbox");
+		Thread.sleep(2000);
+		swipe(AndroidDriver, DIRECTION.DOWN);
+		Thread.sleep(2000);
+		swipe(AndroidDriver, DIRECTION.DOWN);
+		Thread.sleep(2000);
+		swipe(AndroidDriver, DIRECTION.DOWN);
+		
+		//selecting social status
+		click(nobplinDS,"clicking no in social status");
+		Thread.sleep(2000);
+		swipe(AndroidDriver, DIRECTION.DOWN);
+		Thread.sleep(2000);
+		swipe(AndroidDriver, DIRECTION.DOWN);
+		
+		//nominee name
+		click(nomineenameinDS,"clicking on nominee name");
+		Thread.sleep(2000);
+		type(nomineenameinDS,nomineename,"entering nominee name");
+	
+		
+	
+		
+		//nominee age
+		click(nomineeageinDS,"clicking nominee age");
+		Thread.sleep(2000);
+		type(nomineeageinDS,nomineeage,"enter nominee age");
+		Thread.sleep(2000);
+		
+		//nominee relationship
+		click(nomineerelationshipinDS,"clicking on nominee relation ship");
+		Thread.sleep(2000);
+		//dropdown for nominee
+		dropDown(valuesinNomineeDropdown, "Father");
+		
+		//% of claim
+		click(perclaiminDS,"clicking on per claim");
+		Thread.sleep(2000);
+		type(perclaiminDS,perofclaim,"per claim");
+		Thread.sleep(2000);
+		
+		//next button
+		click(next2inDS,"clicking next");
+		Thread.sleep(10000);
+		
+		//third page details
+		
+		//relationship
+		click(relationshipinDS,"clicking on relation ship");
+		Thread.sleep(2000);
+		//dropdown for relatioship
+		dropDown(valuesinRelationshipDropdown, "SELF");
+		swipe(AndroidDriver, DIRECTION.DOWN); //for outpatient care
+		//gender
+		click(genderinDS,"clicking on gender");
+		Thread.sleep(2000);
+		//dropdown for gender
+		dropDown(valuesinGenderDropdown,"Female");
+		
+		//height
+		click(heightinDS,"clicking height");
+		type(heightinDS,height,"height");
+		Thread.sleep(2000);
+		
+		//weight
+		click(weightinDS," clicking weight");
+		type(weightinDS,weight,"weight");
+		Thread.sleep(2000);
+		swipe(AndroidDriver, DIRECTION.DOWN);
+		
+		//Health problems
+		click(noHealthProbleminAS,"no health problem");
+		Thread.sleep(2000);
+		
+		//next
+		click(next3inDS,"clicking on next");
+		Thread.sleep(2000);
+	
+	
+	}
+	
+	
+	
+	public void skipPolicyNumbers() throws Throwable
+	{
+		click(skip,"skip the policy details");
 	}
 	
 		

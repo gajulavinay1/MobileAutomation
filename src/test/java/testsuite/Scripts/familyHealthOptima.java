@@ -12,6 +12,14 @@ import support.HtmlReportSupport;
 import support.Reporter;
 import testsuite.HelperClass;
 
+
+/*@author : sangeetha 
+ * date: 11/08/2020
+@scenario : Customer is trying to buy the FHO  product
+*/
+
+
+
 public class familyHealthOptima extends HelperClass{
 	
 	@Test(dataProvider = "getTestData")

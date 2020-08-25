@@ -12,14 +12,20 @@ import support.HtmlReportSupport;
 import support.Reporter;
 import testsuite.HelperClass;
 
+
+/*@author : sangeetha 
+ * date: 10/08/2020
+@scenario : Customer is trying to buy the Cancer Gold product
+*/
+
 public class cancerGold extends HelperClass {
 	
 		@Test(dataProvider = "getTestData")
-		 public void productCorona(Hashtable<String, String> data) throws Throwable 
+		 public void productCancerGold(Hashtable<String, String> data) throws Throwable 
 		 {
 			 try {
 		            TestEngine.testDescription
-		                    .put(HtmlReportSupport.tc_name, "cardiac care test case for star app");
+		                    .put(HtmlReportSupport.tc_name, "cancergold test case for star app");
 		            
 		              Startingpage();
 		            

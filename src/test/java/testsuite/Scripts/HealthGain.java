@@ -12,6 +12,12 @@ import support.HtmlReportSupport;
 import support.Reporter;
 import testsuite.HelperClass;
 
+
+/*@author : sangeetha 
+ * date: /08/2020
+@scenario : Customer is trying to buy the Health Gain product
+*/
+
 public class HealthGain  extends HelperClass {
 	@Test(dataProvider = "getTestData")
 	 public void productHealthgain(Hashtable<String, String> data) throws Throwable 

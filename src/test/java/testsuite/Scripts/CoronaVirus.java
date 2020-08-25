@@ -11,7 +11,10 @@ import support.CommonDataProvider;
 import support.HtmlReportSupport;
 import support.Reporter;
 import testsuite.HelperClass;
-
+/*@author : sangeetha 
+ * date: /08/2020
+@scenario : Customer is trying to buy the Corona virus  product
+*/
 public class CoronaVirus extends HelperClass
 
 {

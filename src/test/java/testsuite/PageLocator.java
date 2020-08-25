@@ -453,5 +453,96 @@ public static By noAlcohol = By.xpath("(//*[contains(@text,'No')])[6]");
 public static By liveinFHO = By.xpath("//*[contains(@resource-id,'pincode')]");
 
 
+//page locators for mediclassic(MC)
+
+public static By coveragePlan = By.xpath("//*[contains(@resource-id,'coveragePlan')]");
+public static String selectplan = "//*[contains(@text,'#')]";
+public static By ageinMedi = By.xpath("//*[contains(@resource-id,'ageYear')]");
+public static By choosePolicyCoverinMedi = By.xpath("//*[contains(@resource-id,'policy_cover1')]");
+public static By liveinMedi = By.xpath("//*[contains(@resource-id,'postalCode')]");
+
+
+//page locators for arogya sanjeev(AS)
+public static By chooseiWantToInsure = By.xpath("//*[contains(@text,'Choose')]");
+public static By chooseParentsCover = By.xpath("//*[contains(@resource-id,'parentCover')]");
+public static String selectYesorNoinParentsCover  = "//*[contains(@text,'#')]";
+public static By parentYes = By.xpath("//*[contains(@text,'Yes')]");
+public static By chooseHowmanySeniorPatients = By.xpath("//*[contains(@text,'Choose')]");
+public static String selectParentsNumber  = "//*[contains(@text,'#')]";
+public static By ageOf1Parent = By.xpath("//*[contains(@resource-id,'ageParent1')]");
+public static By ageOf2Parent = By.xpath("//*[contains(@resource-id,'ageParent2')]");
+public static By ageOf3Parent = By.xpath("//*[contains(@resource-id,'ageParent3')]");
+public static By ageOf4Parent = By.xpath("//*[contains(@resource-id,'ageParent4')]");
+public static By chooseCoverageAmountinAS = By.xpath("//*[contains(@resource-id,'policy_cover')]");
+public static String coverageAmountinAS = "//*[contains(@text,'#')]";
+public static By noHealthProbleminAS = By.xpath("//*[contains(@text,'No')]");
+public static By yesHealthProbleminAS = By.xpath("//*[contains(@text,'Yes')]");
+
+
+//page locators for Hospital cash(HC)
+public static By choosepolicyTypeinHC = By.xpath("(//*[contains(@text,'Choose')])[1]");
+public static By clickpolicytypeinHC = By.xpath("//*[contains(@text,'Individual')]");
+public static By choosepolicyTypeFloater = By.xpath("//*[contains(@resource-id,'policyTypeFloater')]");
+public static By clickPolicyTypeFloater = By.xpath("//*[contains(@text,'Floater')]");
+public static By choosePolicyType = By.xpath("//*[contains(@resource-id,'policyTypeFloater')]");
+public static By choosePlanType = By.xpath("//*[contains(@resource-id,'planType')]");
+public static String clickPlanType = "//*[contains(@text,'#')]";
+public static By chooseCoverageAmount = By.xpath("//*[contains(@resource-id,'policy_cover_enhanced')]");
+public static String clickCoverageAmount = "//*[contains(@text,'#')]";
+public static By choosePolicyTerm = By.xpath("//*[contains(@resource-id,'policy_term')]");
+public static String clickPolicyTerm = "//*[contains(@text,'#')]";
+public static By chooseHospitalDays = By.xpath("//*[contains(@resource-id,'hospital_days_enhanced')]");
+public static String clickHospitalDays = "//*[contains(@text,'#')]";
+public static By skip = By.xpath("//*[contains(@text,'SKIP')]");
+// for policy type is basic 
+public static By chooseCoverageAmountbasic = By.xpath("//*[contains(@resource-id,'policy_cover_basic')]");
+public static By chooseHospitalDaysbasic = By.xpath("//*[contains(@resource-id,'hospital_days_basic')]");
+
+//page locators for outpatient care (OC)
+
+//page locators for Myself
+public static By chooseiwanttoinsureinOC = By.xpath("//*[contains(@resource-id,'adults')]");
+public static String  clickpersontoinsure    = "//*[contains(@text,'#')]";
+public static By myselfAgeinOC    = By.xpath("//*[contains(@resource-id,'ageMyself')]");
+public static By chooseyearsormonthsinOC    = By.xpath("//*[contains(@resource-id,'suffixAgeMyself')]");
+public static String yearsormonthsinOC     = "//*[contains(@text,'#')]";
+public static By chooseCoverageAmountinOC  = By.xpath("//*[contains(@resource-id,'policy_cover')]");
+public static String  clickCoverageamountinOC    = "//*[contains(@text,'#')]";
+public static By choosePolicyTypeinOC      = By.xpath("//*[contains(@resource-id,'policyTypeMyself')]");
+public static By  clickPolicyTypeinOC     =  By.xpath("//*[contains(@text,'Individual')]");
+public static By   choosePlan   = By.xpath("//*[contains(@text,'Choose')]");
+public static String  clickPlan  = "//*[contains(@text,'#')]";
+
+//page locators for myself and others
+public static By  ageMyselfandOthers   = By.xpath("//*[contains(@resource-id,'ageMyselfOthers')]");
+public static By   chooseNoofmembers   = By.xpath("//*[contains(@resource-id,'no_of_members')]");
+public static String clickNoofmembers = "//*[contains(@text,'#')]";
+public static By choosePolicyType1inOC = By.xpath("//*[contains(@resource-id,'policyTypeMyselfOthers')]");
+public static By clickPolicyType1inOC = By.xpath("//*[contains(@text,'Floater')]");
+
+
+
+//page locators for young star(YS)
+//page locators for Myself
+public static By  mySelfAgeinYS = By.xpath("//*[contains(@resource-id,'age')]");
+public static By  choosePolicyTypeinYS = By.xpath("//*[contains(@resource-id,'policyType')]");
+public static By  clickPolicyTypeinYS = By.xpath("//*[contains(@text,'Individual')]");
+public static By   choosePlanTypeinYS = By.xpath("//*[contains(@resource-id,'planType')]");
+public static String clickPlaninYS = "//*[contains(@text,'#')]";
+public static By ChooseCoverageAmountinYS = By.xpath("//*[contains(@resource-id,'policy_cover_ind')]");
+public static String clickCoverageamountinYS = "//*[contains(@text,'#')]";
+public static By choosePolicyTerminYS = By.xpath("//*[contains(@resource-id,'policy_term')]");
+public static String clickPolicyTerminYS = "//*[contains(@text,'#')]";
+
+//page locators for myself and spouse
+
+public static By choosePolicyTypeFloaterinYS = By.xpath("//*[contains(@resource-id,'policyTypeFloater')]");
+public static By clickPolicyTypeFloaterinYS = By.xpath("//*[contains(@text,'Floater')]");
+public static By chooseCoverageAmount1inYS = By.xpath("//*[contains(@resource-id,'policy_cover_family')]");
+
+
+
+
+
 }
 

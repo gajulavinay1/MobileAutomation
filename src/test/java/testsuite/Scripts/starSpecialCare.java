@@ -12,49 +12,43 @@ import support.HtmlReportSupport;
 import support.Reporter;
 import testsuite.HelperClass;
 
-
 /*@author : sangeetha 
- * date: /08/2020
-@scenario : Customer is trying to buy the Diabetes safe product
+ * date: 17/08/2020
+@scenario : Customer is trying to buy the star special care  product
 */
-
-
-
-public class DiabetesSafe extends HelperClass{
+public class starSpecialCare extends HelperClass {
 	
 	@Test(dataProvider = "getTestData")
-	 public void productDiabetic(Hashtable<String, String> data) throws Throwable 
+	 public void productSpecialCare(Hashtable<String, String> data) throws Throwable 
 	 {
 		 try {
 	            TestEngine.testDescription
-	                    .put(HtmlReportSupport.tc_name, "diabetic safe test case for star app");
+	                    .put(HtmlReportSupport.tc_name, "star special care test case for star app");
 	            
-	            Startingpage();
+	              Startingpage();
 	            
-	          
-	            
-	           // login in to app
+	          // login in to app
 	            
 	            Login(data.get("useremail"),data.get("userpass") );
+	            
 	            
 	            MenuButtonclick();
 	            
 	            //dragStar();
 	            
 	           //selecting the product
-	            
 	            Products(data.get("Selecttheproduct"));
 	            
 	            GetQuote();
 	            
-	            //insurance details
-	            insuranceDetailsinDS(data.get("policytype"),data.get("Age"),data.get("prefferedplan"),data.get("policyamount"));
+	            GetquoteData(data.get("productname"),data.get("Age"),data.get("CoverageAmount"),data.get("Periodofpolicy"),null,null,null,null,null,null,null,null,null,null,null,null,null,null);
 	            
-	            //proposer details
-	            detailsinDS(data.get("income"),data.get("GSTidnumber"),data.get("aadhar"),null,data.get("addressone"),data.get("addresstwo"),data.get("pin"),data.get("nomineename"),data.get("nomineeage"),data.get("perofclaim"),data.get("height"),data.get("weight"),data.get("sugar"),data.get("serum"),data.get("h1bac"));
+	            detailsinAS(data.get("income"),data.get("GSTidnumber"),data.get("aadhar"),null,data.get("addressone"),data.get("addresstwo"),data.get("pin"),data.get("nomineename"),data.get("nomineeage"),data.get("perofclaim"),data.get("height"),data.get("weight"));
 	            
 	            submitProposal();
+	           
 	            fileUpload();
+	            
 	            
 		 }
 
@@ -79,6 +73,6 @@ public class DiabetesSafe extends HelperClass{
 	
 	@DataProvider
     public static Object[][] getTestData() {
-        return CommonDataProvider.getData("diabetessafe");
+        return CommonDataProvider.getData("specialcare");
     }
-}
+} 

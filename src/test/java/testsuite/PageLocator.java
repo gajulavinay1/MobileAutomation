@@ -540,9 +540,34 @@ public static By choosePolicyTypeFloaterinYS = By.xpath("//*[contains(@resource-
 public static By clickPolicyTypeFloaterinYS = By.xpath("//*[contains(@text,'Floater')]");
 public static By chooseCoverageAmount1inYS = By.xpath("//*[contains(@resource-id,'policy_cover_family')]");
 
+//page locators for  Star care micro insurance policy
 
 
+//myself,spouseandmykids(msk)
+public static By choosekidsinmsk = By.xpath("//*[contains(@resource-id,'kids2')]");
+//myself and mykids(mk)
+public static By choosekidsinmk = By.xpath("//*[contains(@resource-id,'kids1')]");
+public static String clickKids = "//*[contains(@text,'#')]";
+public static By sharequote = By.xpath("//*[contains(@text,'SHARE QUOTE')]");
 
+public static By messages = By.xpath("(//*[contains(@resource-id,'android:id/icon')])[2]");
+public static By email = By.xpath("(//*[contains(@resource-id,'android:id/icon')])[3]");
+public static By copytoclipboard = By.xpath("(//*[contains(@resource-id,'android:id/icon')])[4]");
+public static By savetodraft = By.xpath("(//*[contains(@resource-id,'android:id/icon')])[5]");
+
+
+public static By selectname = By.xpath("//*[contains(@resource-id,'com.google.android.apps.messaging:id/name')]");
+public static By sendicon = By.xpath("//*[contains(@resource-id,'com.google.android.apps.messaging:id/send_message_button_icon')]");
+
+
+//page locators for Microrural(MR)
+public static By choosePolicytypeinMR =By.xpath("//*[contains(@resource-id,'policyType')]");
+public static By clickPolicyTypeIndividualinMR = By.xpath("//*[contains(@text,'Individual')]");
+public static By chooseCoverageAmountinMR =By.xpath("//*[contains(@resource-id,'policy_cover_individual')]");
+public static String clickCoverageAountinMR = "//*[contains(@text,'#')]";
+public static By choosePolicytypeFloaterinMR = By.xpath("//*[contains(@resource-id,'policyTypeFloater')]");
+public static By clickPolicyTypeFloaterinMR = By.xpath("//*[contains(@text,'Floater')]");
+public static By chooseCoverageAmountFloaterinMR = By.xpath("//*[contains(@resource-id,'policy_cover_floater')]");
 
 }
 

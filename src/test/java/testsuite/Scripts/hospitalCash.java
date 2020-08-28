@@ -44,7 +44,7 @@ public class hospitalCash extends HelperClass {
 	            
 	            SelectingIwnattoInsure(data.get("selectwhomtoinsure"));
 	            
-	            GetquoteData(data.get("productname"),data.get("Age"),data.get("CoverageAmount"),data.get("Periodofpolicy"),null,null,null,null,null,null,null,null,null,null,data.get("plantype"),data.get("coveragedays"),data.get("selectwhomtoinsure"),null);
+	            GetquoteData(data.get("productname"),data.get("Age"),data.get("CoverageAmount"),data.get("Periodofpolicy"),null,null,null,null,null,null,null,null,null,null,data.get("plantype"),data.get("coveragedays"),data.get("selectwhomtoinsure"),null,null);
 	            
 	            skipPolicyNumbers();
 	            

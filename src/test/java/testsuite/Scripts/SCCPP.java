@@ -12,20 +12,20 @@ import support.HtmlReportSupport;
 import support.Reporter;
 import testsuite.HelperClass;
 
-
 /*@author : sangeetha 
- * date: 17/08/2020
-@scenario : Customer is trying to buy the Arogya sanjeev product
+ * date: 26/08/2020
+@scenario : Customer is trying to buy the Star criticare plus  product
 */
 
-public class arogyaSanjeev extends HelperClass {
+
+public class SCCPP extends HelperClass {
 	
 	@Test(dataProvider = "getTestData")
-	 public void productArogyaSanjeev(Hashtable<String, String> data) throws Throwable 
+	 public void productSCCPP(Hashtable<String, String> data) throws Throwable 
 	 {
 		 try {
 	            TestEngine.testDescription
-	                    .put(HtmlReportSupport.tc_name, "Arogya sanjeev test case for star app");
+	                    .put(HtmlReportSupport.tc_name, "star criticare  policy test case for star app");
 	            
 	              Startingpage();
 	            
@@ -43,16 +43,11 @@ public class arogyaSanjeev extends HelperClass {
 	            
 	            GetQuote();
 	            
-	            SelectingIwnattoInsure(data.get("selectwhomtoinsure"));
+	            GetquoteData(data.get("productname"),data.get("Age"),data.get("CoverageAmount"),null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null);
 	            
-	            GetquoteData(data.get("productname"),data.get("Age"),data.get("CoverageAmount"),null,null,null,null,null,data.get("parentsyesorno"),null,null,null,null,null,null,null,null,null,data.get("numofkids"));
+	           shareQuote();
 	            
-	            detailsinAS(data.get("income"),data.get("GSTidnumber"),data.get("aadhar"),null,data.get("addressone"),data.get("addresstwo"),data.get("pin"),data.get("nomineename"),data.get("nomineeage"),data.get("perofclaim"),data.get("height"),data.get("weight"));
-	            
-	            submitProposal();
-	           
-	            fileUpload();
-	            
+	          
 	            
 		 }
 
@@ -77,8 +72,6 @@ public class arogyaSanjeev extends HelperClass {
 	
 	@DataProvider
     public static Object[][] getTestData() {
-        return CommonDataProvider.getData("arogyasanjeev");
+        return CommonDataProvider.getData("SCCPP");
     }
-}
-
-
+} 

@@ -362,7 +362,7 @@ public class HelperClass extends PageLocator {
 		click(By.xpath(Years.replace("#", Enterkids)), "Coverage Amount");
 	}
 
-	public static void GetquoteData(String option,String Age, String CoverageAmount, String Periodofpolicy,String Selecttheplan,String Deductamount,String zipcode,String yearsormonths,String parentsyesorno,String numofparents,String parent1age,String parent2age,String parent3age,String parent4age,String plantype,String coveragedays,String selectwhomtoinsure,String numofmembers) throws Throwable {
+	public static void GetquoteData(String option,String Age, String CoverageAmount, String Periodofpolicy,String Selecttheplan,String Deductamount,String zipcode,String yearsormonths,String parentsyesorno,String numofparents,String parent1age,String parent2age,String parent3age,String parent4age,String plantype,String coveragedays,String selectwhomtoinsure,String numofmembers,String numofkids) throws Throwable {
 
 		switch (option) {
 
@@ -454,10 +454,10 @@ public class HelperClass extends PageLocator {
 				Thread.sleep(2000);
 				type(ageinMedi, Age, "TypeAge");
 				Thread.sleep(3000);
-				if (isElementDisplayed(Kidageclick, "Kid Age")) {
+				/*if (isElementDisplayed(Kidageclick, "Kid Age")) {
 					Kids("2");
 				}
-				Thread.sleep(2000);
+				Thread.sleep(2000);*/
 				click(chooseyearormonth,"clicking on choose year or month");
 				Thread.sleep(2000);
 				click(By.xpath(clickyearsormonths.replace("#", yearsormonths)),"entering the year");
@@ -486,7 +486,8 @@ public class HelperClass extends PageLocator {
 				type(ageins, Age, "TypeAge");
 				Thread.sleep(2000);
 				if (isElementDisplayed(Kidageclick, "Kid Age")) {
-					Kids("2");
+					click(Kidageclick,"kids");
+					type(Kidageclick,numofkids,"kids");
 				}
 				click(chooseParentsCover,"choose parents coverage");
 				Thread.sleep(2000);
@@ -679,6 +680,8 @@ public class HelperClass extends PageLocator {
 				}
 				break;
 			case "Young Star":
+				if(selectwhomtoinsure.equalsIgnoreCase("myself"))
+				{
 				click(mySelfAgeinYS,"age");
 				type(mySelfAgeinYS,Age,"age");
 				click(choosePolicyTypeinYS,"policy type");
@@ -695,9 +698,108 @@ public class HelperClass extends PageLocator {
 				swipe(AndroidDriver, DIRECTION.DOWN);
 				Thread.sleep(2000);
 				click(BuyNow, "Click on buy Now");
+				}
+				else
+				{
+					click(mySelfAgeinYS,"age");
+					type(mySelfAgeinYS,Age,"age");	
+					click(choosePolicyTypeFloaterinYS,"policy type");
+					click(clickPolicyTypeFloaterinYS,"selecting policy type");
+					click(choosePlanTypeinYS,"plan type");
+					click(By.xpath(clickPlaninYS.replace("#", Selecttheplan)),"selecting the plan");
+					click(chooseCoverageAmount1inYS,"coverage amount");
+					click(By.xpath(clickCoverageamountinYS.replace("#", CoverageAmount)),"coverage amount");
+					click(choosePolicyTerminYS,"policy term");
+					click(By.xpath(clickPolicyTerminYS.replace("#", Periodofpolicy)),"policy term");
+					click(GetQuote, "Click on Get Quote");
+					Thread.sleep(5000);
+					swipe(AndroidDriver, DIRECTION.DOWN);
+					Thread.sleep(2000);
+					click(BuyNow, "Click on buy Now");
+				}
 				break;
+			case "Star Care Micro Insurance Policy"	:
 				
-				
+				click(ageins,"age");
+				type(ageins, Age, "TypeAge");
+				if(selectwhomtoinsure.equalsIgnoreCase("Myself and My Kids"))
+				{
+					click(choosekidsinmk,"kids");
+					click(By.xpath(clickKids.replace("#", numofkids)),"selecting num of kids");
+					
+				}
+				else if(selectwhomtoinsure.equalsIgnoreCase("Myself, Spouse and My Kids"))
+				{
+					click(choosekidsinmsk,"kids");
+					click(By.xpath(clickKids.replace("#", numofkids)),"selecting num of kids");
+				}
+				click(GetQuote, "Click on Get Quote");
+				Thread.sleep(5000);
+				swipe(AndroidDriver, DIRECTION.DOWN);
+				Thread.sleep(2000);
+				click(sharequote, "share quote");
+				break;
+			case "Star Criticare Plus Insurance Policy"	:
+				click(ageins,"age");
+				type(ageins, Age, "TypeAge");
+				click(choosepolicyamount,"choose coverage amount");
+				click(By.xpath(selectCoverageAmountinCV.replace("#", CoverageAmount)),"selecting coverage amount");
+				click(GetQuote, "Click on Get Quote");
+				Thread.sleep(5000);
+				swipe(AndroidDriver, DIRECTION.DOWN);
+				Thread.sleep(2000);
+				click(sharequote, "share quote");
+				break;
+			case "Star Family Delite Insurance Policy":
+				click(ageins,"age");
+				type(ageins, Age, "TypeAge");
+				if(selectwhomtoinsure.equalsIgnoreCase("Myself and My Kids"))
+				{
+					click(choosekidsinmk,"kids");
+					click(By.xpath(clickKids.replace("#", numofkids)),"selecting num of kids");
+					
+				}
+				else if(selectwhomtoinsure.equalsIgnoreCase("Myself, Spouse and My Kids"))
+				{
+					click(choosekidsinmsk,"kids");
+					click(By.xpath(clickKids.replace("#", numofkids)),"selecting num of kids");
+				}
+				click(choosepolicyamount,"choose coverage amount");
+				click(By.xpath(selectCoverageAmountinCV.replace("#", CoverageAmount)),"selecting coverage amount");
+				click(GetQuote, "Click on Get Quote");
+				Thread.sleep(5000);
+				swipe(AndroidDriver, DIRECTION.DOWN);
+				Thread.sleep(2000);
+				click(sharequote, "share quote");
+			    break;
+			case "Micro Rural" :
+				if(selectwhomtoinsure.equalsIgnoreCase("myself"))
+				{
+				click(ageins,"age");
+				type(ageins, Age, "TypeAge");
+				click(choosePolicytypeinMR,"policy type");
+				click(clickPolicyTypeIndividualinMR,"selecting policy type");
+				click(chooseCoverageAmountinMR,"coverage amount");
+				click(By.xpath(clickCoverageAountinMR.replace("#", CoverageAmount)),"selecting coverage amount");
+				}
+				else
+				{
+					click(ageins,"age");
+					type(ageins, Age, "TypeAge");
+					if (isElementDisplayed(Kidageclick, "Kid Age")) {
+						Kids("1");
+					}
+					click(choosePolicytypeFloaterinMR,"policy type");
+					click(clickPolicyTypeFloaterinMR,"selecting policy type");
+					click(chooseCoverageAmountFloaterinMR,"coverage amount");
+					click(By.xpath(clickCoverageAountinMR.replace("#", CoverageAmount)),"selecting coverage amount");
+				}
+				click(GetQuote, "Click on Get Quote");
+				Thread.sleep(5000);
+				swipe(AndroidDriver, DIRECTION.DOWN);
+				Thread.sleep(2000);
+				click(sharequote, "share quote");
+				break;
 			default:
 				System.out.println("There is no value");
 
@@ -732,15 +834,13 @@ public class HelperClass extends PageLocator {
 		Thread.sleep(2000);
 		type(ageins, Age, "age");
 		Thread.sleep(3000);
-		
-		if (isElementDisplayed(Kidageclick, "Kid Age")) {
-			Kids("2");
-		}
-		Thread.sleep(2000);
 		click(chooseyearormonth,"clicking on choose year or month");
 		Thread.sleep(2000);
 		click(By.xpath(clickyearsormonths.replace("#", yearsormonths)),"entering the year");
 		Thread.sleep(2000);
+		if (isElementDisplayed(Kidageclick, "Kid Age")) {
+			Kids("2");
+		}
 		click(choosepolicytype, "clickonchoosepolicytype");
 		Thread.sleep(2000);
 		click(clickpolicytype,"click on policy type");
@@ -1925,7 +2025,7 @@ public class HelperClass extends PageLocator {
 		type(ageins, Age, "TypeAge");
 		Thread.sleep(3000);
 		if (isElementDisplayed(Kidageclick, "Kid Age")) {
-			Kids("2");
+			Kids("1");
 		}
 		Thread.sleep(2000);
 		click(PolicyCoverclick, "Policy Coverage");
@@ -2147,7 +2247,13 @@ public class HelperClass extends PageLocator {
 	}
 	
 		
-
+public void shareQuote() throws Throwable
+{
+	
+	click(messages,"messages");
+	click(selectname,"selecting contact");
+	click(sendicon,"sending message");
+}
 
 
 

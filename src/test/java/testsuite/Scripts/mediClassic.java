@@ -37,7 +37,7 @@ public class mediClassic extends HelperClass{
 	            
 	            GetQuote();
 	            
-	            GetquoteData(data.get("productname"),data.get("Age"),data.get("CoverageAmount"), data.get("Periodofpolicy"),data.get("Selecttheplan"),null,data.get("zipcode"),data.get("yearsormonths"),null,null,null,null,null,null,null,null,null,null);
+	            GetquoteData(data.get("productname"),data.get("Age"),data.get("CoverageAmount"), data.get("Periodofpolicy"),data.get("Selecttheplan"),null,data.get("zipcode"),data.get("yearsormonths"),null,null,null,null,null,null,null,null,null,null,null);
 
 	            Details(data.get("Address1"),data.get("Address2"),data.get("pincode"));
 	            

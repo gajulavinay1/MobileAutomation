@@ -44,7 +44,7 @@ public class outPatientCare extends HelperClass {
 	            
 	            SelectingIwnattoInsure(data.get("selectwhomtoinsure"));
 	            
-	            GetquoteData(data.get("productname"),data.get("Age"),data.get("CoverageAmount"),null,data.get("Selecttheplan"),null,null,data.get("yearsormonths"),null,null,null,null,null,null,null,null,data.get("selectwhomtoinsure"),data.get("numofmembers"),null);
+	            GetquoteData(data.get("productname"),data.get("Age"),data.get("CoverageAmount"),null,data.get("Selecttheplan"),null,null,data.get("yearsormonths"),null,null,null,null,null,null,null,null,data.get("selectwhomtoinsure"),data.get("numofmembers"),null,null);
 	            
 	            skipPolicyNumbers();
 	            

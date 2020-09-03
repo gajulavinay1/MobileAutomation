@@ -41,7 +41,7 @@ public class starSpecialCare extends HelperClass {
 	            
 	            GetQuote();
 	            
-	            GetquoteData(data.get("productname"),data.get("Age"),data.get("CoverageAmount"),data.get("Periodofpolicy"),null,null,null,null,null,null,null,null,null,null,null,null,null,null,null);
+	            GetquoteData(data.get("productname"),data.get("Age"),data.get("CoverageAmount"),data.get("Periodofpolicy"),null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null);
 	            
 	            detailsinAS(data.get("income"),data.get("GSTidnumber"),data.get("aadhar"),null,data.get("addressone"),data.get("addresstwo"),data.get("pin"),data.get("nomineename"),data.get("nomineeage"),data.get("perofclaim"),data.get("height"),data.get("weight"));
 	            

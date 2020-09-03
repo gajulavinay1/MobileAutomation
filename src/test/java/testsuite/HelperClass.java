@@ -359,10 +359,11 @@ public class HelperClass extends PageLocator {
 
 	public static void Kids(String Enterkids) throws Throwable {
 		click(Kidageclick, "Selecting done");
-		click(By.xpath(Years.replace("#", Enterkids)), "Coverage Amount");
+		Thread.sleep(2000);
+		click(By.xpath(Years.replace("#", Enterkids)), "selecting age");
 	}
 
-	public static void GetquoteData(String option,String Age, String CoverageAmount, String Periodofpolicy,String Selecttheplan,String Deductamount,String zipcode,String yearsormonths,String parentsyesorno,String numofparents,String parent1age,String parent2age,String parent3age,String parent4age,String plantype,String coveragedays,String selectwhomtoinsure,String numofmembers,String numofkids) throws Throwable {
+	public static void GetquoteData(String option,String Age, String CoverageAmount, String Periodofpolicy,String Selecttheplan,String Deductamount,String zipcode,String yearsormonths,String parentsyesorno,String numofparents,String parent1age,String parent2age,String parent3age,String parent4age,String plantype,String coveragedays,String selectwhomtoinsure,String numofmembers,String numofkids,String policytype) throws Throwable {
 
 		switch (option) {
 
@@ -800,6 +801,52 @@ public class HelperClass extends PageLocator {
 				Thread.sleep(2000);
 				click(sharequote, "share quote");
 				break;
+			case "Corona Virus Policy - COVID":
+				Thread.sleep(2000);
+				click(age,"age");
+				Thread.sleep(2000);
+				type(age, Age, "age");
+				Thread.sleep(2000);
+				click(chooseYearorMonthinCV,"choose years or months");
+				Thread.sleep(2000);
+				click(By.xpath(clickYearorMonthinCV.replace("#", yearsormonths)),"select years or months");
+				Thread.sleep(2000);
+				
+				click(chooseInsureMembersinCV,"choose insure members");
+				Thread.sleep(2000);
+				click(By.xpath(selectInsureMembersinCV.replace("#", numofmembers)),"select members");
+				Thread.sleep(2000);
+				click(chooseCoverageAmountinCV,"choose amount");
+				Thread.sleep(2000);
+				click(By.xpath(selectCoverageAmountinCV.replace("#",CoverageAmount)),"select amount");
+				Thread.sleep(2000);
+				click(getQuoteinCV,"get quote");
+				Thread.sleep(2000);
+				swipe(AndroidDriver, DIRECTION.DOWN);
+				click(buynowinDS,"clicking on buy now");
+				break;
+			case "Diabetes Safe":
+				Thread.sleep(2000);
+				click(choosepolicytypeinDS,"click on choose");
+				Thread.sleep(2000);
+				click(By.xpath(policytypeinDS.replace("#", policytype)),"selecting policy type");
+				Thread.sleep(2000);
+				click(ageinDS, "click on Age");
+				Thread.sleep(2000);
+				type(ageinDS, Age, "age");
+				Thread.sleep(2000);
+				click(chooseprefferedplaninDS,"click on choose");
+				Thread.sleep(2000);
+				click(By.xpath(prefferedplaninDS.replace("#", Selecttheplan)),"click type of plan");
+				Thread.sleep(2000);
+				click(policycoverinDS,"click on choose policy cover");
+				Thread.sleep(2000);
+				click(By.xpath(clickamountinDS.replace("#", CoverageAmount)),"selecting amount");
+				Thread.sleep(2000);
+				click(getquoteinDS,"clicking on getquote");
+				Thread.sleep(2000);
+				click(buynowinDS,"clicking on buy now");
+				break;
 			default:
 				System.out.println("There is no value");
 
@@ -870,7 +917,6 @@ public class HelperClass extends PageLocator {
 		swipe(AndroidDriver, DIRECTION.DOWN);
 		click(DOB, "clicking on DOB field");
 		Thread.sleep(2000);
-		//pressByCoordinates(548,1793);
 		clickByCondindates(548, 1793);
 		Thread.sleep(2000);
 		swipe(AndroidDriver, DIRECTION.DOWN);
@@ -887,7 +933,7 @@ public class HelperClass extends PageLocator {
 		Thread.sleep(2000);
 		click(InsurerDOB, "clicking on InsurerDOB field");
 		Thread.sleep(2000);
-		clickByCondindates(548, 1042);
+		clickByCondindates(548, 1080);
 		Thread.sleep(5000);
 		swipe(AndroidDriver, DIRECTION.DOWN);
 		Thread.sleep(2000);
@@ -965,30 +1011,6 @@ public class HelperClass extends PageLocator {
 
 	}
 	
-	public static void insuranceDetailsinDS(String policytype,String Age,String prefferedplan,String policyamount) throws Throwable
-	{
-		Thread.sleep(2000);
-		click(choosepolicytypeinDS,"click on choose");
-		Thread.sleep(2000);
-		click(By.xpath(policytypeinDS.replace("#", policytype)),"selecting policy type");
-		Thread.sleep(2000);
-		click(ageinDS, "click on Age");
-		Thread.sleep(2000);
-		type(ageinDS, Age, "age");
-		Thread.sleep(2000);
-		click(chooseprefferedplaninDS,"click on choose");
-		Thread.sleep(2000);
-		click(By.xpath(prefferedplaninDS.replace("#", prefferedplan)),"click type of plan");
-		Thread.sleep(2000);
-		click(policycoverinDS,"click on choose policy cover");
-		Thread.sleep(2000);
-		click(By.xpath(clickamountinDS.replace("#", policyamount)),"selecting amount");
-		Thread.sleep(2000);
-		click(getquoteinDS,"clicking on getquote");
-		Thread.sleep(2000);
-		click(buynowinDS,"clicking on buy now");
-		
-	}
 	
 	public static void detailsinDS(String income,String GSTidnumber,String aadhar,String pannum,String addressone,String addresstwo,String pin,String nomineename,String nomineeage,String perofclaim,String height,String weight,String sugar,String serum,String h1bac) throws Throwable
 	{
@@ -1009,7 +1031,8 @@ public class HelperClass extends PageLocator {
 		Thread.sleep(2000);
 		click(proposerdobinDS,"clicking on proposerdob");
 		Thread.sleep(2000);
-		clickByCondindates(742, 1700);
+		clickByCondindates(250, 1818);
+		//clickByCondindates(742, 1700);
 		Thread.sleep(2000);
 		
 		//selecting occupation
@@ -1276,32 +1299,7 @@ public class HelperClass extends PageLocator {
 	}
 	
 	
-	public static void insuranceDetailsinCV(String Age,String yearsormonths,String insuremembers,String coverageamount) throws Throwable
-	{
-		
-		Thread.sleep(2000);
-		click(age,"age");
-		Thread.sleep(2000);
-		type(age, Age, "age");
-		Thread.sleep(2000);
-		click(chooseYearorMonthinCV,"choose years or months");
-		Thread.sleep(2000);
-		click(By.xpath(clickYearorMonthinCV.replace("#", yearsormonths)),"select years or months");
-		Thread.sleep(2000);
-		
-		click(chooseInsureMembersinCV,"choose insure members");
-		Thread.sleep(2000);
-		click(By.xpath(selectInsureMembersinCV.replace("#", insuremembers)),"select members");
-		Thread.sleep(2000);
-		click(chooseCoverageAmountinCV,"choose amount");
-		Thread.sleep(2000);
-		click(By.xpath(selectCoverageAmountinCV.replace("#",coverageamount)),"select amount");
-		Thread.sleep(2000);
-		click(getQuoteinCV,"get quote");
-		Thread.sleep(2000);
-		swipe(AndroidDriver, DIRECTION.DOWN);
-		click(buynowinDS,"clicking on buy now");
-	}
+	
 	
 	public static void detailsinCV(String income,String GSTidnumber,String aadhar,String pannum,String addressone,String addresstwo,String pin,String nomineename,String nomineeage,String perofclaim,String height,String weight) throws Throwable
 	{
@@ -1322,7 +1320,8 @@ public class HelperClass extends PageLocator {
 		Thread.sleep(2000);
 		click(proposerdobinDS,"clicking on proposerdob");
 		Thread.sleep(2000);
-		clickByCondindates(742, 1700);
+		clickByCondindates(250, 1818);
+		//clickByCondindates(742, 1700);
 		Thread.sleep(2000);
 		
 		//selecting occupation
@@ -1549,7 +1548,8 @@ public class HelperClass extends PageLocator {
 		Thread.sleep(2000);
 		click(proposerdobinDS,"clicking on proposerdob");
 		Thread.sleep(2000);
-		clickByCondindates(742, 1700);
+		clickByCondindates(250, 1818);
+		//clickByCondindates(742, 1700);
 		Thread.sleep(2000);
 		
 		//selecting occupation
@@ -1805,7 +1805,8 @@ public class HelperClass extends PageLocator {
 		Thread.sleep(2000);
 		click(proposerdobinDS,"clicking on proposerdob");
 		Thread.sleep(2000);
-		clickByCondindates(742, 1700);
+		clickByCondindates(250, 1818);
+		//clickByCondindates(742, 1700);
 		Thread.sleep(2000);
 		
 		//selecting occupation
@@ -2063,7 +2064,8 @@ public class HelperClass extends PageLocator {
 		Thread.sleep(2000);
 		click(proposerdobinDS,"clicking on proposerdob");
 		Thread.sleep(2000);
-		clickByCondindates(742, 1700);
+		clickByCondindates(250, 1818);
+		//clickByCondindates(742, 1700);
 		Thread.sleep(2000);
 		
 		//selecting occupation

@@ -43,7 +43,7 @@ public class SCCPP extends HelperClass {
 	            
 	            GetQuote();
 	            
-	            GetquoteData(data.get("productname"),data.get("Age"),data.get("CoverageAmount"),null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null);
+	            GetquoteData(data.get("productname"),data.get("Age"),data.get("CoverageAmount"),null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null);
 	            
 	           shareQuote();
 	            

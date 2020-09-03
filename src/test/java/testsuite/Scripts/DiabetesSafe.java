@@ -47,14 +47,15 @@ public class DiabetesSafe extends HelperClass{
 	            
 	            GetQuote();
 	            
-	            //insurance details
-	            insuranceDetailsinDS(data.get("policytype"),data.get("Age"),data.get("prefferedplan"),data.get("policyamount"));
 	            
+	            GetquoteData(data.get("productname"),data.get("Age"),data.get("CoverageAmount"),null,data.get("Selecttheplan"),null,null,null,null,null,null,null,null,null,null,null,null,null,null,data.get("policytype"));
+	            
+	           
 	            //proposer details
 	            detailsinDS(data.get("income"),data.get("GSTidnumber"),data.get("aadhar"),null,data.get("addressone"),data.get("addresstwo"),data.get("pin"),data.get("nomineename"),data.get("nomineeage"),data.get("perofclaim"),data.get("height"),data.get("weight"),data.get("sugar"),data.get("serum"),data.get("h1bac"));
 	            
 	            submitProposal();
-	            fileUpload();
+	           // fileUpload();
 	            
 		 }
 

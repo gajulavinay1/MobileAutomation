@@ -45,7 +45,7 @@ public class arogyaSanjeev extends HelperClass {
 	            
 	            SelectingIwnattoInsure(data.get("selectwhomtoinsure"));
 	            
-	            GetquoteData(data.get("productname"),data.get("Age"),data.get("CoverageAmount"),null,null,null,null,null,data.get("parentsyesorno"),null,null,null,null,null,null,null,null,null,data.get("numofkids"));
+	            GetquoteData(data.get("productname"),data.get("Age"),data.get("CoverageAmount"),null,null,null,null,null,data.get("parentsyesorno"),null,null,null,null,null,null,null,null,null,data.get("numofkids"),null);
 	            
 	            detailsinAS(data.get("income"),data.get("GSTidnumber"),data.get("aadhar"),null,data.get("addressone"),data.get("addresstwo"),data.get("pin"),data.get("nomineename"),data.get("nomineeage"),data.get("perofclaim"),data.get("height"),data.get("weight"));
 	            

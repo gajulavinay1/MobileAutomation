@@ -47,9 +47,9 @@ public class cancerGold extends HelperClass {
 		            
 		            detailsinCG(data.get("income"),data.get("GSTidnumber"),data.get("aadhar"),null,data.get("addressone"),data.get("addresstwo"),data.get("pin"),data.get("nomineename"),data.get("nomineeage"),data.get("perofclaim"),data.get("height"),data.get("weight"),data.get("datenstage"),data.get("chemodate"),data.get("tobaccoyears"));
 		            
-		            submitProposal();
+		            submitProposal_Fileupload();
 		           
-		            fileUpload();
+		            medicalDeclaration();
 		            
 		            
 			 }

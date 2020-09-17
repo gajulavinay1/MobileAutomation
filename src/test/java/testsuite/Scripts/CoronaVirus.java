@@ -45,13 +45,19 @@ public class CoronaVirus extends HelperClass
 	            
 	            GetquoteData(data.get("productname"),data.get("Age"),data.get("CoverageAmount"),null,null,null,null,data.get("yearsormonths"),null,null,null,null,null,null,null,null,null,data.get("numofmembers"),null,null);
 	            
-	           
-	            
 	            detailsinCV(data.get("income"),data.get("GSTidnumber"),data.get("aadhar"),null,data.get("addressone"),data.get("addresstwo"),data.get("pin"),data.get("nomineename"),data.get("nomineeage"),data.get("perofclaim"),data.get("height"),data.get("weight"));
 	           
-	            submitProposal();
+	            insuredDetails(data.get("height"),data.get("weight"),null,"SELF",null);
+	            
+	            clickNextTab();
+	            
+	            insuredDetails(data.get("height"),data.get("weight"),data.get("name"),"DEPENDANT CHILDREN","STUDENTS-SCHOOL AND COLLEGE");
+	            
+	            clicknext();
+	            
+	            submitProposal_Fileupload();
 	           
-	           // fileUpload();
+	            medicalDeclaration();
 		 }
 
 	            catch (Exception e) {

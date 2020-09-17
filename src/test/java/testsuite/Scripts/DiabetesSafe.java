@@ -54,8 +54,9 @@ public class DiabetesSafe extends HelperClass{
 	            //proposer details
 	            detailsinDS(data.get("income"),data.get("GSTidnumber"),data.get("aadhar"),null,data.get("addressone"),data.get("addresstwo"),data.get("pin"),data.get("nomineename"),data.get("nomineeage"),data.get("perofclaim"),data.get("height"),data.get("weight"),data.get("sugar"),data.get("serum"),data.get("h1bac"));
 	            
-	            submitProposal();
-	           // fileUpload();
+	            submitProposal_Fileupload();
+	            
+	            medicalDeclaration();
 	            
 		 }
 

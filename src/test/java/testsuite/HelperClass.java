@@ -852,6 +852,14 @@ public class HelperClass extends PageLocator {
 
 		}
 	}
+	/**
+	 * 
+	 * @param Age
+	 * @param CoverageAmount
+	 * @param Periodofpolicy
+	 * @throws Throwable
+	 */
+	
 	public static void GetquoteDatacom(String Age, String CoverageAmount, String Periodofpolicy) throws Throwable {
 		click(ageins, "Clicking on age");
 		Thread.sleep(2000);
@@ -875,6 +883,14 @@ public class HelperClass extends PageLocator {
 		Thread.sleep(2000);
 		click(clickbuynow, "Click on buy Now");
 	}
+	/**
+	 * 
+	 * @param Age
+	 * @param yearsormonths
+	 * @param policyamount
+	 * @param CoverageAmount
+	 * @throws Throwable
+	 */
 	
 	public static void GetquoteDataHG(String Age,String yearsormonths ,String policyamount, String CoverageAmount) throws Throwable {
 		 click(ageins,"age");
@@ -911,6 +927,13 @@ public class HelperClass extends PageLocator {
 		 click(clickbuynow,"clickonbuynow");
 	}
 	
+	/**
+	 * 
+	 * @param Address1
+	 * @param Address2
+	 * @param pincode
+	 * @throws Throwable
+	 */
 
 	public static void Details(String Address1, String Address2, String pincode) throws Throwable {
 		Thread.sleep(2000);
@@ -944,7 +967,54 @@ public class HelperClass extends PageLocator {
 		clickByCondindates(888, 2097);
 		Thread.sleep(2000);
 	}
+	/**
+	 * 
+	 * @param Address1
+	 * @param Address2
+	 * @param pincode
+	 * @throws Throwable
+	 */
 	
+	public static void mediClassicDetails(String Address1, String Address2, String pincode) throws Throwable {
+		Thread.sleep(2000);
+		swipe(AndroidDriver, DIRECTION.DOWN);
+		click(DOB, "clicking on DOB field");
+		Thread.sleep(2000);
+		clickByCondindates(550, 940);
+		Thread.sleep(2000);
+		swipe(AndroidDriver, DIRECTION.DOWN);
+		Thread.sleep(2000);
+		type(addressOne, Address1, "Enter addressOne");
+		Thread.sleep(2000);
+		type(addressTwo, Address2, "Enter addressTwo");
+		Thread.sleep(2000);
+		type(pinCode, pincode, "Enter pincode");
+		Thread.sleep(4000);
+		swipe(AndroidDriver, DIRECTION.DOWN);
+		Thread.sleep(2000);
+		swipe(AndroidDriver, DIRECTION.DOWN);
+		Thread.sleep(2000);
+		click(InsurerDOB, "clicking on InsurerDOB field");
+		Thread.sleep(2000);
+		clickByCondindates(548, 1080);
+		Thread.sleep(5000);
+		swipe(AndroidDriver, DIRECTION.DOWN);
+		Thread.sleep(2000);
+		clickByCondindates(913, 2267);
+		Thread.sleep(2000);
+		click(AgreeTC, "Agree Terms and conditions");
+		Thread.sleep(4000);
+		clickByCondindates(888, 2097);
+		Thread.sleep(2000);
+	}
+	
+	/**
+	 * 
+	 * @param Address1
+	 * @param Address2
+	 * @param pincode
+	 * @throws Throwable
+	 */
 	
 	public static void Details_HG(String Address1, String Address2, String pincode) throws Throwable {
 		Thread.sleep(2000);
@@ -981,7 +1051,16 @@ public class HelperClass extends PageLocator {
 		Thread.sleep(2000);
 	}
 	
-
+/**
+ * 
+ * @param SelectCard
+ * @param Entercardnumber
+ * @param Nameincard
+ * @param month
+ * @param year
+ * @param Cvvnumber
+ * @throws Throwable
+ */
 	public static void Payment(String SelectCard,String Entercardnumber,String Nameincard,String month,String year,String Cvvnumber) throws Throwable {
 		Thread.sleep(2000);
 		click(By.xpath(Debitorcreditcard.replace("#",SelectCard)), "Select the Card");
@@ -1011,6 +1090,25 @@ public class HelperClass extends PageLocator {
 
 	}
 	
+	/**
+	 * 
+	 * @param income
+	 * @param GSTidnumber
+	 * @param aadhar
+	 * @param pannum
+	 * @param addressone
+	 * @param addresstwo
+	 * @param pin
+	 * @param nomineename
+	 * @param nomineeage
+	 * @param perofclaim
+	 * @param height
+	 * @param weight
+	 * @param sugar
+	 * @param serum
+	 * @param h1bac
+	 * @throws Throwable
+	 */
 	
 	public static void detailsinDS(String income,String GSTidnumber,String aadhar,String pannum,String addressone,String addresstwo,String pin,String nomineename,String nomineeage,String perofclaim,String height,String weight,String sugar,String serum,String h1bac) throws Throwable
 	{
@@ -1262,15 +1360,10 @@ public class HelperClass extends PageLocator {
 	
 	
 	}
-	public static void submitProposal() throws Exception 
+	public static void submitProposal_Fileupload() throws Throwable 
 	{
-		Thread.sleep(2000);
-		clickByCondindates(1001, 2274);
+		swipe(AndroidDriver, DIRECTION.DOWN);
 		Thread.sleep(22000);
-	}
-	public static void fileUpload() throws Throwable
-	{
-		Thread.sleep(2000);
 		click(clickFileUplaoinDS,"clicking on file upload");
 		Thread.sleep(2000);
 		click(ageProof,"clicking on age proof");
@@ -1282,6 +1375,16 @@ public class HelperClass extends PageLocator {
 		click(clickFile,"clicking on file");
 		Thread.sleep(10000);
 		swipe(AndroidDriver, DIRECTION.DOWN);
+		Thread.sleep(2000);
+		clickByCondindates(1001, 2274);
+	}
+	/**
+	 * 
+	 * @throws Throwable
+	 */
+	public static void medicalDeclaration() throws Throwable
+	{
+		
 		click(clickNoMedicalDeclaration,"clicking on no in medical declaration");
 		Thread.sleep(2000);
 		swipe(AndroidDriver, DIRECTION.DOWN);
@@ -1461,7 +1564,7 @@ public class HelperClass extends PageLocator {
 		click(next2inDS,"clicking next");
 		Thread.sleep(10000);
 		
-		//third page details
+		/*//third page details
 		
 		//relationship
 		click(relationshipinDS,"clicking on relation ship");
@@ -1485,8 +1588,8 @@ public class HelperClass extends PageLocator {
 		type(weightinDS,weight,"weight");
 		Thread.sleep(2000);
 		swipe(AndroidDriver, DIRECTION.DOWN);
-		
-		/*//selecting occupation
+		*/
+		/*selecting occupation
 		click(selectoccupationinDS,"clicking on occupation");
 		Thread.sleep(2000);
 		//dropdown for occupation
@@ -1501,12 +1604,148 @@ public class HelperClass extends PageLocator {
 		dropDown(valuesinSumInsuredDropdown,"42,000");
 		*/
 		
-		//next
+		/*//next
 		click(next3inDS,"clicking on next");
 		Thread.sleep(2000);
-	
+	*/
 	
 	}
+	
+	public static void insuredDetails(String height,String weight, String name, String relationship, String occupation) throws Throwable
+	{
+		//relationship
+		click(relationshipinDS,"clicking on relation ship");
+		Thread.sleep(2000);
+		//dropdown for relatioship
+		dropDown(valuesinRelationshipDropdown, relationship);
+		
+		//name
+		click(insuredname,"clicking on relation ship");
+		type(insuredname,name,"entering insured name");
+		
+		//dob
+		click(insureddob,"insured dob");
+		clickByCondindates(670, 1678);
+		
+		//gender
+		click(genderinDS,"clicking on gender");
+		Thread.sleep(2000);
+		//dropdown for gender
+		dropDown(valuesinGenderDropdown,"Female");
+		
+		//height
+		click(heightinDS,"clicking height");
+		
+		type(heightinDS,height,"height");
+		Thread.sleep(2000);
+		
+		//weight
+		click(weightinDS," clicking weight");
+		type(weightinDS,weight,"weight");
+		Thread.sleep(2000);
+		swipe(AndroidDriver, DIRECTION.DOWN);
+		
+		//occupation
+		click(insuredOccupation,"insured occupation");
+		dropDown(valuesinGenderDropdown,occupation);
+		
+		/*//next
+		click(next3inDS,"clicking on next");
+		Thread.sleep(2000);*/
+	}
+	
+	public static void clicknext() throws Throwable
+	{
+		Thread.sleep(2000);
+		click(next3inDS,"clicking on next");
+		Thread.sleep(2000);
+	}
+	
+	public static void clickNextTab()  throws Throwable
+	{
+		Thread.sleep(2000);
+		click(click2tabs,"clicking on 2nd tab");
+	}
+	/**
+	 * this method is used to filling the insured details
+	 * @param numofmembers
+	 * @param name 
+	 * @throws Throwable 
+	 */
+	/*public static void coronaInsuredDetails(String numofmembers,String height,String weight, String name) throws Throwable
+	{
+		int x =Integer.parseInt(numofmembers);
+		System.out.println("selected members:  "  +x);
+		
+			insuredDetails(height, weight);
+		
+		if(x>1)
+		{
+			for (int index=1;index>=x-1;index++)
+			{
+			
+			//relationship
+			click(relationshipinDS,"clicking on relation ship");
+			Thread.sleep(2000);
+			//dropdown for relatioship
+			dropDown(valuesinRelationshipDropdown, "SELF");
+			
+			//gender
+			click(genderinDS,"clicking on gender");
+			Thread.sleep(2000);
+			//dropdown for gender
+			dropDown(valuesinGenderDropdown,"Female");
+			
+			//height
+			click(heightinDS,"clicking height");
+			
+			type(heightinDS,height,"height");
+			Thread.sleep(2000);
+			
+			//weight
+			click(weightinDS," clicking weight");
+			type(weightinDS,weight,"weight");
+			Thread.sleep(2000);
+			swipe(AndroidDriver, DIRECTION.UP);
+			
+			//
+			
+		}
+		}
+			for(int y=2;y>=x;y++)
+			{
+				 click(By.xpath(clicknexttabs.replace("#", y)),"next insureds tabs");
+				
+				//relationship
+				click(insuredRelationShip,"clicking on relation ship");
+				Thread.sleep(2000);
+				//dropdown for relatioship
+				dropDown(valuesinRelationshipDropdown, "DEPENDANT CHILDREN");
+				
+				//name
+				click(insuredname,"clicking on relation ship");
+				type(insuredname,name,"entering insured name");
+				
+				//dob
+				click(insureddob,"insured dob");
+				clickByCondindates(670, 1678);
+				
+				//gender
+				click(insuredGender,"insured gender");
+				//dropdown for gender
+				dropDown(valuesinGenderDropdown,"Female");
+				
+				//occupation
+				click(insuredOccupation,"insured occupation");
+				dropDown(valuesinGenderDropdown,"STUDENTS-SCHOOL AND COLLEGE");
+				
+				//next
+				click(next3inDS,"clicking on next");
+				Thread.sleep(2000);
+			
+			}
+	*/
+	
 	public static void insuranceDetailsinCC(String Age,String plan,String coverageamount) throws Throwable
 	{
 		

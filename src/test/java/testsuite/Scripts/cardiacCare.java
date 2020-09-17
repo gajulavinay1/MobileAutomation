@@ -50,7 +50,7 @@ public class cardiacCare extends HelperClass
 	            
 	            detailsinCC(data.get("income"),data.get("GSTidnumber"),data.get("aadhar"),null,data.get("addressone"),data.get("addresstwo"),data.get("pin"),data.get("nomineename"),data.get("nomineeage"),data.get("perofclaim"),data.get("height"),data.get("weight"));
 	           
-	            submitProposal();
+	            submitProposal_Fileupload();
 	           
 	            medicalDeclarationCC();
 		 }

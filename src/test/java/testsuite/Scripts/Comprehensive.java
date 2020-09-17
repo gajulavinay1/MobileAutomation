@@ -17,7 +17,7 @@ import testsuite.HelperClass;
 
 /*@author : sangeetha 
  * date: /08/2020
-@scenario : Customer is trying to buy the Comprehensive product
+ Customer is trying to buy the Comprehensive product
 */
 
 public class Comprehensive extends HelperClass{

@@ -34,7 +34,7 @@ public class ProductsEndtoEnd extends HelperClass {
 
             SelectingIwnattoInsure(data.get("selectwhomtoinsure"));
 
-            GetquoteData(data.get("ProductName"),data.get("Age"),data.get("CoverageAmount"),data.get("Periodofpolicy"),data.get("Selecttheplan"),data.get("Deductamount"),data.get("zipcode"));
+            GetquoteData(data.get("ProductName"),data.get("Age"),data.get("CoverageAmount"),data.get("Periodofpolicy"),data.get("Selecttheplan"),data.get("Deductamount"),data.get("zipcode"),null);
 
             Details(data.get("Address1"),data.get("Address2"),data.get("pincode"));
 

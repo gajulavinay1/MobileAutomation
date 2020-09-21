@@ -7,6 +7,7 @@ import io.appium.java_client.remote.MobilePlatform;
 import io.appium.java_client.service.local.AppiumDriverLocalService;
 import io.appium.java_client.service.local.AppiumServiceBuilder;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -87,6 +88,10 @@ public class TestEngine extends HtmlReportSupport {
     public static AppiumDriver AndroidDriver = null;
     public static AppiumDriver Iosdriver = null;
     public static RemoteWebDriver driver = null;
+    
+    public static final String  USERNAME = "vinaygajula";
+    public static final String ACCESS_KEY = "a61bd3ec-b500-4ba7-8d75-d1fd513d02c1";
+    public static final String sauceurl = "https://" +USERNAME+":" +ACCESS_KEY+ "@ondemand.us-west-1.saucelabs.com:443/wd/hub";
 
     @BeforeSuite
     public static void setupSuite(ITestContext ctx) throws Throwable {
@@ -106,8 +111,38 @@ public class TestEngine extends HtmlReportSupport {
             capabilitiesForAppium.setCapability("appPackage", appPackage);
             capabilitiesForAppium.setCapability("appActivity", appActivity);
             capabilitiesForAppium.setCapability("app", appPath);
+           
 
             AndroidDriver = new AndroidDriver(new URL("http://127.0.0.1:4723/wd/hub"), capabilitiesForAppium);
+            driver = (AndroidDriver);
+            driver.manage().timeouts().implicitlyWait(5000, TimeUnit.SECONDS);
+        }
+        else if (browserType.equalsIgnoreCase("saucelabs")) {
+
+        	DesiredCapabilities capabilitiesForAppium = new DesiredCapabilities();
+        	capabilitiesForAppium.setCapability("platformName", "Android");
+        	capabilitiesForAppium.setCapability("deviceName", "Samsung Galaxy S9");
+        	capabilitiesForAppium.setCapability("platformVersion", "10");
+        	capabilitiesForAppium.setCapability("app", "sauce-storage:Star Power.apk");
+        	capabilitiesForAppium.setCapability("browserName", "");
+        	capabilitiesForAppium.setCapability("deviceOrientation", "portrait");
+        	//capabilitiesForAppium.setCapability("appiumVersion", "1.15.1");
+        	AndroidDriver  = new AndroidDriver<WebElement>( new URL(sauceurl), capabilitiesForAppium);
+        	
+        	
+        	
+        	
+        	/*String appPath = System.getProperty("user.dir")+apkPath;
+            DesiredCapabilities capabilitiesForAppium = new DesiredCapabilities();
+            capabilitiesForAppium.setCapability("deviceName", DeviceName);
+            capabilitiesForAppium.setCapability("platformName", AndroidplatformName);
+            capabilitiesForAppium.setCapability("platformVersion", AndroidplatformVersion);
+            capabilitiesForAppium.setCapability("appPackage", appPackage);
+            capabilitiesForAppium.setCapability("appActivity", appActivity);
+            capabilitiesForAppium.setCapability("app", appPath);
+           */
+
+           // AndroidDriver = new AndroidDriver(new URL("http://127.0.0.1:4723/wd/hub"), capabilitiesForAppium);
             driver = (AndroidDriver);
             driver.manage().timeouts().implicitlyWait(5000, TimeUnit.SECONDS);
         }
@@ -215,6 +250,9 @@ public class TestEngine extends HtmlReportSupport {
             e1.printStackTrace();
         }
     }
+    
+    
+    
 
     @BeforeMethod(alwaysRun = true)
     public void setBrowerDriver(Method method) throws Throwable {
@@ -305,6 +343,8 @@ public class TestEngine extends HtmlReportSupport {
 			strDirectoy = "AndroidChrome" + File.separator + "AndroidChrome";
 		} else if (browserType.equalsIgnoreCase("iPhoneSafari")) {
 			strDirectoy = "iPhoneSafari" + File.separator + "iPhoneSafari";
+		}else if (browserType.equalsIgnoreCase("saucelabs")) {
+			strDirectoy = "saucelabs" + File.separator + "saucelabs";
 		}
 
 		if (strDirectoy != "") {

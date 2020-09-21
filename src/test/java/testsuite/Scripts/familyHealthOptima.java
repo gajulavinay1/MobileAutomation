@@ -45,7 +45,7 @@ public class familyHealthOptima extends HelperClass{
 	            
 	            GetquoteDatafho(data.get("Age"), data.get("CoverageAmount"),data.get("livein"));
 
-	            Details(data.get("Address1"),data.get("Address2"),data.get("pincode"));
+	            detailsFHO(data.get("Address1"),data.get("Address2"),data.get("pincode"));
 	            
 	            //Payment(data.get("SelectCard"),data.get("Entercardnumber"),data.get("Nameincard"),data.get("month"),data.get("year"),data.get("Cvvnumber"));
 		 }

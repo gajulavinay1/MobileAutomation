@@ -1619,15 +1619,65 @@ public class HelperClass extends PageLocator {
 		//dropdown for relatioship
 		dropDown(valuesinRelationshipDropdown, relationship);
 		
-		//name
+		/*//name
 		click(insuredname,"clicking on relation ship");
 		type(insuredname,name,"entering insured name");
 		
 		//dob
 		click(insureddob,"insured dob");
 		clickByCondindates(670, 1678);
+		*/
+		//gender
+		click(genderinDS,"clicking on gender");
+		Thread.sleep(2000);
+		//dropdown for gender
+		dropDown(valuesinGenderDropdown,"Female");
+		
+		//height
+		click(heightinDS,"clicking height");
+		
+		type(heightinDS,height,"height");
+		Thread.sleep(2000);
+		
+		//weight
+		click(weightinDS," clicking weight");
+		type(weightinDS,weight,"weight");
+		Thread.sleep(2000);
+		swipe(AndroidDriver, DIRECTION.DOWN);
+		
+		Thread.sleep(2000);
+		swipe(AndroidDriver, DIRECTION.UP);
+		
+		/*//occupation
+		click(insuredOccupation,"insured occupation");
+		dropDown(valuesinGenderDropdown,occupation);
+		
+		//next
+		click(next3inDS,"clicking on next");
+		Thread.sleep(2000);*/
+	}
+	
+	
+	public static void insuredDetails1(String height,String weight, String name, String relationship, String occupation) throws Throwable
+	{
+		//relationship
+		click(relationshipinDS,"clicking on relation ship");
+		Thread.sleep(2000);
+		//dropdown for relatioship
+		dropDown(valuesinRelationshipDropdown, relationship);
+		
+		//name
+		click(insuredname,"entering name");
+		type(insuredname,name,"entering insured name");
+		
+		//dob
+		Thread.sleep(2000);
+		click(insureddob,"insured dob");
+		Thread.sleep(2000);
+		clickByCondindates(543, 1878);
 		
 		//gender
+		swipe(AndroidDriver, DIRECTION.DOWN);
 		click(genderinDS,"clicking on gender");
 		Thread.sleep(2000);
 		//dropdown for gender
@@ -1649,9 +1699,14 @@ public class HelperClass extends PageLocator {
 		click(insuredOccupation,"insured occupation");
 		dropDown(valuesinGenderDropdown,occupation);
 		
-		/*//next
-		click(next3inDS,"clicking on next");
-		Thread.sleep(2000);*/
+		//sum insured
+		click(suminsuredinDS,"clicking on sum insured");
+		Thread.sleep(2000);
+		//dropdown for sum insured
+		dropDown(valuesinSumInsuredDropdown,"42,000");
+	
+		
+		
 	}
 	
 	public static void clicknext() throws Throwable
@@ -2281,6 +2336,42 @@ public class HelperClass extends PageLocator {
 		swipe(AndroidDriver, DIRECTION.DOWN);
 		Thread.sleep(2000);
 		click(clickbuynow, "Click on buy Now");
+	}
+	
+	
+	public static void detailsFHO(String Address1, String Address2, String pincode) throws Throwable {
+		Thread.sleep(2000);
+		swipe(AndroidDriver, DIRECTION.DOWN);
+		Thread.sleep(2000);
+		swipe(AndroidDriver, DIRECTION.DOWN);
+		click(DOB, "clicking on DOB field");
+		Thread.sleep(2000);
+		clickByCondindates(550, 1017);
+		Thread.sleep(2000);
+		swipe(AndroidDriver, DIRECTION.DOWN);
+		Thread.sleep(2000);
+		type(addressOne, Address1, "Enter addressOne");
+		Thread.sleep(2000);
+		type(addressTwo, Address2, "Enter addressTwo");
+		Thread.sleep(2000);
+		type(pinCode, pincode, "Enter pincode");
+		Thread.sleep(4000);
+		swipe(AndroidDriver, DIRECTION.DOWN);
+		Thread.sleep(2000);
+		swipe(AndroidDriver, DIRECTION.DOWN);
+		Thread.sleep(2000);
+		click(InsurerDOB, "clicking on InsurerDOB field");
+		Thread.sleep(2000);
+		clickByCondindates(548, 1080);
+		Thread.sleep(5000);
+		swipe(AndroidDriver, DIRECTION.DOWN);
+		Thread.sleep(2000);
+		clickByCondindates(913, 2267);
+		Thread.sleep(2000);
+		click(AgreeTC, "Agree Terms and conditions");
+		Thread.sleep(4000);
+		clickByCondindates(888, 2097);
+		Thread.sleep(2000);
 	}
 	public static void detailsinAS(String income,String GSTidnumber,String aadhar,String pannum,String addressone,String addresstwo,String pin,String nomineename,String nomineeage,String perofclaim,String height,String weight) throws Throwable
 	{

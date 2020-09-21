@@ -403,11 +403,12 @@ public static By getQuoteinCV = By.xpath("//*[contains(@resource-id,'getQuote')]
 
 public static By insuredRelationShip = By.xpath("//*[contains(@resource-id,'insureds_0_relationship_id')]");
 public static By insuredname = By.xpath("//*[contains(@resource-id,'insuredsName')]");
-public static By insureddob = By.xpath("//*[contains(@resource-id,'insureds_0_dob')]");
+public static By insureddob = By.xpath("//*[contains(@resource-id,'insureds_0_dobtwo')]");
 public static By insuredGender = By.xpath("//*[contains(@resource-id,'insureds_0_sex')]");
 public static By insuredOccupation = By.xpath("//*[contains(@resource-id,'insureds_0_occupation_id')]");
 public static By insuredSum = By.xpath("//*[contains(@resource-id,'sumInsured1')]");
 public static By click2tabs =  By.xpath("(//*[contains(@text,'2')])[2]");
+
 
 //page locators for cardiac care
 public static By ageinCC = By.xpath("(//*[contains(@resource-id,'Age')])[2]");

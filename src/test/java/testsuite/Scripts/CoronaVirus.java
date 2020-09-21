@@ -51,7 +51,7 @@ public class CoronaVirus extends HelperClass
 	            
 	            clickNextTab();
 	            
-	            insuredDetails(data.get("height"),data.get("weight"),data.get("name"),"DEPENDANT CHILDREN","STUDENTS-SCHOOL AND COLLEGE");
+	            insuredDetails1(data.get("height"),data.get("weight"),data.get("name"),"DEPENDANT CHILDREN","BUSINESS/TRADERS");
 	            
 	            clicknext();
 	            

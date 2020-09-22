@@ -234,7 +234,7 @@ public class PageLocator extends ActionEngine {
 		public static By HospitalCash = By.xpath("//*[contains(@text,'Hospital Cash No worries about your Incidental expenses during hospitalisation.')]");
 		public static By OutpatientCare = By.xpath("//*[contains(@text,'Outpatient Care')]");
 		public static By YoungStarBuy = By.xpath("//*[contains(@text,'Young Star Buy Young Star when you are young. Get ceaseless protection and cheer lifelong.')]");
-
+        public static By coronaRakshak = By.xpath("//*[contains(@text,'Corona Rakshak A complete health plan for known Corona.')]");
 	
 	// After selecting the product click on get quote
 		public static By Clickongetquote = By.xpath("//*[contains(@text,'GET QUOTE')]");
@@ -578,5 +578,19 @@ public static By choosePolicytypeFloaterinMR = By.xpath("//*[contains(@resource-
 public static By clickPolicyTypeFloaterinMR = By.xpath("//*[contains(@text,'Floater')]");
 public static By chooseCoverageAmountFloaterinMR = By.xpath("//*[contains(@resource-id,'policy_cover_floater')]");
 
+
+
+//page locators for corona rakshak
+public static By clickIwanttoInsure = By.xpath("//*[contains(@resource-id,'adults')]");
+public static String chooseIwanttoInsure = "//*[contains(@text,'#')]";
+public static By ageinCR = By.xpath("//*[contains(@resource-id,'ageYear1')]");
+public static By chooseYearsormonthsinCR = By.xpath("//*[contains(@resource-id,'suffixAge1')]");
+public static By selectYearsorMonths = By.xpath("//*[contains(@text,'Year(s)')]");
+public static By choosePolicyperiod = By.xpath("//*[contains(@resource-id,'policyPeriod')]");
+public static By selectPolicyPeriod = By.xpath("//*[contains(@text,'3.5 months (105 days)')]");
+public static By choosecoverageamount = By.xpath("//*[contains(@resource-id,'policy_cover')]");
+public static By selectCoverageamount = By.xpath("//*[contains(@text,'1 Lakh')]");
+public static By postalcode = By.xpath("//*[contains(@resource-id,'postalCode')]");
+public static By noOtherHealthInsurance = By.xpath("(//*[contains(@text,'No')])[4]");
 }
 

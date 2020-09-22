@@ -340,6 +340,29 @@ public class HelperClass extends PageLocator {
 				click(YoungStarBuy, "YoungStarBuy");
 				Thread.sleep(2000);
 				break;
+			case "Corona Rakshak":
+				swipe(AndroidDriver, DIRECTION.DOWN);
+				Thread.sleep(2000);
+				swipe(AndroidDriver, DIRECTION.DOWN);
+				Thread.sleep(2000);
+				swipe(AndroidDriver, DIRECTION.DOWN);
+				Thread.sleep(2000);
+				swipe(AndroidDriver, DIRECTION.DOWN);
+				Thread.sleep(2000);
+				swipe(AndroidDriver, DIRECTION.DOWN);
+				Thread.sleep(2000);
+				swipe(AndroidDriver, DIRECTION.DOWN);
+				Thread.sleep(2000);
+				swipe(AndroidDriver, DIRECTION.DOWN);
+				Thread.sleep(2000);
+				swipe(AndroidDriver, DIRECTION.DOWN);
+				Thread.sleep(2000);
+				swipe(AndroidDriver, DIRECTION.DOWN);
+				Thread.sleep(2000);
+				swipe(AndroidDriver, DIRECTION.DOWN);
+				click(coronaRakshak, "corona rakshak");
+				Thread.sleep(2000);
+				break;
 			default:
 				System.out.println("There is no value");
 		}
@@ -2587,7 +2610,29 @@ public void shareQuote() throws Throwable
 	click(sendicon,"sending message");
 }
 
-
+public void getCoronaRakshakQuoteData(String Age, String  yearsormonths, String policyperiod, String CoverageAmount, String pincode) throws Throwable
+{
+	click(ageinCR, "Clicking on age");
+	type(ageinCR, Age, "TypeAge");
+	click(chooseYearsormonthsinCR,"years or months");
+	Thread.sleep(2000);
+	click(selectYearsorMonths,"years or months");
+	click(choosePolicyperiod,"policy period");
+	Thread.sleep(4000);
+	click(selectPolicyPeriod, "Select the period of policy");
+	click(choosecoverageamount, "coverage amount");
+	Thread.sleep(2000);
+	click(selectCoverageamount,"selecting coverage amount");
+	click(postalcode, "Clicking on postal code");
+	type(postalcode, pincode, "postalcode");
+	Thread.sleep(2000);
+	click(GetQuote, "Click on Get Quote");
+	Thread.sleep(5000);
+	swipe(AndroidDriver, DIRECTION.DOWN);
+	Thread.sleep(2000);
+	click(BuyNow, "Click on buy Now");
+	
+}
 
 
 

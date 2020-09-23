@@ -46,11 +46,11 @@ public class CoronaRakshak extends HelperClass
 	            
 	            SelectingIwnattoInsure(data.get("selectwhomtoinsure"));
 	            
-	            getCoronaRakshakQuoteData(data.get("Age"),data.get("CoverageAmount"),data.get("yearsormonths"),data.get("policyperiod"),data.get("pincode"));
+	            getCoronaRakshakQuoteData(data.get("Age"),data.get("yearsormonths"),data.get("policyperiod"),data.get("CoverageAmount"),data.get("pincode"));
 	            
-	            detailsinCV(data.get("income"),data.get("GSTidnumber"),data.get("aadhar"),null,data.get("addressone"),data.get("addresstwo"),data.get("pin"),data.get("nomineename"),data.get("nomineeage"),data.get("perofclaim"),data.get("height"),data.get("weight"));
+	            coronaRakshakDetails(data.get("income") , data.get("GSTidnumber") , data.get("aadhar") , data.get("pannum") , data.get("addressone") , data.get("addresstwo") ,  data.get("pin"), data.get("nomineename") ,  data.get("nomineeage"),  data.get("perofclaim"));
 	           
-	            insuredDetails(data.get("height"),data.get("weight"),null,"SELF",null);
+	            coronarakshakInsuredDetails(data.get("height"),data.get("weight"),null,"SELF",null);
 	            
 	            clicknext();
 	            

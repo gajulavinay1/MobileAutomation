@@ -1395,6 +1395,8 @@ public class HelperClass extends PageLocator {
 		Thread.sleep(2000);
 		click(clickOnUploadFiles,"clicking on upload files");
 		Thread.sleep(2000);
+		click(clickContinue,"click on continue");
+		Thread.sleep(2000);
 		click(clickFile,"clicking on file");
 		Thread.sleep(10000);
 		swipe(AndroidDriver, DIRECTION.DOWN);
@@ -1408,8 +1410,8 @@ public class HelperClass extends PageLocator {
 	public static void medicalDeclaration() throws Throwable
 	{
 		
-		click(clickNoMedicalDeclaration,"clicking on no in medical declaration");
-		Thread.sleep(2000);
+		//click(clickNoMedicalDeclaration,"clicking on no in medical declaration");
+		//Thread.sleep(2000);
 		swipe(AndroidDriver, DIRECTION.DOWN);
 		Thread.sleep(2000);
 		swipe(AndroidDriver, DIRECTION.DOWN);
@@ -1642,6 +1644,45 @@ public class HelperClass extends PageLocator {
 		//dropdown for relatioship
 		dropDown(valuesinRelationshipDropdown, relationship);
 		
+
+		//gender
+		click(genderinDS,"clicking on gender");
+		Thread.sleep(2000);
+		//dropdown for gender
+		dropDown(valuesinGenderDropdown,"Female");
+		
+		//height
+		click(heightinDS,"clicking height");
+	    type(heightinDS,height,"height");
+		Thread.sleep(2000);
+		
+		//weight
+		click(weightinDS," clicking weight");
+		type(weightinDS,weight,"weight");
+		Thread.sleep(2000);
+		swipe(AndroidDriver, DIRECTION.DOWN);
+		Thread.sleep(2000);
+		swipe(AndroidDriver, DIRECTION.UP);
+		
+		/*//occupation
+		click(insuredOccupation,"insured occupation");
+		dropDown(valuesinGenderDropdown,occupation);
+		
+		//next
+		click(next3inDS,"clicking on next");
+		Thread.sleep(2000);*/
+	}
+	
+	
+	
+	public static void coronarakshakInsuredDetails(String height,String weight, String name, String relationship, String occupation) throws Throwable
+	{
+		//relationship
+		click(relationshipinDS,"clicking on relation ship");
+		Thread.sleep(2000);
+		//dropdown for relatioship
+		dropDown(valuesinRelationshipDropdown, relationship);
+		
 		/*//name
 		click(insuredname,"clicking on relation ship");
 		type(insuredname,name,"entering insured name");
@@ -1668,8 +1709,10 @@ public class HelperClass extends PageLocator {
 		Thread.sleep(2000);
 		swipe(AndroidDriver, DIRECTION.DOWN);
 		
+		click(noHealthproblems,"no health problems");
+		
 		Thread.sleep(2000);
-		swipe(AndroidDriver, DIRECTION.UP);
+		//swipe(AndroidDriver, DIRECTION.UP);
 		
 		/*//occupation
 		click(insuredOccupation,"insured occupation");
@@ -2619,11 +2662,11 @@ public void getCoronaRakshakQuoteData(String Age, String  yearsormonths, String 
 	click(selectYearsorMonths,"years or months");
 	click(choosePolicyperiod,"policy period");
 	Thread.sleep(4000);
-	click(selectPolicyPeriod, "Select the period of policy");
+	click(By.xpath(selectPolicyPeriod.replace("#", policyperiod)), "Policy Period");
 	click(choosecoverageamount, "coverage amount");
 	Thread.sleep(2000);
 	click(selectCoverageamount,"selecting coverage amount");
-	click(postalcode, "Clicking on postal code");
+	//click(postalcode, "Clicking on postal code");
 	type(postalcode, pincode, "postalcode");
 	Thread.sleep(2000);
 	click(GetQuote, "Click on Get Quote");
@@ -2719,11 +2762,14 @@ public void coronaRakshakDetails(String income, String GSTidnumber, String aadha
 			swipe(AndroidDriver, DIRECTION.DOWN);
 			Thread.sleep(2000);
 			
+			
+			//
+			click(noOtherHealthInsurance,"no other health insurance");
+			
+			click(noadversemedicalconditions,"no adverse medical conditions");
 			//need to add code for yes 
 			
-			//other health insurance
-			//click(healthinsunoinDS,"clicking on no health insurance");
-			clickByCondindates(406, 1457);
+			
 			Thread.sleep(2000);
 			swipe(AndroidDriver, DIRECTION.DOWN);
 			
@@ -2741,11 +2787,11 @@ public void coronaRakshakDetails(String income, String GSTidnumber, String aadha
 			type(addresstwoinDS, addresstwo, "entering addresstwo");
 			Thread.sleep(2000);
 			
-			//pincode
+			/*//pincode
 			click(pincodeinDS,"clicking on pincode");
 			Thread.sleep(2000);
 			type(pincodeinDS,pin,"entering pincode");
-			Thread.sleep(2000);
+			Thread.sleep(2000);*/
 			swipe(AndroidDriver, DIRECTION.DOWN);
 			
 			//clicking on checkbox to copy address

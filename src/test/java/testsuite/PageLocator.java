@@ -587,10 +587,13 @@ public static By ageinCR = By.xpath("//*[contains(@resource-id,'ageYear1')]");
 public static By chooseYearsormonthsinCR = By.xpath("//*[contains(@resource-id,'suffixAge1')]");
 public static By selectYearsorMonths = By.xpath("//*[contains(@text,'Year(s)')]");
 public static By choosePolicyperiod = By.xpath("//*[contains(@resource-id,'policyPeriod')]");
-public static By selectPolicyPeriod = By.xpath("//*[contains(@text,'3.5 months (105 days)')]");
+public static String selectPolicyPeriod = "//*[contains(@text,'#')]";
 public static By choosecoverageamount = By.xpath("//*[contains(@resource-id,'policy_cover')]");
 public static By selectCoverageamount = By.xpath("//*[contains(@text,'1 Lakh')]");
 public static By postalcode = By.xpath("//*[contains(@resource-id,'postalCode')]");
-public static By noOtherHealthInsurance = By.xpath("(//*[contains(@text,'No')])[4]");
+public static By noOtherHealthInsurance = By.xpath("(//*[@class='android.widget.RadioButton'])[6]");
+public static By noadversemedicalconditions = By.xpath("(//*[@class='android.widget.RadioButton'])[8]");
+public static By noHealthproblems = By.xpath("//*[contains(@text,'No')]");
+public static By clickContinue = By.xpath("(//*[contains(@text,'CONTINUE')])[1]");
 }
 

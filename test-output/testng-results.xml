@@ -2,23 +2,23 @@
 <testng-results skipped="0" failed="8" ignored="0" total="8" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="1039636" started-at="2020-09-23T15:47:42 IST" finished-at="2020-09-23T16:05:02 IST">
+  <suite name="Default suite" duration-ms="31834" started-at="2020-09-23T18:48:39 IST" finished-at="2020-09-23T18:49:11 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="1039636" started-at="2020-09-23T15:47:42 IST" finished-at="2020-09-23T16:05:02 IST">
+    <test name="Default test" duration-ms="31834" started-at="2020-09-23T18:48:39 IST" finished-at="2020-09-23T18:49:11 IST">
       <class name="testsuite.Scripts.CoronaRakshak">
-        <test-method status="PASS" signature="setupSuite(org.testng.ITestContext)[pri:0, instance:testsuite.Scripts.CoronaRakshak@df27fae]" name="setupSuite" is-config="true" duration-ms="20725" started-at="2020-09-23T15:47:22 IST" finished-at="2020-09-23T15:47:42 IST">
+        <test-method status="PASS" signature="setupSuite(org.testng.ITestContext)[pri:0, instance:testsuite.Scripts.CoronaRakshak@df27fae]" name="setupSuite" is-config="true" duration-ms="22794" started-at="2020-09-23T18:48:17 IST" finished-at="2020-09-23T18:48:39 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@2b61a019]]>
+                <![CDATA[org.testng.TestRunner@56276db8]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupSuite -->
-        <test-method status="PASS" signature="setBrowerDriver(java.lang.reflect.Method)[pri:0, instance:testsuite.Scripts.CoronaRakshak@df27fae]" name="setBrowerDriver" is-config="true" duration-ms="6" started-at="2020-09-23T15:47:46 IST" finished-at="2020-09-23T15:47:46 IST">
+        <test-method status="PASS" signature="setBrowerDriver(java.lang.reflect.Method)[pri:0, instance:testsuite.Scripts.CoronaRakshak@df27fae]" name="setBrowerDriver" is-config="true" duration-ms="7" started-at="2020-09-23T18:48:42 IST" finished-at="2020-09-23T18:48:42 IST">
           <params>
             <param index="0">
               <value>
@@ -29,7 +29,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setBrowerDriver -->
-        <test-method status="FAIL" signature="productCoronaRakshak(java.util.Hashtable)[pri:0, instance:testsuite.Scripts.CoronaRakshak@df27fae]" name="productCoronaRakshak" duration-ms="827496" started-at="2020-09-23T15:47:46 IST" data-provider="getTestData" finished-at="2020-09-23T16:01:33 IST">
+        <test-method status="FAIL" signature="productCoronaRakshak(java.util.Hashtable)[pri:0, instance:testsuite.Scripts.CoronaRakshak@df27fae]" name="productCoronaRakshak" duration-ms="28846" started-at="2020-09-23T18:48:42 IST" data-provider="getTestData" finished-at="2020-09-23T18:49:10 IST">
           <params>
             <param index="0">
               <value>
@@ -37,75 +37,6 @@
               </value>
             </param>
           </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Step Star cororna rakshak ProductEndtoEnd Scenario Failed with description Failed with  expected [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Step Star cororna rakshak ProductEndtoEnd Scenario Failed with description Failed with  expected [true] but found [false]
-at org.testng.Assert.fail(Assert.java:97)
-at org.testng.Assert.failNotEquals(Assert.java:969)
-at org.testng.Assert.assertTrue(Assert.java:43)
-at support.HtmlReportSupport.onFailure(HtmlReportSupport.java:779)
-at support.Reporter.failureReport(Reporter.java:91)
-at testsuite.Scripts.CoronaRakshak.productCoronaRakshak(CoronaRakshak.java:64)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.util.ArrayList.forEach(Unknown Source)
-at org.testng.TestRunner.privateRun(TestRunner.java:766)
-at org.testng.TestRunner.run(TestRunner.java:587)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
-at org.testng.TestNG.runSuites(TestNG.java:1039)
-at org.testng.TestNG.run(TestNG.java:1007)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- productCoronaRakshak -->
-        <test-method status="PASS" signature="tearDownMethod()[pri:0, instance:testsuite.Scripts.CoronaRakshak@df27fae]" name="tearDownMethod" is-config="true" duration-ms="6" started-at="2020-09-23T16:01:33 IST" finished-at="2020-09-23T16:01:33 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownMethod -->
-        <test-method status="PASS" signature="setBrowerDriver(java.lang.reflect.Method)[pri:0, instance:testsuite.Scripts.CoronaRakshak@df27fae]" name="setBrowerDriver" is-config="true" duration-ms="23" started-at="2020-09-23T16:01:33 IST" finished-at="2020-09-23T16:01:33 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void testsuite.Scripts.CoronaRakshak.productCoronaRakshak(java.util.Hashtable) throws java.lang.Throwable]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setBrowerDriver -->
-        <test-method status="FAIL" signature="productCoronaRakshak(java.util.Hashtable)[pri:0, instance:testsuite.Scripts.CoronaRakshak@df27fae]" name="productCoronaRakshak" duration-ms="207965" started-at="2020-09-23T16:01:33 IST" data-provider="getTestData" finished-at="2020-09-23T16:05:01 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{selectwhomtoinsure=, Selecttheproduct=, userpass=, useremail=, pin=, nomineename=, nomineeage=, CoverageAmount=, weight=, pincode=, height=, policyperiod=, addresstwo=, relationship2=, relationship1=, aadhar=, income=, Age=, perofclaim=, GSTidnumber=, yearsormonths=, name=, addressone=}]]>
-              </value>
-            </param>
-          </params>
           <exception class="org.openqa.selenium.WebDriverException">
             <message>
               <![CDATA[An unknown server-side error occurred while processing the command. Original error: Could not proxy command to remote server. Original error: Error: socket hang up
@@ -113,7 +44,7 @@ Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17
 System info: host: 'NBLAP195', ip: '172.27.196.209', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
 Driver info: io.appium.java_client.android.AndroidDriver
 Capabilities {app: E:\StarHealthMobileAutomati..., appActivity: com.star.customer_app.MainA..., appPackage: com.star.customer_app, databaseEnabled: false, desired: {app: E:\StarHealthMobileAutomati..., appActivity: com.star.customer_app.MainA..., appPackage: com.star.customer_app, deviceName: Pixel XL API 27, platformName: android, platformVersion: 8.1.0}, deviceApiLevel: 27, deviceManufacturer: Google, deviceModel: Android SDK built for x86, deviceName: emulator-5554, deviceScreenDensity: 560, deviceScreenSize: 1440x2560, deviceUDID: emulator-5554, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 3.5, platform: LINUX, platformName: Android, platformVersion: 8.1.0, statBarHeight: 84, takesScreenshot: true, viewportRect: {height: 2308, left: 0, top: 84, width: 1440}, warnings: {}, webStorageEnabled: false}
-Session ID: fad2d702-996e-462d-ad82-5d617148af03]]>
+Session ID: ffa1d53e-8e50-4788-a35b-5e9c15614d42]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to remote server. Original error: Error: socket hang up
@@ -121,7 +52,7 @@ Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17
 System info: host: 'NBLAP195', ip: '172.27.196.209', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
 Driver info: io.appium.java_client.android.AndroidDriver
 Capabilities {app: E:\StarHealthMobileAutomati..., appActivity: com.star.customer_app.MainA..., appPackage: com.star.customer_app, databaseEnabled: false, desired: {app: E:\StarHealthMobileAutomati..., appActivity: com.star.customer_app.MainA..., appPackage: com.star.customer_app, deviceName: Pixel XL API 27, platformName: android, platformVersion: 8.1.0}, deviceApiLevel: 27, deviceManufacturer: Google, deviceModel: Android SDK built for x86, deviceName: emulator-5554, deviceScreenDensity: 560, deviceScreenSize: 1440x2560, deviceUDID: emulator-5554, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 3.5, platform: LINUX, platformName: Android, platformVersion: 8.1.0, statBarHeight: 84, takesScreenshot: true, viewportRect: {height: 2308, left: 0, top: 84, width: 1440}, warnings: {}, webStorageEnabled: false}
-Session ID: fad2d702-996e-462d-ad82-5d617148af03
+Session ID: ffa1d53e-8e50-4788-a35b-5e9c15614d42
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -138,7 +69,7 @@ at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
 at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)
 at accelerators.ActionEngine.screenShot(ActionEngine.java:127)
 at support.Reporter.failureReport(Reporter.java:87)
-at testsuite.Scripts.CoronaRakshak.productCoronaRakshak(CoronaRakshak.java:64)
+at testsuite.Scripts.CoronaRakshak.productCoronaRakshak(CoronaRakshak.java:73)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -173,11 +104,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- productCoronaRakshak -->
-        <test-method status="PASS" signature="tearDownMethod()[pri:0, instance:testsuite.Scripts.CoronaRakshak@df27fae]" name="tearDownMethod" is-config="true" duration-ms="1" started-at="2020-09-23T16:05:01 IST" finished-at="2020-09-23T16:05:01 IST">
+        <test-method status="PASS" signature="tearDownMethod()[pri:0, instance:testsuite.Scripts.CoronaRakshak@df27fae]" name="tearDownMethod" is-config="true" duration-ms="2" started-at="2020-09-23T18:49:10 IST" finished-at="2020-09-23T18:49:10 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownMethod -->
-        <test-method status="PASS" signature="setBrowerDriver(java.lang.reflect.Method)[pri:0, instance:testsuite.Scripts.CoronaRakshak@df27fae]" name="setBrowerDriver" is-config="true" duration-ms="20" started-at="2020-09-23T16:05:01 IST" finished-at="2020-09-23T16:05:01 IST">
+        <test-method status="PASS" signature="setBrowerDriver(java.lang.reflect.Method)[pri:0, instance:testsuite.Scripts.CoronaRakshak@df27fae]" name="setBrowerDriver" is-config="true" duration-ms="4" started-at="2020-09-23T18:49:10 IST" finished-at="2020-09-23T18:49:10 IST">
           <params>
             <param index="0">
               <value>
@@ -188,7 +119,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setBrowerDriver -->
-        <test-method status="FAIL" signature="productCoronaRakshak(java.util.Hashtable)[pri:0, instance:testsuite.Scripts.CoronaRakshak@df27fae]" name="productCoronaRakshak" duration-ms="84" started-at="2020-09-23T16:05:01 IST" data-provider="getTestData" finished-at="2020-09-23T16:05:01 IST">
+        <test-method status="FAIL" signature="productCoronaRakshak(java.util.Hashtable)[pri:0, instance:testsuite.Scripts.CoronaRakshak@df27fae]" name="productCoronaRakshak" duration-ms="190" started-at="2020-09-23T18:49:10 IST" data-provider="getTestData" finished-at="2020-09-23T18:49:11 IST">
           <params>
             <param index="0">
               <value>
@@ -203,7 +134,7 @@ Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17
 System info: host: 'NBLAP195', ip: '172.27.196.209', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
 Driver info: io.appium.java_client.android.AndroidDriver
 Capabilities {app: E:\StarHealthMobileAutomati..., appActivity: com.star.customer_app.MainA..., appPackage: com.star.customer_app, databaseEnabled: false, desired: {app: E:\StarHealthMobileAutomati..., appActivity: com.star.customer_app.MainA..., appPackage: com.star.customer_app, deviceName: Pixel XL API 27, platformName: android, platformVersion: 8.1.0}, deviceApiLevel: 27, deviceManufacturer: Google, deviceModel: Android SDK built for x86, deviceName: emulator-5554, deviceScreenDensity: 560, deviceScreenSize: 1440x2560, deviceUDID: emulator-5554, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 3.5, platform: LINUX, platformName: Android, platformVersion: 8.1.0, statBarHeight: 84, takesScreenshot: true, viewportRect: {height: 2308, left: 0, top: 84, width: 1440}, warnings: {}, webStorageEnabled: false}
-Session ID: fad2d702-996e-462d-ad82-5d617148af03]]>
+Session ID: ffa1d53e-8e50-4788-a35b-5e9c15614d42]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to remote server. Original error: Error: socket hang up
@@ -211,7 +142,7 @@ Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17
 System info: host: 'NBLAP195', ip: '172.27.196.209', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
 Driver info: io.appium.java_client.android.AndroidDriver
 Capabilities {app: E:\StarHealthMobileAutomati..., appActivity: com.star.customer_app.MainA..., appPackage: com.star.customer_app, databaseEnabled: false, desired: {app: E:\StarHealthMobileAutomati..., appActivity: com.star.customer_app.MainA..., appPackage: com.star.customer_app, deviceName: Pixel XL API 27, platformName: android, platformVersion: 8.1.0}, deviceApiLevel: 27, deviceManufacturer: Google, deviceModel: Android SDK built for x86, deviceName: emulator-5554, deviceScreenDensity: 560, deviceScreenSize: 1440x2560, deviceUDID: emulator-5554, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 3.5, platform: LINUX, platformName: Android, platformVersion: 8.1.0, statBarHeight: 84, takesScreenshot: true, viewportRect: {height: 2308, left: 0, top: 84, width: 1440}, warnings: {}, webStorageEnabled: false}
-Session ID: fad2d702-996e-462d-ad82-5d617148af03
+Session ID: ffa1d53e-8e50-4788-a35b-5e9c15614d42
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -228,7 +159,7 @@ at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
 at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)
 at accelerators.ActionEngine.screenShot(ActionEngine.java:127)
 at support.Reporter.failureReport(Reporter.java:87)
-at testsuite.Scripts.CoronaRakshak.productCoronaRakshak(CoronaRakshak.java:64)
+at testsuite.Scripts.CoronaRakshak.productCoronaRakshak(CoronaRakshak.java:73)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -263,11 +194,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- productCoronaRakshak -->
-        <test-method status="PASS" signature="tearDownMethod()[pri:0, instance:testsuite.Scripts.CoronaRakshak@df27fae]" name="tearDownMethod" is-config="true" duration-ms="2" started-at="2020-09-23T16:05:01 IST" finished-at="2020-09-23T16:05:01 IST">
+        <test-method status="PASS" signature="tearDownMethod()[pri:0, instance:testsuite.Scripts.CoronaRakshak@df27fae]" name="tearDownMethod" is-config="true" duration-ms="2" started-at="2020-09-23T18:49:11 IST" finished-at="2020-09-23T18:49:11 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownMethod -->
-        <test-method status="PASS" signature="setBrowerDriver(java.lang.reflect.Method)[pri:0, instance:testsuite.Scripts.CoronaRakshak@df27fae]" name="setBrowerDriver" is-config="true" duration-ms="2" started-at="2020-09-23T16:05:01 IST" finished-at="2020-09-23T16:05:01 IST">
+        <test-method status="PASS" signature="setBrowerDriver(java.lang.reflect.Method)[pri:0, instance:testsuite.Scripts.CoronaRakshak@df27fae]" name="setBrowerDriver" is-config="true" duration-ms="54" started-at="2020-09-23T18:49:11 IST" finished-at="2020-09-23T18:49:11 IST">
           <params>
             <param index="0">
               <value>
@@ -278,7 +209,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setBrowerDriver -->
-        <test-method status="FAIL" signature="productCoronaRakshak(java.util.Hashtable)[pri:0, instance:testsuite.Scripts.CoronaRakshak@df27fae]" name="productCoronaRakshak" duration-ms="143" started-at="2020-09-23T16:05:01 IST" data-provider="getTestData" finished-at="2020-09-23T16:05:02 IST">
+        <test-method status="FAIL" signature="productCoronaRakshak(java.util.Hashtable)[pri:0, instance:testsuite.Scripts.CoronaRakshak@df27fae]" name="productCoronaRakshak" duration-ms="121" started-at="2020-09-23T18:49:11 IST" data-provider="getTestData" finished-at="2020-09-23T18:49:11 IST">
           <params>
             <param index="0">
               <value>
@@ -293,7 +224,7 @@ Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17
 System info: host: 'NBLAP195', ip: '172.27.196.209', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
 Driver info: io.appium.java_client.android.AndroidDriver
 Capabilities {app: E:\StarHealthMobileAutomati..., appActivity: com.star.customer_app.MainA..., appPackage: com.star.customer_app, databaseEnabled: false, desired: {app: E:\StarHealthMobileAutomati..., appActivity: com.star.customer_app.MainA..., appPackage: com.star.customer_app, deviceName: Pixel XL API 27, platformName: android, platformVersion: 8.1.0}, deviceApiLevel: 27, deviceManufacturer: Google, deviceModel: Android SDK built for x86, deviceName: emulator-5554, deviceScreenDensity: 560, deviceScreenSize: 1440x2560, deviceUDID: emulator-5554, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 3.5, platform: LINUX, platformName: Android, platformVersion: 8.1.0, statBarHeight: 84, takesScreenshot: true, viewportRect: {height: 2308, left: 0, top: 84, width: 1440}, warnings: {}, webStorageEnabled: false}
-Session ID: fad2d702-996e-462d-ad82-5d617148af03]]>
+Session ID: ffa1d53e-8e50-4788-a35b-5e9c15614d42]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to remote server. Original error: Error: socket hang up
@@ -301,7 +232,7 @@ Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17
 System info: host: 'NBLAP195', ip: '172.27.196.209', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
 Driver info: io.appium.java_client.android.AndroidDriver
 Capabilities {app: E:\StarHealthMobileAutomati..., appActivity: com.star.customer_app.MainA..., appPackage: com.star.customer_app, databaseEnabled: false, desired: {app: E:\StarHealthMobileAutomati..., appActivity: com.star.customer_app.MainA..., appPackage: com.star.customer_app, deviceName: Pixel XL API 27, platformName: android, platformVersion: 8.1.0}, deviceApiLevel: 27, deviceManufacturer: Google, deviceModel: Android SDK built for x86, deviceName: emulator-5554, deviceScreenDensity: 560, deviceScreenSize: 1440x2560, deviceUDID: emulator-5554, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 3.5, platform: LINUX, platformName: Android, platformVersion: 8.1.0, statBarHeight: 84, takesScreenshot: true, viewportRect: {height: 2308, left: 0, top: 84, width: 1440}, warnings: {}, webStorageEnabled: false}
-Session ID: fad2d702-996e-462d-ad82-5d617148af03
+Session ID: ffa1d53e-8e50-4788-a35b-5e9c15614d42
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -318,7 +249,7 @@ at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
 at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)
 at accelerators.ActionEngine.screenShot(ActionEngine.java:127)
 at support.Reporter.failureReport(Reporter.java:87)
-at testsuite.Scripts.CoronaRakshak.productCoronaRakshak(CoronaRakshak.java:64)
+at testsuite.Scripts.CoronaRakshak.productCoronaRakshak(CoronaRakshak.java:73)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -353,11 +284,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- productCoronaRakshak -->
-        <test-method status="PASS" signature="tearDownMethod()[pri:0, instance:testsuite.Scripts.CoronaRakshak@df27fae]" name="tearDownMethod" is-config="true" duration-ms="1" started-at="2020-09-23T16:05:02 IST" finished-at="2020-09-23T16:05:02 IST">
+        <test-method status="PASS" signature="tearDownMethod()[pri:0, instance:testsuite.Scripts.CoronaRakshak@df27fae]" name="tearDownMethod" is-config="true" duration-ms="2" started-at="2020-09-23T18:49:11 IST" finished-at="2020-09-23T18:49:11 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownMethod -->
-        <test-method status="PASS" signature="setBrowerDriver(java.lang.reflect.Method)[pri:0, instance:testsuite.Scripts.CoronaRakshak@df27fae]" name="setBrowerDriver" is-config="true" duration-ms="2" started-at="2020-09-23T16:05:02 IST" finished-at="2020-09-23T16:05:02 IST">
+        <test-method status="PASS" signature="setBrowerDriver(java.lang.reflect.Method)[pri:0, instance:testsuite.Scripts.CoronaRakshak@df27fae]" name="setBrowerDriver" is-config="true" duration-ms="3" started-at="2020-09-23T18:49:11 IST" finished-at="2020-09-23T18:49:11 IST">
           <params>
             <param index="0">
               <value>
@@ -368,7 +299,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setBrowerDriver -->
-        <test-method status="FAIL" signature="productCoronaRakshak(java.util.Hashtable)[pri:0, instance:testsuite.Scripts.CoronaRakshak@df27fae]" name="productCoronaRakshak" duration-ms="103" started-at="2020-09-23T16:05:02 IST" data-provider="getTestData" finished-at="2020-09-23T16:05:02 IST">
+        <test-method status="FAIL" signature="productCoronaRakshak(java.util.Hashtable)[pri:0, instance:testsuite.Scripts.CoronaRakshak@df27fae]" name="productCoronaRakshak" duration-ms="85" started-at="2020-09-23T18:49:11 IST" data-provider="getTestData" finished-at="2020-09-23T18:49:11 IST">
           <params>
             <param index="0">
               <value>
@@ -383,7 +314,7 @@ Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17
 System info: host: 'NBLAP195', ip: '172.27.196.209', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
 Driver info: io.appium.java_client.android.AndroidDriver
 Capabilities {app: E:\StarHealthMobileAutomati..., appActivity: com.star.customer_app.MainA..., appPackage: com.star.customer_app, databaseEnabled: false, desired: {app: E:\StarHealthMobileAutomati..., appActivity: com.star.customer_app.MainA..., appPackage: com.star.customer_app, deviceName: Pixel XL API 27, platformName: android, platformVersion: 8.1.0}, deviceApiLevel: 27, deviceManufacturer: Google, deviceModel: Android SDK built for x86, deviceName: emulator-5554, deviceScreenDensity: 560, deviceScreenSize: 1440x2560, deviceUDID: emulator-5554, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 3.5, platform: LINUX, platformName: Android, platformVersion: 8.1.0, statBarHeight: 84, takesScreenshot: true, viewportRect: {height: 2308, left: 0, top: 84, width: 1440}, warnings: {}, webStorageEnabled: false}
-Session ID: fad2d702-996e-462d-ad82-5d617148af03]]>
+Session ID: ffa1d53e-8e50-4788-a35b-5e9c15614d42]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to remote server. Original error: Error: socket hang up
@@ -391,7 +322,7 @@ Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17
 System info: host: 'NBLAP195', ip: '172.27.196.209', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
 Driver info: io.appium.java_client.android.AndroidDriver
 Capabilities {app: E:\StarHealthMobileAutomati..., appActivity: com.star.customer_app.MainA..., appPackage: com.star.customer_app, databaseEnabled: false, desired: {app: E:\StarHealthMobileAutomati..., appActivity: com.star.customer_app.MainA..., appPackage: com.star.customer_app, deviceName: Pixel XL API 27, platformName: android, platformVersion: 8.1.0}, deviceApiLevel: 27, deviceManufacturer: Google, deviceModel: Android SDK built for x86, deviceName: emulator-5554, deviceScreenDensity: 560, deviceScreenSize: 1440x2560, deviceUDID: emulator-5554, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 3.5, platform: LINUX, platformName: Android, platformVersion: 8.1.0, statBarHeight: 84, takesScreenshot: true, viewportRect: {height: 2308, left: 0, top: 84, width: 1440}, warnings: {}, webStorageEnabled: false}
-Session ID: fad2d702-996e-462d-ad82-5d617148af03
+Session ID: ffa1d53e-8e50-4788-a35b-5e9c15614d42
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -408,7 +339,7 @@ at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
 at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)
 at accelerators.ActionEngine.screenShot(ActionEngine.java:127)
 at support.Reporter.failureReport(Reporter.java:87)
-at testsuite.Scripts.CoronaRakshak.productCoronaRakshak(CoronaRakshak.java:64)
+at testsuite.Scripts.CoronaRakshak.productCoronaRakshak(CoronaRakshak.java:73)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -443,11 +374,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- productCoronaRakshak -->
-        <test-method status="PASS" signature="tearDownMethod()[pri:0, instance:testsuite.Scripts.CoronaRakshak@df27fae]" name="tearDownMethod" is-config="true" duration-ms="1" started-at="2020-09-23T16:05:02 IST" finished-at="2020-09-23T16:05:02 IST">
+        <test-method status="PASS" signature="tearDownMethod()[pri:0, instance:testsuite.Scripts.CoronaRakshak@df27fae]" name="tearDownMethod" is-config="true" duration-ms="1" started-at="2020-09-23T18:49:11 IST" finished-at="2020-09-23T18:49:11 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownMethod -->
-        <test-method status="PASS" signature="setBrowerDriver(java.lang.reflect.Method)[pri:0, instance:testsuite.Scripts.CoronaRakshak@df27fae]" name="setBrowerDriver" is-config="true" duration-ms="3" started-at="2020-09-23T16:05:02 IST" finished-at="2020-09-23T16:05:02 IST">
+        <test-method status="PASS" signature="setBrowerDriver(java.lang.reflect.Method)[pri:0, instance:testsuite.Scripts.CoronaRakshak@df27fae]" name="setBrowerDriver" is-config="true" duration-ms="2" started-at="2020-09-23T18:49:11 IST" finished-at="2020-09-23T18:49:11 IST">
           <params>
             <param index="0">
               <value>
@@ -458,7 +389,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setBrowerDriver -->
-        <test-method status="FAIL" signature="productCoronaRakshak(java.util.Hashtable)[pri:0, instance:testsuite.Scripts.CoronaRakshak@df27fae]" name="productCoronaRakshak" duration-ms="121" started-at="2020-09-23T16:05:02 IST" data-provider="getTestData" finished-at="2020-09-23T16:05:02 IST">
+        <test-method status="FAIL" signature="productCoronaRakshak(java.util.Hashtable)[pri:0, instance:testsuite.Scripts.CoronaRakshak@df27fae]" name="productCoronaRakshak" duration-ms="116" started-at="2020-09-23T18:49:11 IST" data-provider="getTestData" finished-at="2020-09-23T18:49:11 IST">
           <params>
             <param index="0">
               <value>
@@ -473,7 +404,7 @@ Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17
 System info: host: 'NBLAP195', ip: '172.27.196.209', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
 Driver info: io.appium.java_client.android.AndroidDriver
 Capabilities {app: E:\StarHealthMobileAutomati..., appActivity: com.star.customer_app.MainA..., appPackage: com.star.customer_app, databaseEnabled: false, desired: {app: E:\StarHealthMobileAutomati..., appActivity: com.star.customer_app.MainA..., appPackage: com.star.customer_app, deviceName: Pixel XL API 27, platformName: android, platformVersion: 8.1.0}, deviceApiLevel: 27, deviceManufacturer: Google, deviceModel: Android SDK built for x86, deviceName: emulator-5554, deviceScreenDensity: 560, deviceScreenSize: 1440x2560, deviceUDID: emulator-5554, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 3.5, platform: LINUX, platformName: Android, platformVersion: 8.1.0, statBarHeight: 84, takesScreenshot: true, viewportRect: {height: 2308, left: 0, top: 84, width: 1440}, warnings: {}, webStorageEnabled: false}
-Session ID: fad2d702-996e-462d-ad82-5d617148af03]]>
+Session ID: ffa1d53e-8e50-4788-a35b-5e9c15614d42]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to remote server. Original error: Error: socket hang up
@@ -481,9 +412,8 @@ Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17
 System info: host: 'NBLAP195', ip: '172.27.196.209', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
 Driver info: io.appium.java_client.android.AndroidDriver
 Capabilities {app: E:\StarHealthMobileAutomati..., appActivity: com.star.customer_app.MainA..., appPackage: com.star.customer_app, databaseEnabled: false, desired: {app: E:\StarHealthMobileAutomati..., appActivity: com.star.customer_app.MainA..., appPackage: com.star.customer_app, deviceName: Pixel XL API 27, platformName: android, platformVersion: 8.1.0}, deviceApiLevel: 27, deviceManufacturer: Google, deviceModel: Android SDK built for x86, deviceName: emulator-5554, deviceScreenDensity: 560, deviceScreenSize: 1440x2560, deviceUDID: emulator-5554, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 3.5, platform: LINUX, platformName: Android, platformVersion: 8.1.0, statBarHeight: 84, takesScreenshot: true, viewportRect: {height: 2308, left: 0, top: 84, width: 1440}, warnings: {}, webStorageEnabled: false}
-Session ID: fad2d702-996e-462d-ad82-5d617148af03
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+Session ID: ffa1d53e-8e50-4788-a35b-5e9c15614d42
+at sun.reflect.GeneratedConstructorAccessor32.newInstance(Unknown Source)
 at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
 at java.lang.reflect.Constructor.newInstance(Unknown Source)
 at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
@@ -498,7 +428,7 @@ at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
 at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)
 at accelerators.ActionEngine.screenShot(ActionEngine.java:127)
 at support.Reporter.failureReport(Reporter.java:87)
-at testsuite.Scripts.CoronaRakshak.productCoronaRakshak(CoronaRakshak.java:64)
+at testsuite.Scripts.CoronaRakshak.productCoronaRakshak(CoronaRakshak.java:73)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -533,11 +463,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- productCoronaRakshak -->
-        <test-method status="PASS" signature="tearDownMethod()[pri:0, instance:testsuite.Scripts.CoronaRakshak@df27fae]" name="tearDownMethod" is-config="true" duration-ms="2" started-at="2020-09-23T16:05:02 IST" finished-at="2020-09-23T16:05:02 IST">
+        <test-method status="PASS" signature="tearDownMethod()[pri:0, instance:testsuite.Scripts.CoronaRakshak@df27fae]" name="tearDownMethod" is-config="true" duration-ms="2" started-at="2020-09-23T18:49:11 IST" finished-at="2020-09-23T18:49:11 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownMethod -->
-        <test-method status="PASS" signature="setBrowerDriver(java.lang.reflect.Method)[pri:0, instance:testsuite.Scripts.CoronaRakshak@df27fae]" name="setBrowerDriver" is-config="true" duration-ms="2" started-at="2020-09-23T16:05:02 IST" finished-at="2020-09-23T16:05:02 IST">
+        <test-method status="PASS" signature="setBrowerDriver(java.lang.reflect.Method)[pri:0, instance:testsuite.Scripts.CoronaRakshak@df27fae]" name="setBrowerDriver" is-config="true" duration-ms="4" started-at="2020-09-23T18:49:11 IST" finished-at="2020-09-23T18:49:11 IST">
           <params>
             <param index="0">
               <value>
@@ -548,7 +478,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setBrowerDriver -->
-        <test-method status="FAIL" signature="productCoronaRakshak(java.util.Hashtable)[pri:0, instance:testsuite.Scripts.CoronaRakshak@df27fae]" name="productCoronaRakshak" duration-ms="72" started-at="2020-09-23T16:05:02 IST" data-provider="getTestData" finished-at="2020-09-23T16:05:02 IST">
+        <test-method status="FAIL" signature="productCoronaRakshak(java.util.Hashtable)[pri:0, instance:testsuite.Scripts.CoronaRakshak@df27fae]" name="productCoronaRakshak" duration-ms="94" started-at="2020-09-23T18:49:11 IST" data-provider="getTestData" finished-at="2020-09-23T18:49:11 IST">
           <params>
             <param index="0">
               <value>
@@ -563,7 +493,7 @@ Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17
 System info: host: 'NBLAP195', ip: '172.27.196.209', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
 Driver info: io.appium.java_client.android.AndroidDriver
 Capabilities {app: E:\StarHealthMobileAutomati..., appActivity: com.star.customer_app.MainA..., appPackage: com.star.customer_app, databaseEnabled: false, desired: {app: E:\StarHealthMobileAutomati..., appActivity: com.star.customer_app.MainA..., appPackage: com.star.customer_app, deviceName: Pixel XL API 27, platformName: android, platformVersion: 8.1.0}, deviceApiLevel: 27, deviceManufacturer: Google, deviceModel: Android SDK built for x86, deviceName: emulator-5554, deviceScreenDensity: 560, deviceScreenSize: 1440x2560, deviceUDID: emulator-5554, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 3.5, platform: LINUX, platformName: Android, platformVersion: 8.1.0, statBarHeight: 84, takesScreenshot: true, viewportRect: {height: 2308, left: 0, top: 84, width: 1440}, warnings: {}, webStorageEnabled: false}
-Session ID: fad2d702-996e-462d-ad82-5d617148af03]]>
+Session ID: ffa1d53e-8e50-4788-a35b-5e9c15614d42]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to remote server. Original error: Error: socket hang up
@@ -571,8 +501,8 @@ Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17
 System info: host: 'NBLAP195', ip: '172.27.196.209', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
 Driver info: io.appium.java_client.android.AndroidDriver
 Capabilities {app: E:\StarHealthMobileAutomati..., appActivity: com.star.customer_app.MainA..., appPackage: com.star.customer_app, databaseEnabled: false, desired: {app: E:\StarHealthMobileAutomati..., appActivity: com.star.customer_app.MainA..., appPackage: com.star.customer_app, deviceName: Pixel XL API 27, platformName: android, platformVersion: 8.1.0}, deviceApiLevel: 27, deviceManufacturer: Google, deviceModel: Android SDK built for x86, deviceName: emulator-5554, deviceScreenDensity: 560, deviceScreenSize: 1440x2560, deviceUDID: emulator-5554, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 3.5, platform: LINUX, platformName: Android, platformVersion: 8.1.0, statBarHeight: 84, takesScreenshot: true, viewportRect: {height: 2308, left: 0, top: 84, width: 1440}, warnings: {}, webStorageEnabled: false}
-Session ID: fad2d702-996e-462d-ad82-5d617148af03
-at sun.reflect.GeneratedConstructorAccessor33.newInstance(Unknown Source)
+Session ID: ffa1d53e-8e50-4788-a35b-5e9c15614d42
+at sun.reflect.GeneratedConstructorAccessor32.newInstance(Unknown Source)
 at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
 at java.lang.reflect.Constructor.newInstance(Unknown Source)
 at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
@@ -587,7 +517,7 @@ at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
 at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)
 at accelerators.ActionEngine.screenShot(ActionEngine.java:127)
 at support.Reporter.failureReport(Reporter.java:87)
-at testsuite.Scripts.CoronaRakshak.productCoronaRakshak(CoronaRakshak.java:64)
+at testsuite.Scripts.CoronaRakshak.productCoronaRakshak(CoronaRakshak.java:73)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -622,11 +552,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- productCoronaRakshak -->
-        <test-method status="PASS" signature="tearDownMethod()[pri:0, instance:testsuite.Scripts.CoronaRakshak@df27fae]" name="tearDownMethod" is-config="true" duration-ms="1" started-at="2020-09-23T16:05:02 IST" finished-at="2020-09-23T16:05:02 IST">
+        <test-method status="PASS" signature="tearDownMethod()[pri:0, instance:testsuite.Scripts.CoronaRakshak@df27fae]" name="tearDownMethod" is-config="true" duration-ms="2" started-at="2020-09-23T18:49:11 IST" finished-at="2020-09-23T18:49:11 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownMethod -->
-        <test-method status="PASS" signature="setBrowerDriver(java.lang.reflect.Method)[pri:0, instance:testsuite.Scripts.CoronaRakshak@df27fae]" name="setBrowerDriver" is-config="true" duration-ms="3" started-at="2020-09-23T16:05:02 IST" finished-at="2020-09-23T16:05:02 IST">
+        <test-method status="PASS" signature="setBrowerDriver(java.lang.reflect.Method)[pri:0, instance:testsuite.Scripts.CoronaRakshak@df27fae]" name="setBrowerDriver" is-config="true" duration-ms="4" started-at="2020-09-23T18:49:11 IST" finished-at="2020-09-23T18:49:11 IST">
           <params>
             <param index="0">
               <value>
@@ -637,7 +567,96 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setBrowerDriver -->
-        <test-method status="FAIL" signature="productCoronaRakshak(java.util.Hashtable)[pri:0, instance:testsuite.Scripts.CoronaRakshak@df27fae]" name="productCoronaRakshak" duration-ms="64" started-at="2020-09-23T16:05:02 IST" data-provider="getTestData" finished-at="2020-09-23T16:05:02 IST">
+        <test-method status="FAIL" signature="productCoronaRakshak(java.util.Hashtable)[pri:0, instance:testsuite.Scripts.CoronaRakshak@df27fae]" name="productCoronaRakshak" duration-ms="83" started-at="2020-09-23T18:49:11 IST" data-provider="getTestData" finished-at="2020-09-23T18:49:11 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{selectwhomtoinsure=, Selecttheproduct=, userpass=, useremail=, pin=, nomineename=, nomineeage=, CoverageAmount=, weight=, pincode=, height=, policyperiod=, addresstwo=, relationship2=, relationship1=, aadhar=, income=, Age=, perofclaim=, GSTidnumber=, yearsormonths=, name=, addressone=}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[An unknown server-side error occurred while processing the command. Original error: Could not proxy command to remote server. Original error: Error: socket hang up
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'NBLAP195', ip: '172.27.196.209', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {app: E:\StarHealthMobileAutomati..., appActivity: com.star.customer_app.MainA..., appPackage: com.star.customer_app, databaseEnabled: false, desired: {app: E:\StarHealthMobileAutomati..., appActivity: com.star.customer_app.MainA..., appPackage: com.star.customer_app, deviceName: Pixel XL API 27, platformName: android, platformVersion: 8.1.0}, deviceApiLevel: 27, deviceManufacturer: Google, deviceModel: Android SDK built for x86, deviceName: emulator-5554, deviceScreenDensity: 560, deviceScreenSize: 1440x2560, deviceUDID: emulator-5554, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 3.5, platform: LINUX, platformName: Android, platformVersion: 8.1.0, statBarHeight: 84, takesScreenshot: true, viewportRect: {height: 2308, left: 0, top: 84, width: 1440}, warnings: {}, webStorageEnabled: false}
+Session ID: ffa1d53e-8e50-4788-a35b-5e9c15614d42]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to remote server. Original error: Error: socket hang up
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'NBLAP195', ip: '172.27.196.209', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {app: E:\StarHealthMobileAutomati..., appActivity: com.star.customer_app.MainA..., appPackage: com.star.customer_app, databaseEnabled: false, desired: {app: E:\StarHealthMobileAutomati..., appActivity: com.star.customer_app.MainA..., appPackage: com.star.customer_app, deviceName: Pixel XL API 27, platformName: android, platformVersion: 8.1.0}, deviceApiLevel: 27, deviceManufacturer: Google, deviceModel: Android SDK built for x86, deviceName: emulator-5554, deviceScreenDensity: 560, deviceScreenSize: 1440x2560, deviceUDID: emulator-5554, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 3.5, platform: LINUX, platformName: Android, platformVersion: 8.1.0, statBarHeight: 84, takesScreenshot: true, viewportRect: {height: 2308, left: 0, top: 84, width: 1440}, warnings: {}, webStorageEnabled: false}
+Session ID: ffa1d53e-8e50-4788-a35b-5e9c15614d42
+at sun.reflect.GeneratedConstructorAccessor32.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:45)
+at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)
+at accelerators.ActionEngine.screenShot(ActionEngine.java:127)
+at support.Reporter.failureReport(Reporter.java:87)
+at testsuite.Scripts.CoronaRakshak.productCoronaRakshak(CoronaRakshak.java:73)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- productCoronaRakshak -->
+        <test-method status="PASS" signature="tearDownMethod()[pri:0, instance:testsuite.Scripts.CoronaRakshak@df27fae]" name="tearDownMethod" is-config="true" duration-ms="2" started-at="2020-09-23T18:49:11 IST" finished-at="2020-09-23T18:49:11 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownMethod -->
+        <test-method status="PASS" signature="setBrowerDriver(java.lang.reflect.Method)[pri:0, instance:testsuite.Scripts.CoronaRakshak@df27fae]" name="setBrowerDriver" is-config="true" duration-ms="3" started-at="2020-09-23T18:49:11 IST" finished-at="2020-09-23T18:49:11 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testsuite.Scripts.CoronaRakshak.productCoronaRakshak(java.util.Hashtable) throws java.lang.Throwable]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setBrowerDriver -->
+        <test-method status="FAIL" signature="productCoronaRakshak(java.util.Hashtable)[pri:0, instance:testsuite.Scripts.CoronaRakshak@df27fae]" name="productCoronaRakshak" duration-ms="88" started-at="2020-09-23T18:49:11 IST" data-provider="getTestData" finished-at="2020-09-23T18:49:11 IST">
           <params>
             <param index="0">
               <value>
@@ -652,7 +671,7 @@ Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17
 System info: host: 'NBLAP195', ip: '172.27.196.209', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
 Driver info: io.appium.java_client.android.AndroidDriver
 Capabilities {app: E:\StarHealthMobileAutomati..., appActivity: com.star.customer_app.MainA..., appPackage: com.star.customer_app, databaseEnabled: false, desired: {app: E:\StarHealthMobileAutomati..., appActivity: com.star.customer_app.MainA..., appPackage: com.star.customer_app, deviceName: Pixel XL API 27, platformName: android, platformVersion: 8.1.0}, deviceApiLevel: 27, deviceManufacturer: Google, deviceModel: Android SDK built for x86, deviceName: emulator-5554, deviceScreenDensity: 560, deviceScreenSize: 1440x2560, deviceUDID: emulator-5554, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 3.5, platform: LINUX, platformName: Android, platformVersion: 8.1.0, statBarHeight: 84, takesScreenshot: true, viewportRect: {height: 2308, left: 0, top: 84, width: 1440}, warnings: {}, webStorageEnabled: false}
-Session ID: fad2d702-996e-462d-ad82-5d617148af03]]>
+Session ID: ffa1d53e-8e50-4788-a35b-5e9c15614d42]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to remote server. Original error: Error: socket hang up
@@ -660,8 +679,8 @@ Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17
 System info: host: 'NBLAP195', ip: '172.27.196.209', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
 Driver info: io.appium.java_client.android.AndroidDriver
 Capabilities {app: E:\StarHealthMobileAutomati..., appActivity: com.star.customer_app.MainA..., appPackage: com.star.customer_app, databaseEnabled: false, desired: {app: E:\StarHealthMobileAutomati..., appActivity: com.star.customer_app.MainA..., appPackage: com.star.customer_app, deviceName: Pixel XL API 27, platformName: android, platformVersion: 8.1.0}, deviceApiLevel: 27, deviceManufacturer: Google, deviceModel: Android SDK built for x86, deviceName: emulator-5554, deviceScreenDensity: 560, deviceScreenSize: 1440x2560, deviceUDID: emulator-5554, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 3.5, platform: LINUX, platformName: Android, platformVersion: 8.1.0, statBarHeight: 84, takesScreenshot: true, viewportRect: {height: 2308, left: 0, top: 84, width: 1440}, warnings: {}, webStorageEnabled: false}
-Session ID: fad2d702-996e-462d-ad82-5d617148af03
-at sun.reflect.GeneratedConstructorAccessor33.newInstance(Unknown Source)
+Session ID: ffa1d53e-8e50-4788-a35b-5e9c15614d42
+at sun.reflect.GeneratedConstructorAccessor32.newInstance(Unknown Source)
 at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
 at java.lang.reflect.Constructor.newInstance(Unknown Source)
 at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
@@ -676,7 +695,7 @@ at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
 at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)
 at accelerators.ActionEngine.screenShot(ActionEngine.java:127)
 at support.Reporter.failureReport(Reporter.java:87)
-at testsuite.Scripts.CoronaRakshak.productCoronaRakshak(CoronaRakshak.java:64)
+at testsuite.Scripts.CoronaRakshak.productCoronaRakshak(CoronaRakshak.java:73)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -711,15 +730,15 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- productCoronaRakshak -->
-        <test-method status="PASS" signature="tearDownMethod()[pri:0, instance:testsuite.Scripts.CoronaRakshak@df27fae]" name="tearDownMethod" is-config="true" duration-ms="1" started-at="2020-09-23T16:05:02 IST" finished-at="2020-09-23T16:05:02 IST">
+        <test-method status="PASS" signature="tearDownMethod()[pri:0, instance:testsuite.Scripts.CoronaRakshak@df27fae]" name="tearDownMethod" is-config="true" duration-ms="2" started-at="2020-09-23T18:49:11 IST" finished-at="2020-09-23T18:49:11 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownMethod -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestContext)[pri:0, instance:testsuite.Scripts.CoronaRakshak@df27fae]" name="tearDown" is-config="true" duration-ms="5" started-at="2020-09-23T16:05:02 IST" finished-at="2020-09-23T16:05:02 IST">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestContext)[pri:0, instance:testsuite.Scripts.CoronaRakshak@df27fae]" name="tearDown" is-config="true" duration-ms="5" started-at="2020-09-23T18:49:11 IST" finished-at="2020-09-23T18:49:11 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@2b61a019]]>
+                <![CDATA[org.testng.TestRunner@56276db8]]>
               </value>
             </param>
           </params>

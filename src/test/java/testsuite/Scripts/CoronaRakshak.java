@@ -56,7 +56,7 @@ public class CoronaRakshak extends HelperClass
 	            
 	            submitProposal_Fileupload();
 	           
-	            medicalDeclaration();
+	            //medicalDeclaration();
 		 }
 
 	            catch (Exception e) {

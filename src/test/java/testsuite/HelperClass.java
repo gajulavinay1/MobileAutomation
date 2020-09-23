@@ -1402,6 +1402,7 @@ public class HelperClass extends PageLocator {
 		swipe(AndroidDriver, DIRECTION.DOWN);
 		Thread.sleep(2000);
 		clickByCondindates(1001, 2274);
+		Thread.sleep(20000);
 	}
 	/**
 	 * 
@@ -1425,7 +1426,23 @@ public class HelperClass extends PageLocator {
 		Thread.sleep(2000);
 		clickByCondindates(1025, 2215);
 	}
-	
+	/** 
+	 * filling the proposerdetails form
+	 * 
+	 * @param income
+	 * @param GSTidnumber
+	 * @param aadhar
+	 * @param pannum
+	 * @param addressone
+	 * @param addresstwo
+	 * @param pin
+	 * @param nomineename
+	 * @param nomineeage
+	 * @param perofclaim
+	 * @param height
+	 * @param weight
+	 * @throws Throwable
+	 */
 	
 	
 	
@@ -1787,85 +1804,7 @@ public class HelperClass extends PageLocator {
 		Thread.sleep(2000);
 		click(click2tabs,"clicking on 2nd tab");
 	}
-	/**
-	 * this method is used to filling the insured details
-	 * @param numofmembers
-	 * @param name 
-	 * @throws Throwable 
-	 */
-	/*public static void coronaInsuredDetails(String numofmembers,String height,String weight, String name) throws Throwable
-	{
-		int x =Integer.parseInt(numofmembers);
-		System.out.println("selected members:  "  +x);
-		
-			insuredDetails(height, weight);
-		
-		if(x>1)
-		{
-			for (int index=1;index>=x-1;index++)
-			{
-			
-			//relationship
-			click(relationshipinDS,"clicking on relation ship");
-			Thread.sleep(2000);
-			//dropdown for relatioship
-			dropDown(valuesinRelationshipDropdown, "SELF");
-			
-			//gender
-			click(genderinDS,"clicking on gender");
-			Thread.sleep(2000);
-			//dropdown for gender
-			dropDown(valuesinGenderDropdown,"Female");
-			
-			//height
-			click(heightinDS,"clicking height");
-			
-			type(heightinDS,height,"height");
-			Thread.sleep(2000);
-			
-			//weight
-			click(weightinDS," clicking weight");
-			type(weightinDS,weight,"weight");
-			Thread.sleep(2000);
-			swipe(AndroidDriver, DIRECTION.UP);
-			
-			//
-			
-		}
-		}
-			for(int y=2;y>=x;y++)
-			{
-				 click(By.xpath(clicknexttabs.replace("#", y)),"next insureds tabs");
-				
-				//relationship
-				click(insuredRelationShip,"clicking on relation ship");
-				Thread.sleep(2000);
-				//dropdown for relatioship
-				dropDown(valuesinRelationshipDropdown, "DEPENDANT CHILDREN");
-				
-				//name
-				click(insuredname,"clicking on relation ship");
-				type(insuredname,name,"entering insured name");
-				
-				//dob
-				click(insureddob,"insured dob");
-				clickByCondindates(670, 1678);
-				
-				//gender
-				click(insuredGender,"insured gender");
-				//dropdown for gender
-				dropDown(valuesinGenderDropdown,"Female");
-				
-				//occupation
-				click(insuredOccupation,"insured occupation");
-				dropDown(valuesinGenderDropdown,"STUDENTS-SCHOOL AND COLLEGE");
-				
-				//next
-				click(next3inDS,"clicking on next");
-				Thread.sleep(2000);
-			
-			}
-	*/
+	
 	
 	public static void insuranceDetailsinCC(String Age,String plan,String coverageamount) throws Throwable
 	{
@@ -2379,6 +2318,13 @@ public class HelperClass extends PageLocator {
 	
 	
 	}
+	/**
+	 * 
+	 * @param Age
+	 * @param CoverageAmount
+	 * @param livein
+	 * @throws Throwable
+	 */
 	
 	public static void GetquoteDatafho(String Age, String CoverageAmount, String livein) throws Throwable {
 		click(ageins, "Clicking on age");

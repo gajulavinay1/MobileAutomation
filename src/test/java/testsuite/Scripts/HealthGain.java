@@ -40,7 +40,7 @@ public class HealthGain  extends HelperClass {
 	            
 	            SelectingIwnattoInsure(data.get("selectwhomtoinsure"));
 	            
-	            GetquoteDataHG(data.get("Age"),data.get("yearsormonths"),data.get("policyamount"),data.get("CoverageAmount"));
+	            GetquoteDataHG(data.get("Age"),data.get("yearsormonths"),data.get("policyamount"),data.get("CoverageAmount"),data.get("selectwhomtoinsure"));
 
 	            Details_HG(data.get("Address1"),data.get("Address2"),data.get("pincode"));
 	            

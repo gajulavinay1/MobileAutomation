@@ -7,6 +7,8 @@ import org.openqa.selenium.NotFoundException;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.util.Hashtable;
+
 import org.apache.commons.io.FilenameUtils;
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 import org.apache.poi.ss.usermodel.Cell;
@@ -248,4 +250,23 @@ public class ExcelReader extends TestEngine {
         }
         return colNum;
     }
+    
+    
+    /**
+     * Returns Hash table contains Insurer details
+     * @param sheetName - Product SheetName
+     * @param rowNum - which row number details need to read
+     * @return Hashtable
+     */
+    public Hashtable<String,String> getInsurerDetails(String sheetName,int rowNum) {
+         String path = workingdir + configProps.getProperty("InsurerDetails");
+         Hashtable<String, String> table =new Hashtable<String, String>();
+        workbook = getWorkBook(path);
+        sheet = workbook.getSheetAt(0);
+         int cols =getColumnCount(sheetName);
+             for(int col=0;col<cols;col++) {
+                table.put(getCellData(sheetName, 0, col),getCellData(sheetName, rowNum, col));
+             }
+             return table;
+         }
 }

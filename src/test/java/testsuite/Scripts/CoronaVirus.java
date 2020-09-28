@@ -47,7 +47,7 @@ public class CoronaVirus extends HelperClass
 	            
 	            detailsinCV(data.get("income"),data.get("GSTidnumber"),data.get("aadhar"),null,data.get("addressone"),data.get("addresstwo"),data.get("pin"),data.get("nomineename"),data.get("nomineeage"),data.get("perofclaim"),data.get("height"),data.get("weight"));
 	           
-	            insuredDetails(data.get("height"),data.get("weight"),null,"SELF",null);
+	            insuredDetails(data.get("height"),data.get("weight"),"SELF",null);
 	            
 	            clickNextTab();
 	            

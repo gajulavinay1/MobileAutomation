@@ -29,46 +29,53 @@ public class cancerGold extends HelperClass {
 		            
 		              Startingpage();
 		            
-		          // login in to app
-		            
+		            //login in to app
 		            Login(data.get("useremail"),data.get("userpass") );
 		            
 		            
+		            //selecting products from the menu
 		            MenuButtonclick();
 		            
-		            //dragStar();
 		            
-		           //selecting the product
+		            
+		           //selecting the cancer gold product
 		            Products(data.get("Selecttheproduct"));
 		            
+		            //clicking get quote
 		            GetQuote();
 		            
-		            insuranceDetailsinCG(data.get("Age"),data.get("yearsormonths"),data.get("coverageamount"));
+		            getCancerGoldQuoteData(data.get("Age"),data.get("yearsormonths"),data.get("coverageamount"));
 		            
-		            detailsinCG(data.get("income"),data.get("GSTidnumber"),data.get("aadhar"),null,data.get("addressone"),data.get("addresstwo"),data.get("pin"),data.get("nomineename"),data.get("nomineeage"),data.get("perofclaim"),data.get("height"),data.get("weight"),data.get("datenstage"),data.get("chemodate"),data.get("tobaccoyears"));
+		            detailsinCG(data.get("income"),data.get("GSTidnumber"),data.get("aadhar"),null);
 		            
-		            submitProposal_Fileupload();
+		            commuicationDetails(data.get("addressone"),data.get("addresstwo"),data.get("pin"));
+		            
+		            nomineeDetails(data.get("nomineename"),data.get("nomineeage"),data.get("perofclaim"));
+		            
+		            cancerGoldInsuredDetails(data.get("height"),data.get("weight"),data.get("datenstage"),data.get("chemodate"),data.get("tobaccoyears"));
+		             
+		            cancergoldSubmitproposal();
 		           
-		            medicalDeclaration();
+		           // medicalDeclaration();
 		            
 		            
 			 }
 
 		            catch (Exception e) {
-			            Reporter.failureReport("Star ProductsEndtoEnd Scenario",
+			            Reporter.failureReport("Star  cancer gold ProductsEndtoEnd Scenario",
 			                    "Failed with ");
 			            e.printStackTrace();
 			            flag = false;
 			        }finally {
 			            if (flag) {
-			                Reporter.SuccessReport("Executed Star ProductsEndtoEnd Scenario",
+			                Reporter.SuccessReport("Executed Star cancer gold ProductsEndtoEnd Scenario",
 			                        "Successful");
 			            } else {
 
-			                Reporter.failureReport("Star ProductsEndtoEnd Scenario",
+			                Reporter.failureReport("Star cancer gold ProductsEndtoEnd Scenario",
 			                        "Failed to Execute Star ProductsEndtoEnd Scenario");
 			                Assert.assertTrue(flag == true,
-			                        "Failed to Execute Star ProductsEndtoEnd Scenario");
+			                        "Failed to Execute Star cancer gold ProductsEndtoEnd Scenario");
 			            }
 			        }
 		 }

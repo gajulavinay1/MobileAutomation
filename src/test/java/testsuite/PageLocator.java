@@ -205,7 +205,7 @@ public class PageLocator extends ActionEngine {
 			public static By next5 = By.xpath("(//*[contains(@text,'Next')])[3]");
 			public static By next6 = By.xpath("(//*[contains(@text,'Next')])[3]");
 			public static By Done = By.xpath("(//*[contains(@text,'Done')])[3]");
-			
+			public static By startingSkip = By.xpath("(//*[contains(@text,'Skip')])[3]");
 	
 
 	//Products Selection
@@ -279,6 +279,7 @@ public class PageLocator extends ActionEngine {
 		public static String clickyearsormonths= "//*[contains(@text,'#')]";
 	public static By choosepolicytype= By.xpath("//*[contains(@resource-id,'policyType')]")	;
 	public static By clickpolicytype= By.xpath("//*[contains(@text,'Individual')]");
+	public static By clickFloaterPolicyType = By.xpath("//*[contains(@text,'Floater')]");
 	public static By choosepolicyamount1 = By.xpath("//*[contains(@resource-id,'premiumAmountSelect')]");
 	public static String clickpolicyamount1 = "//*[contains(@text,'#')]";
 	
@@ -312,9 +313,9 @@ public class PageLocator extends ActionEngine {
    public static By pannoinDS = By.xpath("(//*[contains(@text,'No')])[1]");
    public static By enterpaninDS = By.xpath("//*[contains(@resource-id,'panNumber')]");
    public static By eiayesinDS = By.xpath("(//*[contains(@text,'Yes')])[2]");
-   public static By eianoinDS = By.xpath("(//*[contains(@text,'No')])[2]");
+   public static By eianoinDS = By.xpath("(//*[@class='android.widget.RadioButton'])[4]");
    public static By healthinsuyesinDS = By.xpath("(//*[contains(@text,'Yes')])[3]");
-   public static By healthinsunoinDS = By.xpath("(//*[contains(@text,'No')])[3]");
+   public static By healthinsunoinDS = By.xpath("(//*[@class='android.widget.RadioButton'])[6]");
    public static By addressoneinDs = By.xpath("//*[contains(@resource-id,'addressOne')]");
    public static By addresstwoinDS = By.xpath("//*[contains(@resource-id,'addressTwo')]");
    public static By pincodeinDS = By.xpath("//*[contains(@resource-id,'proposerPincode')]");
@@ -378,6 +379,7 @@ public static By otp1 = By.xpath("/hierarchy/android.widget.FrameLayout/android.
  //file upload
  public static By clickFileUplaoinDS = By.xpath("//*[contains(@resource-id,'mui-component-select-age')]");
   public static By ageProof = By.xpath("//*[contains(@text,'Age Proof')]");
+  public static By dischargeSummary =By.xpath("//*[contains(@text,'Discharge Summary')]");
   public static By clickOnUploadFiles = By.xpath("//*[contains(@text,'Click and upload files here')]");
   
 public static By threeLines = By.xpath("//android.widget.ImageButton[@content-desc=\"Show roots\"]");

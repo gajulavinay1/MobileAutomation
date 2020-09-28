@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/8/0</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Sep 23 18:48:39 IST 2020</td>
+<td>Started on:</td><td>Mon Sep 28 17:36:28 IST 2020</td>
 </tr>
-<tr><td>Total time:</td><td>31 seconds (31834 ms)</td>
+<tr><td>Total time:</td><td>856 seconds (856750 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,30 +75,16 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='testsuite.Scripts.CoronaRakshak.productCoronaRakshak()'><b>productCoronaRakshak</b><br>Test class: testsuite.Scripts.CoronaRakshak<br>Parameters: {selectwhomtoinsure=Myself, Selecttheproduct=Corona Rakshak, userpass=Sangeetha$1, useremail=sangeethanulu@gmail.com, pin=500072, nomineename=ghyfsdf, nomineeage=38, CoverageAmount=1 Lakh, weight=62, pincode=500072, height=169, policyperiod=3.5 months, addresstwo=hyderabad, relationship2=DEPENDANT CHILDREN, relationship1=SELF, aadhar=1254, income=600000, Age=56, perofclaim=100, GSTidnumber=22AAAAA0000A1Z5, yearsormonths=Year(s), name=sathvik, addressone=kphb}</td>
-<td><div><pre>org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to remote server. Original error: Error: socket hang up
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;NBLAP195&apos;, ip: &apos;172.27.196.209&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_191&apos;
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities {app: E:\StarHealthMobileAutomati..., appActivity: com.star.customer_app.MainA..., appPackage: com.star.customer_app, databaseEnabled: false, desired: {app: E:\StarHealthMobileAutomati..., appActivity: com.star.customer_app.MainA..., appPackage: com.star.customer_app, deviceName: Pixel XL API 27, platformName: android, platformVersion: 8.1.0}, deviceApiLevel: 27, deviceManufacturer: Google, deviceModel: Android SDK built for x86, deviceName: emulator-5554, deviceScreenDensity: 560, deviceScreenSize: 1440x2560, deviceUDID: emulator-5554, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 3.5, platform: LINUX, platformName: Android, platformVersion: 8.1.0, statBarHeight: 84, takesScreenshot: true, viewportRect: {height: 2308, left: 0, top: 84, width: 1440}, warnings: {}, webStorageEnabled: false}
-Session ID: ffa1d53e-8e50-4788-a35b-5e9c15614d42
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:45)
-	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)
-	at accelerators.ActionEngine.screenShot(ActionEngine.java:127)
-	at support.Reporter.failureReport(Reporter.java:87)
-	at testsuite.Scripts.CoronaRakshak.productCoronaRakshak(CoronaRakshak.java:73)
+<td title='testsuite.Scripts.hospitalCash.productHospitalCash()'><b>productHospitalCash</b><br>Test class: testsuite.Scripts.hospitalCash<br>Parameters: {selectwhomtoinsure=Myself, productname=Hospital Cash, Selecttheproduct=Hospital Cash, Periodofpolicy=1 year, userpass=Sangeetha$1, useremail=sangeethanulu@gmail.com, pin=500072, plantype=Enhanced, nomineename=ghyfsdf, nomineeage=38, CoverageAmount=3,000, weight=62, coveragedays=90, height=169, addresstwo=hyderabad, aadhar=1254, income=600000, Age=45, perofclaim=100, GSTidnumber=22AAAAA0000A1Z5, addressone=kphb}</td>
+<td><div><pre>java.lang.AssertionError: Step Click Failed with description Unable to click on clicking on file upload expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.failNotEquals(Assert.java:969)
+	at org.testng.Assert.assertTrue(Assert.java:43)
+	at support.HtmlReportSupport.onFailure(HtmlReportSupport.java:779)
+	at support.Reporter.failureReport(Reporter.java:91)
+	at accelerators.ActionEngine.click(ActionEngine.java:78)
+	at testsuite.HelperClass.submitProposal_Fileupload(HelperClass.java:1395)
+	at testsuite.Scripts.hospitalCash.productHospitalCash(hospitalCash.java:61)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -127,30 +113,16 @@ Session ID: ffa1d53e-8e50-4788-a35b-5e9c15614d42
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1930837320", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1930837320'><pre>org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to remote server. Original error: Error: socket hang up
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;NBLAP195&apos;, ip: &apos;172.27.196.209&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_191&apos;
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities {app: E:\StarHealthMobileAutomati..., appActivity: com.star.customer_app.MainA..., appPackage: com.star.customer_app, databaseEnabled: false, desired: {app: E:\StarHealthMobileAutomati..., appActivity: com.star.customer_app.MainA..., appPackage: com.star.customer_app, deviceName: Pixel XL API 27, platformName: android, platformVersion: 8.1.0}, deviceApiLevel: 27, deviceManufacturer: Google, deviceModel: Android SDK built for x86, deviceName: emulator-5554, deviceScreenDensity: 560, deviceScreenSize: 1440x2560, deviceUDID: emulator-5554, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 3.5, platform: LINUX, platformName: Android, platformVersion: 8.1.0, statBarHeight: 84, takesScreenshot: true, viewportRect: {height: 2308, left: 0, top: 84, width: 1440}, warnings: {}, webStorageEnabled: false}
-Session ID: ffa1d53e-8e50-4788-a35b-5e9c15614d42
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:45)
-	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)
-	at accelerators.ActionEngine.screenShot(ActionEngine.java:127)
-	at support.Reporter.failureReport(Reporter.java:87)
-	at testsuite.Scripts.CoronaRakshak.productCoronaRakshak(CoronaRakshak.java:73)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1618326227", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1618326227'><pre>java.lang.AssertionError: Step Click Failed with description Unable to click on clicking on file upload expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.failNotEquals(Assert.java:969)
+	at org.testng.Assert.assertTrue(Assert.java:43)
+	at support.HtmlReportSupport.onFailure(HtmlReportSupport.java:779)
+	at support.Reporter.failureReport(Reporter.java:91)
+	at accelerators.ActionEngine.click(ActionEngine.java:78)
+	at testsuite.HelperClass.submitProposal_Fileupload(HelperClass.java:1395)
+	at testsuite.Scripts.hospitalCash.productHospitalCash(hospitalCash.java:61)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -180,33 +152,19 @@ Session ID: ffa1d53e-8e50-4788-a35b-5e9c15614d42
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>28</td>
-<td>testsuite.Scripts.CoronaRakshak@df27fae</td></tr>
+<td>694</td>
+<td>testsuite.Scripts.hospitalCash@df27fae</td></tr>
 <tr>
-<td title='testsuite.Scripts.CoronaRakshak.productCoronaRakshak()'><b>productCoronaRakshak</b><br>Test class: testsuite.Scripts.CoronaRakshak<br>Parameters: {selectwhomtoinsure=, Selecttheproduct=, userpass=, useremail=, pin=, nomineename=, nomineeage=, CoverageAmount=, weight=, pincode=, height=, policyperiod=, addresstwo=, relationship2=, relationship1=, aadhar=, income=, Age=, perofclaim=, GSTidnumber=, yearsormonths=, name=, addressone=}</td>
-<td><div><pre>org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to remote server. Original error: Error: socket hang up
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;NBLAP195&apos;, ip: &apos;172.27.196.209&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_191&apos;
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities {app: E:\StarHealthMobileAutomati..., appActivity: com.star.customer_app.MainA..., appPackage: com.star.customer_app, databaseEnabled: false, desired: {app: E:\StarHealthMobileAutomati..., appActivity: com.star.customer_app.MainA..., appPackage: com.star.customer_app, deviceName: Pixel XL API 27, platformName: android, platformVersion: 8.1.0}, deviceApiLevel: 27, deviceManufacturer: Google, deviceModel: Android SDK built for x86, deviceName: emulator-5554, deviceScreenDensity: 560, deviceScreenSize: 1440x2560, deviceUDID: emulator-5554, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 3.5, platform: LINUX, platformName: Android, platformVersion: 8.1.0, statBarHeight: 84, takesScreenshot: true, viewportRect: {height: 2308, left: 0, top: 84, width: 1440}, warnings: {}, webStorageEnabled: false}
-Session ID: ffa1d53e-8e50-4788-a35b-5e9c15614d42
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:45)
-	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)
-	at accelerators.ActionEngine.screenShot(ActionEngine.java:127)
-	at support.Reporter.failureReport(Reporter.java:87)
-	at testsuite.Scripts.CoronaRakshak.productCoronaRakshak(CoronaRakshak.java:73)
+<td title='testsuite.Scripts.hospitalCash.productHospitalCash()'><b>productHospitalCash</b><br>Test class: testsuite.Scripts.hospitalCash<br>Parameters: {selectwhomtoinsure=, productname=, Selecttheproduct=, Periodofpolicy=, userpass=, useremail=, pin=, plantype=, nomineename=, nomineeage=, CoverageAmount=, weight=, coveragedays=, height=, addresstwo=, aadhar=, income=, Age=, perofclaim=, GSTidnumber=, addressone=}</td>
+<td><div><pre>java.lang.AssertionError: Step Click Failed with description Unable to click on skip expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.failNotEquals(Assert.java:969)
+	at org.testng.Assert.assertTrue(Assert.java:43)
+	at support.HtmlReportSupport.onFailure(HtmlReportSupport.java:779)
+	at support.Reporter.failureReport(Reporter.java:91)
+	at accelerators.ActionEngine.click(ActionEngine.java:78)
+	at testsuite.HelperClass.Startingpage(HelperClass.java:33)
+	at testsuite.Scripts.hospitalCash.productHospitalCash(hospitalCash.java:29)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -235,30 +193,16 @@ Session ID: ffa1d53e-8e50-4788-a35b-5e9c15614d42
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace538667887", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace538667887'><pre>org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to remote server. Original error: Error: socket hang up
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;NBLAP195&apos;, ip: &apos;172.27.196.209&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_191&apos;
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities {app: E:\StarHealthMobileAutomati..., appActivity: com.star.customer_app.MainA..., appPackage: com.star.customer_app, databaseEnabled: false, desired: {app: E:\StarHealthMobileAutomati..., appActivity: com.star.customer_app.MainA..., appPackage: com.star.customer_app, deviceName: Pixel XL API 27, platformName: android, platformVersion: 8.1.0}, deviceApiLevel: 27, deviceManufacturer: Google, deviceModel: Android SDK built for x86, deviceName: emulator-5554, deviceScreenDensity: 560, deviceScreenSize: 1440x2560, deviceUDID: emulator-5554, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 3.5, platform: LINUX, platformName: Android, platformVersion: 8.1.0, statBarHeight: 84, takesScreenshot: true, viewportRect: {height: 2308, left: 0, top: 84, width: 1440}, warnings: {}, webStorageEnabled: false}
-Session ID: ffa1d53e-8e50-4788-a35b-5e9c15614d42
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:45)
-	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)
-	at accelerators.ActionEngine.screenShot(ActionEngine.java:127)
-	at support.Reporter.failureReport(Reporter.java:87)
-	at testsuite.Scripts.CoronaRakshak.productCoronaRakshak(CoronaRakshak.java:73)
+</pre></div><a href='#' onClick='toggleBox("stack-trace2054787417", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2054787417'><pre>java.lang.AssertionError: Step Click Failed with description Unable to click on skip expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.failNotEquals(Assert.java:969)
+	at org.testng.Assert.assertTrue(Assert.java:43)
+	at support.HtmlReportSupport.onFailure(HtmlReportSupport.java:779)
+	at support.Reporter.failureReport(Reporter.java:91)
+	at accelerators.ActionEngine.click(ActionEngine.java:78)
+	at testsuite.HelperClass.Startingpage(HelperClass.java:33)
+	at testsuite.Scripts.hospitalCash.productHospitalCash(hospitalCash.java:29)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -288,33 +232,19 @@ Session ID: ffa1d53e-8e50-4788-a35b-5e9c15614d42
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>0</td>
-<td>testsuite.Scripts.CoronaRakshak@df27fae</td></tr>
+<td>21</td>
+<td>testsuite.Scripts.hospitalCash@df27fae</td></tr>
 <tr>
-<td title='testsuite.Scripts.CoronaRakshak.productCoronaRakshak()'><b>productCoronaRakshak</b><br>Test class: testsuite.Scripts.CoronaRakshak<br>Parameters: {selectwhomtoinsure=, Selecttheproduct=, userpass=, useremail=, pin=, nomineename=, nomineeage=, CoverageAmount=, weight=, pincode=, height=, policyperiod=, addresstwo=, relationship2=, relationship1=, aadhar=, income=, Age=, perofclaim=, GSTidnumber=, yearsormonths=, name=, addressone=}</td>
-<td><div><pre>org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to remote server. Original error: Error: socket hang up
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;NBLAP195&apos;, ip: &apos;172.27.196.209&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_191&apos;
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities {app: E:\StarHealthMobileAutomati..., appActivity: com.star.customer_app.MainA..., appPackage: com.star.customer_app, databaseEnabled: false, desired: {app: E:\StarHealthMobileAutomati..., appActivity: com.star.customer_app.MainA..., appPackage: com.star.customer_app, deviceName: Pixel XL API 27, platformName: android, platformVersion: 8.1.0}, deviceApiLevel: 27, deviceManufacturer: Google, deviceModel: Android SDK built for x86, deviceName: emulator-5554, deviceScreenDensity: 560, deviceScreenSize: 1440x2560, deviceUDID: emulator-5554, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 3.5, platform: LINUX, platformName: Android, platformVersion: 8.1.0, statBarHeight: 84, takesScreenshot: true, viewportRect: {height: 2308, left: 0, top: 84, width: 1440}, warnings: {}, webStorageEnabled: false}
-Session ID: ffa1d53e-8e50-4788-a35b-5e9c15614d42
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:45)
-	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)
-	at accelerators.ActionEngine.screenShot(ActionEngine.java:127)
-	at support.Reporter.failureReport(Reporter.java:87)
-	at testsuite.Scripts.CoronaRakshak.productCoronaRakshak(CoronaRakshak.java:73)
+<td title='testsuite.Scripts.hospitalCash.productHospitalCash()'><b>productHospitalCash</b><br>Test class: testsuite.Scripts.hospitalCash<br>Parameters: {selectwhomtoinsure=, productname=, Selecttheproduct=, Periodofpolicy=, userpass=, useremail=, pin=, plantype=, nomineename=, nomineeage=, CoverageAmount=, weight=, coveragedays=, height=, addresstwo=, aadhar=, income=, Age=, perofclaim=, GSTidnumber=, addressone=}</td>
+<td><div><pre>java.lang.AssertionError: Step Click Failed with description Unable to click on skip expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.failNotEquals(Assert.java:969)
+	at org.testng.Assert.assertTrue(Assert.java:43)
+	at support.HtmlReportSupport.onFailure(HtmlReportSupport.java:779)
+	at support.Reporter.failureReport(Reporter.java:91)
+	at accelerators.ActionEngine.click(ActionEngine.java:78)
+	at testsuite.HelperClass.Startingpage(HelperClass.java:33)
+	at testsuite.Scripts.hospitalCash.productHospitalCash(hospitalCash.java:29)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -343,30 +273,16 @@ Session ID: ffa1d53e-8e50-4788-a35b-5e9c15614d42
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace733461760", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace733461760'><pre>org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to remote server. Original error: Error: socket hang up
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;NBLAP195&apos;, ip: &apos;172.27.196.209&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_191&apos;
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities {app: E:\StarHealthMobileAutomati..., appActivity: com.star.customer_app.MainA..., appPackage: com.star.customer_app, databaseEnabled: false, desired: {app: E:\StarHealthMobileAutomati..., appActivity: com.star.customer_app.MainA..., appPackage: com.star.customer_app, deviceName: Pixel XL API 27, platformName: android, platformVersion: 8.1.0}, deviceApiLevel: 27, deviceManufacturer: Google, deviceModel: Android SDK built for x86, deviceName: emulator-5554, deviceScreenDensity: 560, deviceScreenSize: 1440x2560, deviceUDID: emulator-5554, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 3.5, platform: LINUX, platformName: Android, platformVersion: 8.1.0, statBarHeight: 84, takesScreenshot: true, viewportRect: {height: 2308, left: 0, top: 84, width: 1440}, warnings: {}, webStorageEnabled: false}
-Session ID: ffa1d53e-8e50-4788-a35b-5e9c15614d42
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:45)
-	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)
-	at accelerators.ActionEngine.screenShot(ActionEngine.java:127)
-	at support.Reporter.failureReport(Reporter.java:87)
-	at testsuite.Scripts.CoronaRakshak.productCoronaRakshak(CoronaRakshak.java:73)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1457148583", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1457148583'><pre>java.lang.AssertionError: Step Click Failed with description Unable to click on skip expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.failNotEquals(Assert.java:969)
+	at org.testng.Assert.assertTrue(Assert.java:43)
+	at support.HtmlReportSupport.onFailure(HtmlReportSupport.java:779)
+	at support.Reporter.failureReport(Reporter.java:91)
+	at accelerators.ActionEngine.click(ActionEngine.java:78)
+	at testsuite.HelperClass.Startingpage(HelperClass.java:33)
+	at testsuite.Scripts.hospitalCash.productHospitalCash(hospitalCash.java:29)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -396,33 +312,19 @@ Session ID: ffa1d53e-8e50-4788-a35b-5e9c15614d42
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>0</td>
-<td>testsuite.Scripts.CoronaRakshak@df27fae</td></tr>
+<td>22</td>
+<td>testsuite.Scripts.hospitalCash@df27fae</td></tr>
 <tr>
-<td title='testsuite.Scripts.CoronaRakshak.productCoronaRakshak()'><b>productCoronaRakshak</b><br>Test class: testsuite.Scripts.CoronaRakshak<br>Parameters: {selectwhomtoinsure=, Selecttheproduct=, userpass=, useremail=, pin=, nomineename=, nomineeage=, CoverageAmount=, weight=, pincode=, height=, policyperiod=, addresstwo=, relationship2=, relationship1=, aadhar=, income=, Age=, perofclaim=, GSTidnumber=, yearsormonths=, name=, addressone=}</td>
-<td><div><pre>org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to remote server. Original error: Error: socket hang up
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;NBLAP195&apos;, ip: &apos;172.27.196.209&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_191&apos;
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities {app: E:\StarHealthMobileAutomati..., appActivity: com.star.customer_app.MainA..., appPackage: com.star.customer_app, databaseEnabled: false, desired: {app: E:\StarHealthMobileAutomati..., appActivity: com.star.customer_app.MainA..., appPackage: com.star.customer_app, deviceName: Pixel XL API 27, platformName: android, platformVersion: 8.1.0}, deviceApiLevel: 27, deviceManufacturer: Google, deviceModel: Android SDK built for x86, deviceName: emulator-5554, deviceScreenDensity: 560, deviceScreenSize: 1440x2560, deviceUDID: emulator-5554, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 3.5, platform: LINUX, platformName: Android, platformVersion: 8.1.0, statBarHeight: 84, takesScreenshot: true, viewportRect: {height: 2308, left: 0, top: 84, width: 1440}, warnings: {}, webStorageEnabled: false}
-Session ID: ffa1d53e-8e50-4788-a35b-5e9c15614d42
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:45)
-	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)
-	at accelerators.ActionEngine.screenShot(ActionEngine.java:127)
-	at support.Reporter.failureReport(Reporter.java:87)
-	at testsuite.Scripts.CoronaRakshak.productCoronaRakshak(CoronaRakshak.java:73)
+<td title='testsuite.Scripts.hospitalCash.productHospitalCash()'><b>productHospitalCash</b><br>Test class: testsuite.Scripts.hospitalCash<br>Parameters: {selectwhomtoinsure=, productname=, Selecttheproduct=, Periodofpolicy=, userpass=, useremail=, pin=, plantype=, nomineename=, nomineeage=, CoverageAmount=, weight=, coveragedays=, height=, addresstwo=, aadhar=, income=, Age=, perofclaim=, GSTidnumber=, addressone=}</td>
+<td><div><pre>java.lang.AssertionError: Step Click Failed with description Unable to click on skip expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.failNotEquals(Assert.java:969)
+	at org.testng.Assert.assertTrue(Assert.java:43)
+	at support.HtmlReportSupport.onFailure(HtmlReportSupport.java:779)
+	at support.Reporter.failureReport(Reporter.java:91)
+	at accelerators.ActionEngine.click(ActionEngine.java:78)
+	at testsuite.HelperClass.Startingpage(HelperClass.java:33)
+	at testsuite.Scripts.hospitalCash.productHospitalCash(hospitalCash.java:29)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -451,30 +353,16 @@ Session ID: ffa1d53e-8e50-4788-a35b-5e9c15614d42
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace48305285", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace48305285'><pre>org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to remote server. Original error: Error: socket hang up
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;NBLAP195&apos;, ip: &apos;172.27.196.209&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_191&apos;
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities {app: E:\StarHealthMobileAutomati..., appActivity: com.star.customer_app.MainA..., appPackage: com.star.customer_app, databaseEnabled: false, desired: {app: E:\StarHealthMobileAutomati..., appActivity: com.star.customer_app.MainA..., appPackage: com.star.customer_app, deviceName: Pixel XL API 27, platformName: android, platformVersion: 8.1.0}, deviceApiLevel: 27, deviceManufacturer: Google, deviceModel: Android SDK built for x86, deviceName: emulator-5554, deviceScreenDensity: 560, deviceScreenSize: 1440x2560, deviceUDID: emulator-5554, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 3.5, platform: LINUX, platformName: Android, platformVersion: 8.1.0, statBarHeight: 84, takesScreenshot: true, viewportRect: {height: 2308, left: 0, top: 84, width: 1440}, warnings: {}, webStorageEnabled: false}
-Session ID: ffa1d53e-8e50-4788-a35b-5e9c15614d42
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:45)
-	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)
-	at accelerators.ActionEngine.screenShot(ActionEngine.java:127)
-	at support.Reporter.failureReport(Reporter.java:87)
-	at testsuite.Scripts.CoronaRakshak.productCoronaRakshak(CoronaRakshak.java:73)
+</pre></div><a href='#' onClick='toggleBox("stack-trace722160979", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace722160979'><pre>java.lang.AssertionError: Step Click Failed with description Unable to click on skip expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.failNotEquals(Assert.java:969)
+	at org.testng.Assert.assertTrue(Assert.java:43)
+	at support.HtmlReportSupport.onFailure(HtmlReportSupport.java:779)
+	at support.Reporter.failureReport(Reporter.java:91)
+	at accelerators.ActionEngine.click(ActionEngine.java:78)
+	at testsuite.HelperClass.Startingpage(HelperClass.java:33)
+	at testsuite.Scripts.hospitalCash.productHospitalCash(hospitalCash.java:29)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -504,32 +392,19 @@ Session ID: ffa1d53e-8e50-4788-a35b-5e9c15614d42
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>0</td>
-<td>testsuite.Scripts.CoronaRakshak@df27fae</td></tr>
+<td>22</td>
+<td>testsuite.Scripts.hospitalCash@df27fae</td></tr>
 <tr>
-<td title='testsuite.Scripts.CoronaRakshak.productCoronaRakshak()'><b>productCoronaRakshak</b><br>Test class: testsuite.Scripts.CoronaRakshak<br>Parameters: {selectwhomtoinsure=, Selecttheproduct=, userpass=, useremail=, pin=, nomineename=, nomineeage=, CoverageAmount=, weight=, pincode=, height=, policyperiod=, addresstwo=, relationship2=, relationship1=, aadhar=, income=, Age=, perofclaim=, GSTidnumber=, yearsormonths=, name=, addressone=}</td>
-<td><div><pre>org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to remote server. Original error: Error: socket hang up
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;NBLAP195&apos;, ip: &apos;172.27.196.209&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_191&apos;
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities {app: E:\StarHealthMobileAutomati..., appActivity: com.star.customer_app.MainA..., appPackage: com.star.customer_app, databaseEnabled: false, desired: {app: E:\StarHealthMobileAutomati..., appActivity: com.star.customer_app.MainA..., appPackage: com.star.customer_app, deviceName: Pixel XL API 27, platformName: android, platformVersion: 8.1.0}, deviceApiLevel: 27, deviceManufacturer: Google, deviceModel: Android SDK built for x86, deviceName: emulator-5554, deviceScreenDensity: 560, deviceScreenSize: 1440x2560, deviceUDID: emulator-5554, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 3.5, platform: LINUX, platformName: Android, platformVersion: 8.1.0, statBarHeight: 84, takesScreenshot: true, viewportRect: {height: 2308, left: 0, top: 84, width: 1440}, warnings: {}, webStorageEnabled: false}
-Session ID: ffa1d53e-8e50-4788-a35b-5e9c15614d42
-	at sun.reflect.GeneratedConstructorAccessor32.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:45)
-	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)
-	at accelerators.ActionEngine.screenShot(ActionEngine.java:127)
-	at support.Reporter.failureReport(Reporter.java:87)
-	at testsuite.Scripts.CoronaRakshak.productCoronaRakshak(CoronaRakshak.java:73)
+<td title='testsuite.Scripts.hospitalCash.productHospitalCash()'><b>productHospitalCash</b><br>Test class: testsuite.Scripts.hospitalCash<br>Parameters: {selectwhomtoinsure=, productname=, Selecttheproduct=, Periodofpolicy=, userpass=, useremail=, pin=, plantype=, nomineename=, nomineeage=, CoverageAmount=, weight=, coveragedays=, height=, addresstwo=, aadhar=, income=, Age=, perofclaim=, GSTidnumber=, addressone=}</td>
+<td><div><pre>java.lang.AssertionError: Step Click Failed with description Unable to click on skip expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.failNotEquals(Assert.java:969)
+	at org.testng.Assert.assertTrue(Assert.java:43)
+	at support.HtmlReportSupport.onFailure(HtmlReportSupport.java:779)
+	at support.Reporter.failureReport(Reporter.java:91)
+	at accelerators.ActionEngine.click(ActionEngine.java:78)
+	at testsuite.HelperClass.Startingpage(HelperClass.java:33)
+	at testsuite.Scripts.hospitalCash.productHospitalCash(hospitalCash.java:29)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -558,29 +433,16 @@ Session ID: ffa1d53e-8e50-4788-a35b-5e9c15614d42
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace259251414", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace259251414'><pre>org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to remote server. Original error: Error: socket hang up
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;NBLAP195&apos;, ip: &apos;172.27.196.209&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_191&apos;
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities {app: E:\StarHealthMobileAutomati..., appActivity: com.star.customer_app.MainA..., appPackage: com.star.customer_app, databaseEnabled: false, desired: {app: E:\StarHealthMobileAutomati..., appActivity: com.star.customer_app.MainA..., appPackage: com.star.customer_app, deviceName: Pixel XL API 27, platformName: android, platformVersion: 8.1.0}, deviceApiLevel: 27, deviceManufacturer: Google, deviceModel: Android SDK built for x86, deviceName: emulator-5554, deviceScreenDensity: 560, deviceScreenSize: 1440x2560, deviceUDID: emulator-5554, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 3.5, platform: LINUX, platformName: Android, platformVersion: 8.1.0, statBarHeight: 84, takesScreenshot: true, viewportRect: {height: 2308, left: 0, top: 84, width: 1440}, warnings: {}, webStorageEnabled: false}
-Session ID: ffa1d53e-8e50-4788-a35b-5e9c15614d42
-	at sun.reflect.GeneratedConstructorAccessor32.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:45)
-	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)
-	at accelerators.ActionEngine.screenShot(ActionEngine.java:127)
-	at support.Reporter.failureReport(Reporter.java:87)
-	at testsuite.Scripts.CoronaRakshak.productCoronaRakshak(CoronaRakshak.java:73)
+</pre></div><a href='#' onClick='toggleBox("stack-trace2053349061", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2053349061'><pre>java.lang.AssertionError: Step Click Failed with description Unable to click on skip expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.failNotEquals(Assert.java:969)
+	at org.testng.Assert.assertTrue(Assert.java:43)
+	at support.HtmlReportSupport.onFailure(HtmlReportSupport.java:779)
+	at support.Reporter.failureReport(Reporter.java:91)
+	at accelerators.ActionEngine.click(ActionEngine.java:78)
+	at testsuite.HelperClass.Startingpage(HelperClass.java:33)
+	at testsuite.Scripts.hospitalCash.productHospitalCash(hospitalCash.java:29)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -610,32 +472,19 @@ Session ID: ffa1d53e-8e50-4788-a35b-5e9c15614d42
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>0</td>
-<td>testsuite.Scripts.CoronaRakshak@df27fae</td></tr>
+<td>22</td>
+<td>testsuite.Scripts.hospitalCash@df27fae</td></tr>
 <tr>
-<td title='testsuite.Scripts.CoronaRakshak.productCoronaRakshak()'><b>productCoronaRakshak</b><br>Test class: testsuite.Scripts.CoronaRakshak<br>Parameters: {selectwhomtoinsure=, Selecttheproduct=, userpass=, useremail=, pin=, nomineename=, nomineeage=, CoverageAmount=, weight=, pincode=, height=, policyperiod=, addresstwo=, relationship2=, relationship1=, aadhar=, income=, Age=, perofclaim=, GSTidnumber=, yearsormonths=, name=, addressone=}</td>
-<td><div><pre>org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to remote server. Original error: Error: socket hang up
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;NBLAP195&apos;, ip: &apos;172.27.196.209&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_191&apos;
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities {app: E:\StarHealthMobileAutomati..., appActivity: com.star.customer_app.MainA..., appPackage: com.star.customer_app, databaseEnabled: false, desired: {app: E:\StarHealthMobileAutomati..., appActivity: com.star.customer_app.MainA..., appPackage: com.star.customer_app, deviceName: Pixel XL API 27, platformName: android, platformVersion: 8.1.0}, deviceApiLevel: 27, deviceManufacturer: Google, deviceModel: Android SDK built for x86, deviceName: emulator-5554, deviceScreenDensity: 560, deviceScreenSize: 1440x2560, deviceUDID: emulator-5554, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 3.5, platform: LINUX, platformName: Android, platformVersion: 8.1.0, statBarHeight: 84, takesScreenshot: true, viewportRect: {height: 2308, left: 0, top: 84, width: 1440}, warnings: {}, webStorageEnabled: false}
-Session ID: ffa1d53e-8e50-4788-a35b-5e9c15614d42
-	at sun.reflect.GeneratedConstructorAccessor32.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:45)
-	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)
-	at accelerators.ActionEngine.screenShot(ActionEngine.java:127)
-	at support.Reporter.failureReport(Reporter.java:87)
-	at testsuite.Scripts.CoronaRakshak.productCoronaRakshak(CoronaRakshak.java:73)
+<td title='testsuite.Scripts.hospitalCash.productHospitalCash()'><b>productHospitalCash</b><br>Test class: testsuite.Scripts.hospitalCash<br>Parameters: {selectwhomtoinsure=, productname=, Selecttheproduct=, Periodofpolicy=, userpass=, useremail=, pin=, plantype=, nomineename=, nomineeage=, CoverageAmount=, weight=, coveragedays=, height=, addresstwo=, aadhar=, income=, Age=, perofclaim=, GSTidnumber=, addressone=}</td>
+<td><div><pre>java.lang.AssertionError: Step Click Failed with description Unable to click on skip expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.failNotEquals(Assert.java:969)
+	at org.testng.Assert.assertTrue(Assert.java:43)
+	at support.HtmlReportSupport.onFailure(HtmlReportSupport.java:779)
+	at support.Reporter.failureReport(Reporter.java:91)
+	at accelerators.ActionEngine.click(ActionEngine.java:78)
+	at testsuite.HelperClass.Startingpage(HelperClass.java:33)
+	at testsuite.Scripts.hospitalCash.productHospitalCash(hospitalCash.java:29)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -664,29 +513,16 @@ Session ID: ffa1d53e-8e50-4788-a35b-5e9c15614d42
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1956415355", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1956415355'><pre>org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to remote server. Original error: Error: socket hang up
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;NBLAP195&apos;, ip: &apos;172.27.196.209&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_191&apos;
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities {app: E:\StarHealthMobileAutomati..., appActivity: com.star.customer_app.MainA..., appPackage: com.star.customer_app, databaseEnabled: false, desired: {app: E:\StarHealthMobileAutomati..., appActivity: com.star.customer_app.MainA..., appPackage: com.star.customer_app, deviceName: Pixel XL API 27, platformName: android, platformVersion: 8.1.0}, deviceApiLevel: 27, deviceManufacturer: Google, deviceModel: Android SDK built for x86, deviceName: emulator-5554, deviceScreenDensity: 560, deviceScreenSize: 1440x2560, deviceUDID: emulator-5554, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 3.5, platform: LINUX, platformName: Android, platformVersion: 8.1.0, statBarHeight: 84, takesScreenshot: true, viewportRect: {height: 2308, left: 0, top: 84, width: 1440}, warnings: {}, webStorageEnabled: false}
-Session ID: ffa1d53e-8e50-4788-a35b-5e9c15614d42
-	at sun.reflect.GeneratedConstructorAccessor32.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:45)
-	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)
-	at accelerators.ActionEngine.screenShot(ActionEngine.java:127)
-	at support.Reporter.failureReport(Reporter.java:87)
-	at testsuite.Scripts.CoronaRakshak.productCoronaRakshak(CoronaRakshak.java:73)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1591954203", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1591954203'><pre>java.lang.AssertionError: Step Click Failed with description Unable to click on skip expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.failNotEquals(Assert.java:969)
+	at org.testng.Assert.assertTrue(Assert.java:43)
+	at support.HtmlReportSupport.onFailure(HtmlReportSupport.java:779)
+	at support.Reporter.failureReport(Reporter.java:91)
+	at accelerators.ActionEngine.click(ActionEngine.java:78)
+	at testsuite.HelperClass.Startingpage(HelperClass.java:33)
+	at testsuite.Scripts.hospitalCash.productHospitalCash(hospitalCash.java:29)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -716,32 +552,19 @@ Session ID: ffa1d53e-8e50-4788-a35b-5e9c15614d42
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>0</td>
-<td>testsuite.Scripts.CoronaRakshak@df27fae</td></tr>
+<td>23</td>
+<td>testsuite.Scripts.hospitalCash@df27fae</td></tr>
 <tr>
-<td title='testsuite.Scripts.CoronaRakshak.productCoronaRakshak()'><b>productCoronaRakshak</b><br>Test class: testsuite.Scripts.CoronaRakshak<br>Parameters: {selectwhomtoinsure=, Selecttheproduct=, userpass=, useremail=, pin=, nomineename=, nomineeage=, CoverageAmount=, weight=, pincode=, height=, policyperiod=, addresstwo=, relationship2=, relationship1=, aadhar=, income=, Age=, perofclaim=, GSTidnumber=, yearsormonths=, name=, addressone=}</td>
-<td><div><pre>org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to remote server. Original error: Error: socket hang up
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;NBLAP195&apos;, ip: &apos;172.27.196.209&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_191&apos;
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities {app: E:\StarHealthMobileAutomati..., appActivity: com.star.customer_app.MainA..., appPackage: com.star.customer_app, databaseEnabled: false, desired: {app: E:\StarHealthMobileAutomati..., appActivity: com.star.customer_app.MainA..., appPackage: com.star.customer_app, deviceName: Pixel XL API 27, platformName: android, platformVersion: 8.1.0}, deviceApiLevel: 27, deviceManufacturer: Google, deviceModel: Android SDK built for x86, deviceName: emulator-5554, deviceScreenDensity: 560, deviceScreenSize: 1440x2560, deviceUDID: emulator-5554, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 3.5, platform: LINUX, platformName: Android, platformVersion: 8.1.0, statBarHeight: 84, takesScreenshot: true, viewportRect: {height: 2308, left: 0, top: 84, width: 1440}, warnings: {}, webStorageEnabled: false}
-Session ID: ffa1d53e-8e50-4788-a35b-5e9c15614d42
-	at sun.reflect.GeneratedConstructorAccessor32.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:45)
-	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)
-	at accelerators.ActionEngine.screenShot(ActionEngine.java:127)
-	at support.Reporter.failureReport(Reporter.java:87)
-	at testsuite.Scripts.CoronaRakshak.productCoronaRakshak(CoronaRakshak.java:73)
+<td title='testsuite.Scripts.hospitalCash.productHospitalCash()'><b>productHospitalCash</b><br>Test class: testsuite.Scripts.hospitalCash<br>Parameters: {selectwhomtoinsure=, productname=, Selecttheproduct=, Periodofpolicy=, userpass=, useremail=, pin=, plantype=, nomineename=, nomineeage=, CoverageAmount=, weight=, coveragedays=, height=, addresstwo=, aadhar=, income=, Age=, perofclaim=, GSTidnumber=, addressone=}</td>
+<td><div><pre>java.lang.AssertionError: Step Click Failed with description Unable to click on skip expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.failNotEquals(Assert.java:969)
+	at org.testng.Assert.assertTrue(Assert.java:43)
+	at support.HtmlReportSupport.onFailure(HtmlReportSupport.java:779)
+	at support.Reporter.failureReport(Reporter.java:91)
+	at accelerators.ActionEngine.click(ActionEngine.java:78)
+	at testsuite.HelperClass.Startingpage(HelperClass.java:33)
+	at testsuite.Scripts.hospitalCash.productHospitalCash(hospitalCash.java:29)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -770,29 +593,16 @@ Session ID: ffa1d53e-8e50-4788-a35b-5e9c15614d42
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace500230084", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace500230084'><pre>org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to remote server. Original error: Error: socket hang up
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;NBLAP195&apos;, ip: &apos;172.27.196.209&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_191&apos;
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities {app: E:\StarHealthMobileAutomati..., appActivity: com.star.customer_app.MainA..., appPackage: com.star.customer_app, databaseEnabled: false, desired: {app: E:\StarHealthMobileAutomati..., appActivity: com.star.customer_app.MainA..., appPackage: com.star.customer_app, deviceName: Pixel XL API 27, platformName: android, platformVersion: 8.1.0}, deviceApiLevel: 27, deviceManufacturer: Google, deviceModel: Android SDK built for x86, deviceName: emulator-5554, deviceScreenDensity: 560, deviceScreenSize: 1440x2560, deviceUDID: emulator-5554, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 3.5, platform: LINUX, platformName: Android, platformVersion: 8.1.0, statBarHeight: 84, takesScreenshot: true, viewportRect: {height: 2308, left: 0, top: 84, width: 1440}, warnings: {}, webStorageEnabled: false}
-Session ID: ffa1d53e-8e50-4788-a35b-5e9c15614d42
-	at sun.reflect.GeneratedConstructorAccessor32.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:45)
-	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)
-	at accelerators.ActionEngine.screenShot(ActionEngine.java:127)
-	at support.Reporter.failureReport(Reporter.java:87)
-	at testsuite.Scripts.CoronaRakshak.productCoronaRakshak(CoronaRakshak.java:73)
+</pre></div><a href='#' onClick='toggleBox("stack-trace841483227", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace841483227'><pre>java.lang.AssertionError: Step Click Failed with description Unable to click on skip expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.failNotEquals(Assert.java:969)
+	at org.testng.Assert.assertTrue(Assert.java:43)
+	at support.HtmlReportSupport.onFailure(HtmlReportSupport.java:779)
+	at support.Reporter.failureReport(Reporter.java:91)
+	at accelerators.ActionEngine.click(ActionEngine.java:78)
+	at testsuite.HelperClass.Startingpage(HelperClass.java:33)
+	at testsuite.Scripts.hospitalCash.productHospitalCash(hospitalCash.java:29)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -822,32 +632,19 @@ Session ID: ffa1d53e-8e50-4788-a35b-5e9c15614d42
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>0</td>
-<td>testsuite.Scripts.CoronaRakshak@df27fae</td></tr>
+<td>23</td>
+<td>testsuite.Scripts.hospitalCash@df27fae</td></tr>
 <tr>
-<td title='testsuite.Scripts.CoronaRakshak.productCoronaRakshak()'><b>productCoronaRakshak</b><br>Test class: testsuite.Scripts.CoronaRakshak<br>Parameters: {selectwhomtoinsure=, Selecttheproduct=, userpass=, useremail=, pin=, nomineename=, nomineeage=, CoverageAmount=, weight=, pincode=, height=, policyperiod=, addresstwo=, relationship2=, relationship1=, aadhar=, income=, Age=, perofclaim=, GSTidnumber=, yearsormonths=, name=adbExecTimeout: "50000", addressone=}</td>
-<td><div><pre>org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to remote server. Original error: Error: socket hang up
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;NBLAP195&apos;, ip: &apos;172.27.196.209&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_191&apos;
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities {app: E:\StarHealthMobileAutomati..., appActivity: com.star.customer_app.MainA..., appPackage: com.star.customer_app, databaseEnabled: false, desired: {app: E:\StarHealthMobileAutomati..., appActivity: com.star.customer_app.MainA..., appPackage: com.star.customer_app, deviceName: Pixel XL API 27, platformName: android, platformVersion: 8.1.0}, deviceApiLevel: 27, deviceManufacturer: Google, deviceModel: Android SDK built for x86, deviceName: emulator-5554, deviceScreenDensity: 560, deviceScreenSize: 1440x2560, deviceUDID: emulator-5554, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 3.5, platform: LINUX, platformName: Android, platformVersion: 8.1.0, statBarHeight: 84, takesScreenshot: true, viewportRect: {height: 2308, left: 0, top: 84, width: 1440}, warnings: {}, webStorageEnabled: false}
-Session ID: ffa1d53e-8e50-4788-a35b-5e9c15614d42
-	at sun.reflect.GeneratedConstructorAccessor32.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:45)
-	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)
-	at accelerators.ActionEngine.screenShot(ActionEngine.java:127)
-	at support.Reporter.failureReport(Reporter.java:87)
-	at testsuite.Scripts.CoronaRakshak.productCoronaRakshak(CoronaRakshak.java:73)
+<td title='testsuite.Scripts.hospitalCash.productHospitalCash()'><b>productHospitalCash</b><br>Test class: testsuite.Scripts.hospitalCash<br>Parameters: {selectwhomtoinsure=, productname=, Selecttheproduct=, Periodofpolicy=, userpass=, useremail=, pin=, plantype=, nomineename=, nomineeage=, CoverageAmount=, weight=, coveragedays=, height=, addresstwo=, aadhar=, income=, Age=, perofclaim=, GSTidnumber=, addressone=}</td>
+<td><div><pre>java.lang.AssertionError: Step Click Failed with description Unable to click on skip expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.failNotEquals(Assert.java:969)
+	at org.testng.Assert.assertTrue(Assert.java:43)
+	at support.HtmlReportSupport.onFailure(HtmlReportSupport.java:779)
+	at support.Reporter.failureReport(Reporter.java:91)
+	at accelerators.ActionEngine.click(ActionEngine.java:78)
+	at testsuite.HelperClass.Startingpage(HelperClass.java:33)
+	at testsuite.Scripts.hospitalCash.productHospitalCash(hospitalCash.java:29)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -876,29 +673,16 @@ Session ID: ffa1d53e-8e50-4788-a35b-5e9c15614d42
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1535026957", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1535026957'><pre>org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to remote server. Original error: Error: socket hang up
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;NBLAP195&apos;, ip: &apos;172.27.196.209&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_191&apos;
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities {app: E:\StarHealthMobileAutomati..., appActivity: com.star.customer_app.MainA..., appPackage: com.star.customer_app, databaseEnabled: false, desired: {app: E:\StarHealthMobileAutomati..., appActivity: com.star.customer_app.MainA..., appPackage: com.star.customer_app, deviceName: Pixel XL API 27, platformName: android, platformVersion: 8.1.0}, deviceApiLevel: 27, deviceManufacturer: Google, deviceModel: Android SDK built for x86, deviceName: emulator-5554, deviceScreenDensity: 560, deviceScreenSize: 1440x2560, deviceUDID: emulator-5554, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 3.5, platform: LINUX, platformName: Android, platformVersion: 8.1.0, statBarHeight: 84, takesScreenshot: true, viewportRect: {height: 2308, left: 0, top: 84, width: 1440}, warnings: {}, webStorageEnabled: false}
-Session ID: ffa1d53e-8e50-4788-a35b-5e9c15614d42
-	at sun.reflect.GeneratedConstructorAccessor32.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:45)
-	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)
-	at accelerators.ActionEngine.screenShot(ActionEngine.java:127)
-	at support.Reporter.failureReport(Reporter.java:87)
-	at testsuite.Scripts.CoronaRakshak.productCoronaRakshak(CoronaRakshak.java:73)
+</pre></div><a href='#' onClick='toggleBox("stack-trace465233746", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace465233746'><pre>java.lang.AssertionError: Step Click Failed with description Unable to click on skip expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.failNotEquals(Assert.java:969)
+	at org.testng.Assert.assertTrue(Assert.java:43)
+	at support.HtmlReportSupport.onFailure(HtmlReportSupport.java:779)
+	at support.Reporter.failureReport(Reporter.java:91)
+	at accelerators.ActionEngine.click(ActionEngine.java:78)
+	at testsuite.HelperClass.Startingpage(HelperClass.java:33)
+	at testsuite.Scripts.hospitalCash.productHospitalCash(hospitalCash.java:29)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -928,8 +712,8 @@ Session ID: ffa1d53e-8e50-4788-a35b-5e9c15614d42
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>0</td>
-<td>testsuite.Scripts.CoronaRakshak@df27fae</td></tr>
+<td>22</td>
+<td>testsuite.Scripts.hospitalCash@df27fae</td></tr>
 </table><p>
 </body>
 </html>

@@ -490,7 +490,7 @@ public class ActionEngine extends TestEngine {
 		return flag;
 	}
 
-	public static Boolean isElementDisplayed(By locator, String locatorName) {
+	public static boolean isElementDisplayed(By locator, String locatorName) {
 		Boolean flag = false;
 		try {
 			driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
@@ -509,6 +509,26 @@ public class ActionEngine extends TestEngine {
 
 		return flag;
 	}
+	public static boolean isElementEnabled(By locator, String locatorName) {
+		Boolean flag = false;
+		try {
+			driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+			MobileElement we = (MobileElement) driver.findElement(locator);
+			flag = we.isEnabled();
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			// e.printStackTrace();
+		} finally {
+			if (!flag) {
+				System.out.println("Element is not display: " +locatorName);
+			} else {
+				System.out.println("Element is display "+ locatorName);
+			}
+		}
+
+		return flag;
+	}
+
 
 	public static void scrollTo(String selector, int typ) {
 		((FindsByAndroidUIAutomator<MobileElement>) driver)

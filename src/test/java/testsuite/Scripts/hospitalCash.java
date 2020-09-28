@@ -48,11 +48,19 @@ public class hospitalCash extends HelperClass {
 	            
 	            skipPolicyNumbers();
 	            
-	            detailsinAS(data.get("income"),data.get("GSTidnumber"),data.get("aadhar"),null,data.get("addressone"),data.get("addresstwo"),data.get("pin"),data.get("nomineename"),data.get("nomineeage"),data.get("perofclaim"),data.get("height"),data.get("weight"));
+	            //detailsinAS(data.get("income"),data.get("GSTidnumber"),data.get("aadhar"),null,data.get("addressone"),data.get("addresstwo"),data.get("pin"),data.get("nomineename"),data.get("nomineeage"),data.get("perofclaim"),data.get("height"),data.get("weight"));
+	            
+	            proposalForm(data.get("income"),data.get("GSTidnumber"),data.get("aadhar"),null);
+	            
+	            commuicationDetails(data.get("addressone"),data.get("addresstwo"),data.get("pin"));
+	            
+	            nomineeDetails(data.get("nomineename"),data.get("nomineeage"),data.get("perofclaim"));
+	            
+	            insuredDetails(data.get("height"),data.get("weight"),"self",null);
 	            
 	            submitProposal_Fileupload();
 	           
-	            medicalDeclaration();
+	            //medicalDeclaration();
 	            
 	            
 		 }

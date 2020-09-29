@@ -8,6 +8,7 @@ import org.testng.annotations.Test;
 
 import accelerators.TestEngine;
 import support.CommonDataProvider;
+import support.ExcelReader;
 import support.HtmlReportSupport;
 import support.Reporter;
 import testsuite.HelperClass;
@@ -22,6 +23,7 @@ public class hospitalCash extends HelperClass {
 	@Test(dataProvider = "getTestData")
 	 public void productHospitalCash(Hashtable<String, String> data) throws Throwable 
 	 {
+		 ExcelReader excel = new ExcelReader();
 		 try {
 	            TestEngine.testDescription
 	                    .put(HtmlReportSupport.tc_name, "Hospital cash test case for star app");
@@ -56,7 +58,13 @@ public class hospitalCash extends HelperClass {
 	            
 	            nomineeDetails(data.get("nomineename"),data.get("nomineeage"),data.get("perofclaim"));
 	            
-	            insuredDetails(data.get("height"),data.get("weight"),"self",null);
+	            CommonDataProvider.getData("hc_insureddetails");
+	            
+	            Hashtable<String, String> table =new Hashtable<String, String>();
+	            
+	            table = excel.getInsurerDetails("hc_insureddetails", 2);
+	            
+	            insuredDetails(data.get("height"),data.get("weight"),"self",null,null);
 	            
 	            submitProposal_Fileupload();
 	           

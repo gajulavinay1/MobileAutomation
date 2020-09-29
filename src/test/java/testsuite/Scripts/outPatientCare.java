@@ -8,6 +8,7 @@ import org.testng.annotations.Test;
 
 import accelerators.TestEngine;
 import support.CommonDataProvider;
+import support.ExcelReader;
 import support.HtmlReportSupport;
 import support.Reporter;
 import testsuite.HelperClass;
@@ -21,23 +22,20 @@ public class outPatientCare extends HelperClass {
 	
 	@Test(dataProvider = "getTestData")
 	 public void productOutPatient(Hashtable<String, String> data) throws Throwable 
-	 {
+	 {   
+         
 		 try {
 	            TestEngine.testDescription
 	                    .put(HtmlReportSupport.tc_name, "out patient care test case for star app");
 	            
-	              Startingpage();
+	             Startingpage();
 	            
-	          // login in to app
-	            
+	          //login in to app
 	            Login(data.get("useremail"),data.get("userpass") );
-	            
 	            
 	            MenuButtonclick();
 	            
-	            //dragStar();
-	            
-	           //selecting the product
+	          //selecting the product
 	            Products(data.get("Selecttheproduct"));
 	            
 	            GetQuote();
@@ -48,11 +46,19 @@ public class outPatientCare extends HelperClass {
 	            
 	            skipPolicyNumbers();
 	            
-	            detailsinAS(data.get("income"),data.get("GSTidnumber"),data.get("aadhar"),null,data.get("addressone"),data.get("addresstwo"),data.get("pin"),data.get("nomineename"),data.get("nomineeage"),data.get("perofclaim"),data.get("height"),data.get("weight"));
+	            //detailsinAS(data.get("income"),data.get("GSTidnumber"),data.get("aadhar"),null,data.get("addressone"),data.get("addresstwo"),data.get("pin"),data.get("nomineename"),data.get("nomineeage"),data.get("perofclaim"),data.get("height"),data.get("weight"));
+	            
+	            proposalForm(data.get("income"),data.get("GSTidnumber"),data.get("aadhar"),null);
+	            
+	            commuicationDetails(data.get("addressone"),data.get("addresstwo"),data.get("pin"));
+	            
+	            nomineeDetails(data.get("nomineename"),data.get("nomineeage"),data.get("perofclaim"));
+                
+	            insuredDetails(data.get("height"),data.get("weight"),"SELF",null,"female");
 	            
 	            submitProposal_Fileupload();
 	           
-	            medicalDeclaration();
+	           // medicalDeclaration();
 	            
 	            
 		 }

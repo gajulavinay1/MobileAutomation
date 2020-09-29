@@ -31,6 +31,12 @@ public class ExcelReader extends TestEngine {
         workbook = getWorkBook(path);
         sheet = workbook.getSheetAt(0);
     }
+    public ExcelReader(String path) {
+
+        workbook = getWorkBook(path);
+        sheet = workbook.getSheetAt(0);
+    }
+
 
     /**
      * This method returns workbook object of excel file
@@ -259,7 +265,7 @@ public class ExcelReader extends TestEngine {
      * @return Hashtable
      */
     public Hashtable<String,String> getInsurerDetails(String sheetName,int rowNum) {
-         String path = workingdir + configProps.getProperty("InsurerDetails");
+         String path = workingdir + configProps.getProperty("insureddetails");
          Hashtable<String, String> table =new Hashtable<String, String>();
         workbook = getWorkBook(path);
         sheet = workbook.getSheetAt(0);
